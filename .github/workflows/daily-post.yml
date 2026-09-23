@@ -1,0 +1,103 @@
+name: Daily LinkedIn Post
+
+# Runs automatically every day and can also be triggered manually
+# (workflow_dispatch) to run the exact same pipeline on demand.
+#
+# IMPORTANT: intentionally does NOT trigger on `push`. The job commits
+# updated history files (data/*.json) back to the repository - triggering
+# on push would create an infinite loop (SPEC section 49).
+#
+# NOTE: GitHub disables scheduled workflows on repositories with no activity
+# for 60 days (public repos). If this stops running automatically after a
+# long period of inactivity, open the Actions tab and re-enable the
+# workflow, or push any commit to reset the inactivity clock (SPEC section 50).
+on:
+  schedule:
+    - cron: '0 9 * * *'
+      timezone: 'America/Toronto'
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Force a real publish attempt even if the DRY_RUN repository variable is true'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: cloud-linkedin-agent-daily
+  cancel-in-progress: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NODE_ENV: production
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+      LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+      LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+      LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+      LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202509' }}
+      POST_TIMEZONE: ${{ vars.POST_TIMEZONE || 'America/Toronto' }}
+      DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '1' }}
+      MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '1' }}
+      MAX_AI_REQUESTS_PER_RUN: ${{ vars.MAX_AI_REQUESTS_PER_RUN || '3' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Generate and (maybe) publish post
+        id: run
+        run: |
+          if [ "${{ inputs.publish }}" = "true" ]; then
+            npm run publish
+          else
+            npm run generate
+          fi
+
+      - name: Commit and push updated history
+        if: always()
+        run: |
+          git config user.name "CloudLinkedIn Agent"
+          git config user.email "cloudlinkedin-agent@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No history changes to commit."
+          else
+            git commit -m "chore: update content history [skip ci]"
+            git push
+          fi
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[CloudLinkedIn Agent] Daily posting failed - ${new Date().toISOString().slice(0, 10)}`,
+              body: [
+                `**Date:** ${new Date().toISOString()}`,
+                `**Run:** ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+                '',
+                'The daily-post workflow failed. Check the linked run logs for details (no secrets are printed in logs).',
+              ].join('\n'),
+            });

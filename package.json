@@ -1,0 +1,38 @@
+{
+  "name": "cloud-linkedin-agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent that generates and publishes daily Cloud/Virtualization/DevOps LinkedIn posts.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts generate",
+    "generate": "tsx src/index.ts generate",
+    "generate:dry": "tsx src/index.ts generate --dry",
+    "publish": "tsx src/index.ts generate --publish",
+    "linkedin:auth": "tsx src/linkedin/linkedinAuthCli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src tests --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@google/genai": "^2.23.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
