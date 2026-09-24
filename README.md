@@ -125,7 +125,7 @@ See `.env.example` for the authoritative list. Summary:
 | `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` | Only for `npm run linkedin:auth` | From your LinkedIn Developer app |
 | `LINKEDIN_REDIRECT_URI` | Only for `npm run linkedin:auth` | Must match the app's registered redirect URL exactly |
 | `LINKEDIN_ACCESS_TOKEN` | Yes, unless `DRY_RUN=true` or `MOCK_LINKEDIN=true` | Obtained once via `npm run linkedin:auth` |
-| `LINKEDIN_API_VERSION` | No (default `202509`) | `Linkedin-Version` header, format `YYYYMM` - bump periodically |
+| `LINKEDIN_API_VERSION` | No (default `202609`) | `Linkedin-Version` header, format `YYYYMM` - LinkedIn only supports each version for ~12 months, so bump this periodically (check https://learn.microsoft.com/linkedin/marketing/versioning) |
 | `POST_TIMEZONE` | No (default `America/Toronto`) | Used for the GitHub Actions cron schedule |
 | `DRY_RUN` | No (default `true`) | When true, generates + validates but never publishes and never writes to `data/posts.json` / `data/topics.json` |
 | `MOCK_LINKEDIN` | No (default `false`) | Simulates LinkedIn publication locally, no network call |
@@ -235,7 +235,7 @@ If LinkedIn changes this contract in the future, update
 | --- | --- |
 | `DRY_RUN` | `true` |
 | `GEMINI_MODEL` | `gemini-2.5-flash` |
-| `LINKEDIN_API_VERSION` | `202509` |
+| `LINKEDIN_API_VERSION` | `202609` |
 | `POST_TIMEZONE` | `America/Toronto` |
 | `POSTS_PER_DAY` / `MAX_POSTS_PER_DAY` / `MAX_AI_REQUESTS_PER_RUN` | `1` / `1` / `3` |
 | `MOCK_LINKEDIN` / `MOCK_GEMINI` | `false` |

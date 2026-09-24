@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "runId": "run_20260924172803_091",
+    "startedAt": "2026-09-24T17:28:03.296Z",
+    "completedAt": "2026-09-24T17:28:12.174Z",
+    "status": "dry_run",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 0,
+    "dryRun": true
+  },
+  {
+    "runId": "run_20260924172930_308",
+    "startedAt": "2026-09-24T17:29:30.153Z",
+    "completedAt": "2026-09-24T17:29:40.053Z",
+    "status": "failed",
+    "topic": "Azure Resource Groups explained",
+    "category": "Microsoft Azure",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "error": "LinkedIn request failed (426): {\"status\":426,\"code\":\"NONEXISTENT_VERSION\",\"message\":\"Requested version 20250901 is not active\"}",
+    "errorCategory": "LINKEDIN_BAD_REQUEST",
+    "dryRun": false
+  },
+  {
+    "runId": "run_20260924173122_723",
+    "startedAt": "2026-09-24T17:31:22.400Z",
+    "completedAt": "2026-09-24T17:31:32.789Z",
+    "status": "success",
+    "topic": "Infrastructure as Code fundamentals",
+    "category": "DevOps",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7508941202742833152",
+    "dryRun": false
+  }
+]

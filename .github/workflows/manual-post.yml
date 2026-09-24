@@ -29,7 +29,7 @@ jobs:
       LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
       LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
       LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
-      LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202509' }}
+      LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202609' }}
       POST_TIMEZONE: ${{ vars.POST_TIMEZONE || 'America/Toronto' }}
       MOCK_LINKEDIN: ${{ vars.MOCK_LINKEDIN || 'false' }}
       MOCK_GEMINI: ${{ vars.MOCK_GEMINI || 'false' }}

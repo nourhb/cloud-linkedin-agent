@@ -143,7 +143,7 @@ export function loadConfig(): AppConfig {
       clientSecret: env.LINKEDIN_CLIENT_SECRET,
       redirectUri: env.LINKEDIN_REDIRECT_URI,
       accessToken: env.LINKEDIN_ACCESS_TOKEN,
-      apiVersion: env.LINKEDIN_API_VERSION ?? '202509',
+      apiVersion: env.LINKEDIN_API_VERSION ?? '202609',
       mockEnabled: linkedinMockEnabled,
     },
     schedule: {
