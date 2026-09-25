@@ -47,7 +47,10 @@ export class GeminiClient implements AiClient {
     }
   }
 
-  async generateImage(prompt: string, topic = 'cloud infrastructure'): Promise<GeneratedImageAsset> {
+  async generateImage(
+    prompt: string,
+    post: { topic: string; category: string } = { topic: 'cloud infrastructure', category: 'Cloud Computing' },
+  ): Promise<GeneratedImageAsset> {
     try {
       return await this.generateWithGeminiImage(prompt);
     } catch (error) {
@@ -55,7 +58,7 @@ export class GeminiClient implements AiClient {
         imageModel: this.imageModel,
         error: error instanceof Error ? error.message.slice(0, 180) : String(error).slice(0, 180),
       });
-      return fetchFallbackPhoto(prompt, topic);
+      return fetchFallbackPhoto(prompt, post);
     }
   }
 

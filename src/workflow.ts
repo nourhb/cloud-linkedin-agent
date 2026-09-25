@@ -151,7 +151,7 @@ export async function runDailyWorkflow(
 
     logger.info('Generating post image');
     const imageAsset = await retry(
-      () => aiClient.generateImage(buildImagePrompt(generation.post), generation.post.topic),
+      () => aiClient.generateImage(buildImagePrompt(generation.post), generation.post),
       {
         attempts: 2,
         delaysMs: [5_000],

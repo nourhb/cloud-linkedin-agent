@@ -14,11 +14,11 @@ const post: GeneratedPost = {
 };
 
 describe('buildImagePrompt', () => {
-  it('asks for a photorealistic image with no overlaid text', () => {
+  it('asks for a photorealistic indoor tech scene, not a landscape', () => {
     const prompt = buildImagePrompt(post);
     expect(prompt).toContain('Type 1 vs Type 2 hypervisors');
-    expect(prompt).toContain('No readable text');
-    expect(prompt).toContain('hypervisor');
+    expect(prompt).toContain('server racks');
+    expect(prompt).toContain('Not a landscape');
   });
 
   it('builds concise alt text from the topic', () => {

@@ -79,6 +79,11 @@ export function checkQuality(
     }
   }
 
+  // --- Domain-like tokens (LinkedIn auto-linkifies example.com) --------------
+  if (/\b[\w-]+\.(com|net|org|io|dev|cloud|app)\b/i.test(combinedText)) {
+    errors.push('contains a domain-like token (LinkedIn will turn it into a blue link); describe hostnames in words instead');
+  }
+
   // --- Fabricated experience (SPEC section 59, mandatory rule) ---------------
   for (const pattern of FABRICATED_EXPERIENCE_PATTERNS) {
     if (pattern.test(combinedText)) {

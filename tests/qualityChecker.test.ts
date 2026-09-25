@@ -89,6 +89,17 @@ describe('qualityChecker', () => {
     expect(result.errors.some((e) => e.includes('opening sentence'))).toBe(true);
   });
 
+  it('rejects domain-like tokens that LinkedIn would auto-link', () => {
+    const result = checkQuality(
+      basePost({
+        body: longEnoughBody(2) + '\n\nYou would point your-app.com at the load balancer.',
+      }),
+      { strategy },
+    );
+    expect(result.valid).toBe(false);
+    expect(result.errors.some((e) => e.includes('domain-like'))).toBe(true);
+  });
+
   it('flags missing required fields', () => {
     const result = checkQuality(basePost({ topic: '' }), { strategy });
     expect(result.valid).toBe(false);

@@ -12,5 +12,5 @@ export interface AiClient {
   generateJson(systemPrompt: string, userPrompt: string): Promise<string>;
 
   /** Generates a LinkedIn-ready photo/illustration for the post. */
-  generateImage(prompt: string, topic?: string): Promise<GeneratedImageAsset>;
+  generateImage(prompt: string, post?: { topic: string; category: string }): Promise<GeneratedImageAsset>;
 }
