@@ -13,6 +13,7 @@
     "generate:dry": "tsx src/index.ts generate --dry",
     "publish": "tsx src/index.ts generate --publish",
     "linkedin:auth": "tsx src/linkedin/linkedinAuthCli.ts",
+    "ui": "tsx src/ui/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint src tests --ext .ts",

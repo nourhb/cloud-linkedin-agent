@@ -43,6 +43,7 @@ cloud-linkedin-agent/
 │   ├── linkedin/          OAuth helper, current Posts API client, publisher, mock
 │   ├── storage/           JSON-file repositories for posts/topics/runs
 │   ├── utils/             logger, retry, hashing
+│   ├── ui/                local read-only monitor dashboard
 │   ├── workflow.ts        orchestrates the full daily pipeline
 │   └── index.ts           CLI entrypoint
 └── tests/                 vitest unit tests
@@ -254,6 +255,7 @@ npm run dev            # watch mode, defaults to DRY_RUN from .env
 npm run generate       # one run, respects DRY_RUN from .env
 npm run generate:dry   # force dry-run regardless of .env (never publishes, never writes data/posts.json)
 npm run publish        # force a real publish attempt (respects MOCK_LINKEDIN)
+npm run ui             # open the local monitor at http://127.0.0.1:3030
 npm run test           # vitest
 npm run lint           # eslint
 npm run typecheck      # tsc --noEmit
