@@ -122,6 +122,7 @@ See `.env.example` for the authoritative list. Summary:
 | --- | --- | --- |
 | `GEMINI_API_KEY` | Yes, unless `MOCK_GEMINI=true` | From Google AI Studio |
 | `GEMINI_MODEL` | No (default `gemini-2.5-flash`) | Change the model without touching code |
+| `GEMINI_IMAGE_MODEL` | No (default `gemini-2.5-flash-image`) | Generates the photo attached to each post |
 | `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` | Only for `npm run linkedin:auth` | From your LinkedIn Developer app |
 | `LINKEDIN_REDIRECT_URI` | Only for `npm run linkedin:auth` | Must match the app's registered redirect URL exactly |
 | `LINKEDIN_ACCESS_TOKEN` | Yes, unless `DRY_RUN=true` or `MOCK_LINKEDIN=true` | Obtained once via `npm run linkedin:auth` |
@@ -424,8 +425,9 @@ in a different AI or LinkedIn client in the future, keep this guarantee.
 
 - No web research / fact-checking pipeline (SPEC §39/40) - content comes
   from the model's own knowledge plus the curated topic catalog.
-- No image generation (SPEC §63) - text-only posts, to keep the system free
-  and simple.
+- Image generation is on: each published post uploads a Gemini-generated
+  photo via the current LinkedIn Images API, then attaches `urn:li:image:{id}`
+  on `POST /rest/posts`.
 - No weekly summary or email notifications (SPEC §52/53) - only the
   optional failure-issue notification is implemented.
 - No `src/research/` module - the directory structure is intentionally left

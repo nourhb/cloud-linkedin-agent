@@ -103,5 +103,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7509250238902059008",
     "contentHash": "27ea1ab0e5466a727e8efa8315c7aa0f699eeb42992e86c10856ed97ed8fdeb4"
+  },
+  {
+    "id": "post_20260925140510_957",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "concept_breakdown",
+    "difficulty": "beginner",
+    "content": "How do services in a dynamic cloud environment actually find each other, or how does a user's browser locate your application?\n\nIt all boils down to DNS – the Domain Name System. Think of it as the internet's phonebook, translating human-readable domain names (like example.com) into machine-readable IP addresses (like 192.0.2.1). In the cloud, this becomes even more critical with ephemeral resources and autoscaling. Without robust DNS, your microservices wouldn't know where to send requests, and your load balancers couldn't route traffic effectively. Key record types like 'A' records map a domain to an IP, while 'CNAME' records point a domain to another domain, simplifying management.\n\nFor instance, if you launch an EC2 instance or a virtual machine in Azure to host a web application, you wouldn't want users to type an IP address. Instead, you'd configure a DNS 'A' record (or a 'CNAME' if pointing to a load balancer or another service) to direct your-app.com to that resource's public IP. As I'm learning, setting this up correctly is foundational.\n\nGetting a solid grasp of DNS fundamentals is indispensable for anyone building or managing cloud infrastructure. It's not just a networking concept; it's the essential backbone connecting all your cloud resources and making them accessible.",
+    "hook": "How do services in a dynamic cloud environment actually find each other, or how does a user's browser locate your application?",
+    "hashtags": [
+      "#CloudComputing",
+      "#Networking",
+      "#DNS",
+      "#DevOps"
+    ],
+    "keywords": [
+      "dns",
+      "networking",
+      "resolution"
+    ],
+    "generatedAt": "2026-09-25T14:05:10.932Z",
+    "publishedAt": "2026-09-25T14:05:58.668Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7509251854527078401",
+    "contentHash": "8c6803711086946d2695377492213bc6e1cfb0a5ea2471cc901991d3311d9f26"
   }
 ]

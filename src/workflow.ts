@@ -4,6 +4,7 @@ import { TopicRepository } from './storage/topicRepository.js';
 import { RunRepository } from './storage/runRepository.js';
 import { selectTopic } from './content/topicEngine.js';
 import { generatePost } from './ai/postGenerator.js';
+import { buildImageAltText, buildImagePrompt } from './ai/imagePrompt.js';
 import { GeminiClient } from './ai/geminiClient.js';
 import { MockGeminiClient } from './ai/mockGeminiClient.js';
 import { MockLinkedinClient } from './linkedin/mockLinkedinClient.js';
@@ -33,7 +34,7 @@ function createAiClient(config: AppConfig): AiClient {
   if (!config.gemini.apiKey) {
     throw new Error('GEMINI_API_KEY is missing and MOCK_GEMINI is not enabled.');
   }
-  return new GeminiClient(config.gemini.apiKey, config.gemini.model);
+  return new GeminiClient(config.gemini.apiKey, config.gemini.model, config.gemini.imageModel);
 }
 
 /**
@@ -148,13 +149,27 @@ export async function runDailyWorkflow(
 
     const publisher = await createPublisher(config);
 
+    logger.info('Generating post image');
+    const imageAsset = await retry(
+      () => aiClient.generateImage(buildImagePrompt(generation.post), generation.post.topic),
+      {
+        attempts: 2,
+        delaysMs: [5_000],
+        isRetryable: isRetryableError,
+      },
+    );
+    const publishableImage = {
+      ...imageAsset,
+      altText: buildImageAltText(generation.post),
+    };
+
     logger.info('Publishing to LinkedIn');
     let publishResult;
     try {
       publishResult = await retry(
         () => {
           publicationAttempts++;
-          return publisher.publishPost(generation.post);
+          return publisher.publishPost(generation.post, publishableImage);
         },
         {
           attempts: 3,

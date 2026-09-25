@@ -56,6 +56,7 @@ export interface AppConfig {
   gemini: {
     apiKey: string | undefined;
     model: string;
+    imageModel: string;
     mockEnabled: boolean;
   };
   linkedin: {
@@ -136,6 +137,7 @@ export function loadConfig(): AppConfig {
     gemini: {
       apiKey: env.GEMINI_API_KEY,
       model: env.GEMINI_MODEL ?? 'gemini-2.5-flash',
+      imageModel: env.GEMINI_IMAGE_MODEL ?? 'gemini-2.5-flash-image',
       mockEnabled: geminiMockEnabled,
     },
     linkedin: {

@@ -1,5 +1,5 @@
 import type { GeneratedPost, PublishResult } from '../types.js';
-import type { LinkedInPublisher } from './linkedinTypes.js';
+import type { LinkedInPublisher, PublishableImage } from './linkedinTypes.js';
 import { logger } from '../utils/logger.js';
 
 /**
@@ -8,9 +8,13 @@ import { logger } from '../utils/logger.js';
  * development and CI.
  */
 export class MockLinkedinClient implements LinkedInPublisher {
-  async publishPost(post: GeneratedPost): Promise<PublishResult> {
+  async publishPost(post: GeneratedPost, image?: PublishableImage): Promise<PublishResult> {
     const mockId = `mock:${Date.now()}`;
-    logger.info('Mock LinkedIn publication successful', { postId: mockId, topic: post.topic });
+    logger.info('Mock LinkedIn publication successful', {
+      postId: mockId,
+      topic: post.topic,
+      hasImage: Boolean(image),
+    });
     return {
       success: true,
       linkedinPostId: mockId,

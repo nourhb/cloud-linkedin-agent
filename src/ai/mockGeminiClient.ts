@@ -1,5 +1,11 @@
-import type { AiClient } from './aiClient.js';
+import type { AiClient, GeneratedImageAsset } from './aiClient.js';
 import type { ContentType } from '../types.js';
+
+/** 1x1 PNG used only by the mock client so CI never calls a real image model. */
+const MOCK_PNG = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==',
+  'base64',
+);
 
 /**
  * Deterministic mock Gemini client (SPEC section 69). Allows local
@@ -165,5 +171,9 @@ export class MockGeminiClient implements AiClient {
     };
 
     return JSON.stringify(mockPost);
+  }
+
+  async generateImage(_prompt: string): Promise<GeneratedImageAsset> {
+    return { bytes: MOCK_PNG, mimeType: 'image/png' };
   }
 }

@@ -2,9 +2,9 @@ import type { AppConfig } from '../config/config.js';
 import type { GeneratedPost, PublishResult } from '../types.js';
 import { ClassifiedError } from '../types.js';
 import { logger } from '../utils/logger.js';
-import { createPost, getAuthorUrn } from './linkedinClient.js';
+import { createPost, getAuthorUrn, initializeImageUpload, uploadImageBytes } from './linkedinClient.js';
 import { buildCommentary } from './littleText.js';
-import type { LinkedInPublisher } from './linkedinTypes.js';
+import type { LinkedInPublisher, PublishableImage } from './linkedinTypes.js';
 
 /**
  * Real LinkedIn publisher (SPEC section 24) using the current Posts API
@@ -29,7 +29,7 @@ export class LinkedinPublisher implements LinkedInPublisher {
     return this.authorUrnPromise;
   }
 
-  async publishPost(post: GeneratedPost): Promise<PublishResult> {
+  async publishPost(post: GeneratedPost, image?: PublishableImage): Promise<PublishResult> {
     const accessToken = this.config.linkedin.accessToken;
     if (!accessToken) {
       return {
@@ -42,11 +42,31 @@ export class LinkedinPublisher implements LinkedInPublisher {
     try {
       const authorUrn = await this.getAuthorUrnCached();
       const commentary = buildCommentary(post.hook, post.body, post.hashtags);
+
+      let imageUrn: string | undefined;
+      if (image) {
+        logger.info('Uploading post image to LinkedIn');
+        const initialized = await initializeImageUpload({
+          authorUrn,
+          accessToken,
+          apiVersion: this.config.linkedin.apiVersion,
+        });
+        await uploadImageBytes({
+          uploadUrl: initialized.uploadUrl,
+          bytes: image.bytes,
+          mimeType: image.mimeType,
+          accessToken,
+        });
+        imageUrn = initialized.imageUrn;
+      }
+
       const result = await createPost({
         authorUrn,
         commentary,
         accessToken,
         apiVersion: this.config.linkedin.apiVersion,
+        imageUrn,
+        imageTitle: image?.altText,
       });
 
       return {

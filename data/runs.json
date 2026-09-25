@@ -63,5 +63,29 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7509250238902059008",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260925140350_063",
+    "startedAt": "2026-09-25T14:03:50.794Z",
+    "completedAt": "2026-09-25T14:04:03.993Z",
+    "status": "failed",
+    "generationAttempts": 1,
+    "publicationAttempts": 0,
+    "error": "Gemini request failed: This method is only supported by the Gemini Enterprise Agent Platform (previously known as Vertex AI).",
+    "errorCategory": "UNKNOWN_ERROR",
+    "dryRun": false
+  },
+  {
+    "runId": "run_20260925140510_032",
+    "startedAt": "2026-09-25T14:05:10.932Z",
+    "completedAt": "2026-09-25T14:05:58.671Z",
+    "status": "success",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "concept_breakdown",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7509251854527078401",
+    "dryRun": false
   }
 ]

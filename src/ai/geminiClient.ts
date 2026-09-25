@@ -1,7 +1,9 @@
 import { GoogleGenAI } from '@google/genai';
 import { ClassifiedError } from '../types.js';
+import { logger } from '../utils/logger.js';
+import { fetchFallbackPhoto } from './fallbackPhoto.js';
 import { GENERATED_POST_SCHEMA } from './promptBuilder.js';
-import type { AiClient } from './aiClient.js';
+import type { AiClient, GeneratedImageAsset } from './aiClient.js';
 
 /**
  * Real Gemini client using the current official Google Gen AI SDK
@@ -13,10 +15,12 @@ import type { AiClient } from './aiClient.js';
 export class GeminiClient implements AiClient {
   private readonly client: GoogleGenAI;
   private readonly model: string;
+  private readonly imageModel: string;
 
-  constructor(apiKey: string, model: string) {
+  constructor(apiKey: string, model: string, imageModel: string) {
     this.client = new GoogleGenAI({ apiKey });
     this.model = model;
+    this.imageModel = imageModel;
   }
 
   async generateJson(systemPrompt: string, userPrompt: string): Promise<string> {
@@ -42,6 +46,46 @@ export class GeminiClient implements AiClient {
       throw classifyGeminiError(error);
     }
   }
+
+  async generateImage(prompt: string, topic = 'cloud infrastructure'): Promise<GeneratedImageAsset> {
+    try {
+      return await this.generateWithGeminiImage(prompt);
+    } catch (error) {
+      logger.warn('Gemini image model unavailable, using free photo fallback', {
+        imageModel: this.imageModel,
+        error: error instanceof Error ? error.message.slice(0, 180) : String(error).slice(0, 180),
+      });
+      return fetchFallbackPhoto(prompt, topic);
+    }
+  }
+
+  private async generateWithGeminiImage(prompt: string): Promise<GeneratedImageAsset> {
+    const response = await this.client.models.generateContent({
+      model: this.imageModel,
+      contents: prompt,
+      config: {
+        responseModalities: ['IMAGE', 'TEXT'],
+      },
+    });
+
+    const parts = response.candidates?.[0]?.content?.parts ?? [];
+    for (const part of parts) {
+      const inline = part.inlineData;
+      if (!inline?.data) continue;
+      return {
+        bytes: Buffer.from(inline.data, 'base64'),
+        mimeType: normalizeImageMime(inline.mimeType),
+      };
+    }
+
+    throw new ClassifiedError('AI_INVALID_RESPONSE', 'Gemini image response contained no image data.');
+  }
+}
+
+function normalizeImageMime(mimeType: string | undefined): GeneratedImageAsset['mimeType'] {
+  if (mimeType === 'image/jpeg' || mimeType === 'image/jpg') return 'image/jpeg';
+  if (mimeType === 'image/gif') return 'image/gif';
+  return 'image/png';
 }
 
 function classifyGeminiError(error: unknown): ClassifiedError {
