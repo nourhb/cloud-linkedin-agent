@@ -3,12 +3,8 @@ import type { GeneratedPost, PublishResult } from '../types.js';
 import { ClassifiedError } from '../types.js';
 import { logger } from '../utils/logger.js';
 import { createPost, getAuthorUrn } from './linkedinClient.js';
+import { buildCommentary } from './littleText.js';
 import type { LinkedInPublisher } from './linkedinTypes.js';
-
-function buildCommentary(post: GeneratedPost): string {
-  const hashtagLine = post.hashtags.join(' ');
-  return [post.hook, '', post.body, '', hashtagLine].join('\n').trim();
-}
 
 /**
  * Real LinkedIn publisher (SPEC section 24) using the current Posts API
@@ -45,7 +41,7 @@ export class LinkedinPublisher implements LinkedInPublisher {
 
     try {
       const authorUrn = await this.getAuthorUrnCached();
-      const commentary = buildCommentary(post);
+      const commentary = buildCommentary(post.hook, post.body, post.hashtags);
       const result = await createPost({
         authorUrn,
         commentary,
