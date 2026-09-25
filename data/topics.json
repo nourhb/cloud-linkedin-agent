@@ -5,5 +5,12 @@
     "lastUsed": "2026-09-24T17:31:22.400Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "What is a hypervisor?",
+    "category": "Virtualization",
+    "lastUsed": "2026-09-25T13:51:41.065Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

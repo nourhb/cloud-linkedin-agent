@@ -50,5 +50,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7508941202742833152",
     "contentHash": "f2c4c41b6936a368833351c2033852ec229fb5db71aadf47e9be68c552f21d4f"
+  },
+  {
+    "id": "post_20260925135141_220",
+    "topic": "What is a hypervisor?",
+    "category": "Virtualization",
+    "contentType": "question_discussion",
+    "difficulty": "beginner",
+    "content": "When we talk about Virtual Machines (VMs), it's easy to think they just run \"on the server,\" almost directly. But there's a critical layer in between the VM and the physical hardware that makes it all possible and efficient.\n\nThat layer is the hypervisor, and I've been diving deeper into understanding its role in cloud computing and virtualization.\n\nThe reality is, a hypervisor is specialized software, firmware, or hardware that creates and runs virtual machines. It's often called a Virtual Machine Monitor (VMM). Its primary job is to abstract the underlying physical hardware (CPU, memory, storage, network) and present it as virtual resources to each VM. This allows multiple operating systems to share the same physical hardware resources without interfering with each other.\n\nThink of it as the traffic controller for your virtual servers. It allocates resources, schedules tasks, and ensures isolation between guests. There are two main types:\n\n*   Type 1 (Bare-metal): Runs directly on the host hardware (e.g., VMware ESXi, Microsoft Hyper-V, KVM). These are what you'll find powering most cloud environments.\n*   Type 2 (Hosted): Runs on top of a conventional operating system (e.g., VirtualBox, VMware Workstation). Great for development and testing on a desktop.\n\nUnderstanding hypervisors is fundamental to grasping how cloud platforms achieve their scalability, resource utilization, and isolation. It's a core concept in my journey into cloud and virtualization.",
+    "hook": "When we talk about Virtual Machines (VMs), it's easy to think they just run \"on the server,\" almost directly. But there's a critical layer in between the VM and the physical hardware that makes it all possible and efficient.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#Hypervisor",
+      "#VMs"
+    ],
+    "keywords": [
+      "hypervisor",
+      "virtualization",
+      "vm",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-09-25T13:51:41.065Z",
+    "publishedAt": "2026-09-25T13:53:05.194Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7509248614720897025",
+    "contentHash": "44b346c38e4f43a2c361ccc04f5092c11ef2735be9cacb9ca8e7a855d9f87e92"
   }
 ]
