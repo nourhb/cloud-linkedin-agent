@@ -76,5 +76,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7509248614720897025",
     "contentHash": "44b346c38e4f43a2c361ccc04f5092c11ef2735be9cacb9ca8e7a855d9f87e92"
+  },
+  {
+    "id": "post_20260925135909_544",
+    "topic": "Type 1 vs Type 2 hypervisors",
+    "category": "Virtualization",
+    "contentType": "troubleshooting",
+    "difficulty": "beginner",
+    "content": "What I learned about hypervisor types, and how that helps troubleshoot VM performance.\n\nLately, I've been exploring how the fundamental architecture of hypervisors can really impact VM troubleshooting. It's not just about knowing what a hypervisor is, but understanding the practical differences between Type 1 (bare-metal) and Type 2 (hosted).\n\nType 1 hypervisors like VMware ESXi or KVM run directly on the hardware. They're efficient because they manage resources without an intermediary host OS. This is ideal for production environments where performance and low latency are critical.\n\nType 2 hypervisors, such as VirtualBox or VMware Workstation, run as an application on top of an existing operating system. While great for development or testing on a laptop, they introduce an extra layer of abstraction.\n\nHere's the troubleshooting takeaway: If you're experiencing slow VM performance, the hypervisor type points you in different directions. With a Type 2 setup, you first need to check the *host OS* for resource contention, background processes, or even OS-level issues. The VM isn't getting direct hardware access, so its performance is inherently tied to the host's health.\n\nFor Type 1, you'd focus more on the hypervisor's own resource allocation settings, underlying physical hardware health, or network configurations within the bare-metal layer. This distinction is vital for efficient diagnosis.",
+    "hook": "What I learned about hypervisor types, and how that helps troubleshoot VM performance.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#Troubleshooting",
+      "#Linux"
+    ],
+    "keywords": [
+      "hypervisor",
+      "type1",
+      "type2",
+      "virtualization",
+      "VM performance"
+    ],
+    "generatedAt": "2026-09-25T13:59:09.965Z",
+    "publishedAt": "2026-09-25T13:59:33.309Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7509250238902059008",
+    "contentHash": "27ea1ab0e5466a727e8efa8315c7aa0f699eeb42992e86c10856ed97ed8fdeb4"
   }
 ]

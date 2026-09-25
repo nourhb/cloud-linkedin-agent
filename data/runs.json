@@ -50,5 +50,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7509248614720897025",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260925135909_296",
+    "startedAt": "2026-09-25T13:59:09.965Z",
+    "completedAt": "2026-09-25T13:59:33.312Z",
+    "status": "success",
+    "topic": "Type 1 vs Type 2 hypervisors",
+    "category": "Virtualization",
+    "contentType": "troubleshooting",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7509250238902059008",
+    "dryRun": false
   }
 ]
