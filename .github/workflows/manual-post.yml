@@ -23,7 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      NODE_ENV: production
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
       LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
@@ -54,10 +53,14 @@ jobs:
 
       - name: Generate (dry-run)
         if: inputs.mode == 'dry-run'
+        env:
+          NODE_ENV: production
         run: npm run generate:dry
 
       - name: Generate and publish
         if: inputs.mode == 'publish'
+        env:
+          NODE_ENV: production
         run: npm run publish
 
       - name: Commit and push updated history
