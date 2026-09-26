@@ -128,5 +128,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7509251854527078401",
     "contentHash": "8c6803711086946d2695377492213bc6e1cfb0a5ea2471cc901991d3311d9f26"
+  },
+  {
+    "id": "post_20260926164919_010",
+    "topic": "Kubernetes Pods explained",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "difficulty": "beginner",
+    "content": "One of the first misconceptions I encountered learning Kubernetes was thinking a Pod is simply a container.\n\nIt's a common initial thought: 'A Pod? Oh, that's just where my container runs.' While many Pods do host a single application container, it's more accurate to view a Pod as the smallest deployable unit that encapsulates one or more *tightly coupled* containers.\n\nThese containers within a Pod share resources like their network namespace and storage volumes. They're designed to work together as a single, cohesive application unit. Think of it as a logical host for processes that need to be co-located and co-managed.\n\nFor example, consider an application container that needs a separate sidecar container for log shipping or metrics collection. Instead of deploying these as entirely separate entities, they can live within the same Pod. This allows them to communicate via `localhost` and easily share data through mounted volumes, streamlining their operation.\n\nRecognizing Pods as a boundary for shared context and co-scheduling, rather than just a single container wrapper, is crucial for designing efficient and scalable microservices on Kubernetes. It enables patterns like sidecars and init containers that are fundamental to robust cloud-native architectures.",
+    "hook": "One of the first misconceptions I encountered learning Kubernetes was thinking a Pod is simply a container.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#Docker"
+    ],
+    "keywords": [
+      "kubernetes",
+      "pod",
+      "container"
+    ],
+    "generatedAt": "2026-09-26T16:49:19.824Z",
+    "publishedAt": "2026-09-26T16:49:31.924Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7509655404289683456",
+    "contentHash": "ad12ccd5280ac1b4b2b3e33d0c784ea641bb34e8fe2b1584da71f44041619ab7"
   }
 ]
