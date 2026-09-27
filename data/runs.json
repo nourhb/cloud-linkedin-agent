@@ -100,5 +100,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7509655404289683456",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260927172119_438",
+    "startedAt": "2026-09-27T17:21:19.779Z",
+    "completedAt": "2026-09-27T17:21:34.303Z",
+    "status": "success",
+    "topic": "AWS EC2 fundamentals",
+    "category": "AWS",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7510025856501587970",
+    "dryRun": false
   }
 ]

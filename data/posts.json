@@ -153,5 +153,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7509655404289683456",
     "contentHash": "ad12ccd5280ac1b4b2b3e33d0c784ea641bb34e8fe2b1584da71f44041619ab7"
+  },
+  {
+    "id": "post_20260927172119_070",
+    "topic": "AWS EC2 fundamentals",
+    "category": "AWS",
+    "contentType": "technical_explanation",
+    "difficulty": "beginner",
+    "content": "Lately, I've been exploring the core services of AWS, and a common question that comes up for beginners is: 'What exactly is EC2?' It's a fundamental building block, but the 'Elastic Compute Cloud' name can be a bit abstract at first.\n\nAt its heart, AWS EC2 provides resizable compute capacity in the cloud. Think of it as renting a virtual server that you can configure with your desired operating system, CPU, memory, and storage. Instead of buying and maintaining physical hardware, AWS handles all that underlying infrastructure.\n\nWhat makes it powerful is the flexibility. You choose an Amazon Machine Image (AMI), which is a pre-configured template for your instance, and an instance type that specifies the hardware resources (e.g., a 't2.micro' for a small test server, or an 'm5.large' for more demanding applications). You can launch instances in minutes and scale them up or down as your needs change, paying only for what you use.\n\nFor example, if you're setting up a personal project like a small blog or a development environment, you could launch a Linux-based EC2 instance, install your web server software, and have it accessible online without ever touching a physical machine. Need more processing power or storage next month? You can modify the instance type.\n\nUnderstanding EC2 is crucial for anyone diving into AWS. It's the engine that powers many cloud applications, enabling true agility and cost-efficiency by virtualizing your compute resources.",
+    "hook": "Lately, I've been exploring the core services of AWS, and a common question that comes up for beginners is: 'What exactly is EC2?' It's a fundamental building block, but the 'Elastic Compute Cloud' name can be a bit abstract at first.",
+    "hashtags": [
+      "#CloudComputing",
+      "#AWS",
+      "#EC2",
+      "#Virtualization",
+      "#Compute"
+    ],
+    "keywords": [
+      "aws",
+      "ec2",
+      "compute",
+      "cloud computing",
+      "virtualization"
+    ],
+    "generatedAt": "2026-09-27T17:21:19.779Z",
+    "publishedAt": "2026-09-27T17:21:34.301Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7510025856501587970",
+    "contentHash": "129478f298650b37f6717783b5269d687280f6c896293b8efbec567f8fc4d388"
   }
 ]
