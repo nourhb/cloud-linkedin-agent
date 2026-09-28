@@ -126,5 +126,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7510426782261633025",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260928235026_638",
+    "startedAt": "2026-09-28T23:50:26.771Z",
+    "completedAt": "2026-09-28T23:50:38.431Z",
+    "status": "success",
+    "topic": "Ansible playbooks explained",
+    "category": "Ansible",
+    "contentType": "learning_in_public",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7510486149866483712",
+    "dryRun": false
   }
 ]

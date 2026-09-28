@@ -206,5 +206,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7510426782261633025",
     "contentHash": "68294a768dbae316bb016316ffbb17109149fcc5e7c25f335991157843031ba2"
+  },
+  {
+    "id": "post_20260928235026_819",
+    "topic": "Ansible playbooks explained",
+    "category": "Ansible",
+    "contentType": "learning_in_public",
+    "difficulty": "beginner",
+    "content": "A common initial thought when learning about Ansible is that it's just a way to run commands on multiple servers. While true, that's just scratching the surface. I've been diving into Ansible playbooks lately, and realizing they offer so much more.\n\nReality: Playbooks are the real power behind Ansible. They're not just command wrappers; they define a desired state for your infrastructure in a repeatable, human-readable way. Think of them as a blueprint for your IT automation tasks.\n\nTechnical Explanation: At their core, Ansible playbooks are YAML files. They consist of one or more \"plays,\" and each play maps a group of hosts to a set of \"tasks.\" Tasks are where the action happens – executing modules to install packages, manage services, copy files, or even run custom scripts.\n\nFor example, a simple playbook could ensure Apache is installed and running on a web server group. It handles the idempotency too – if Apache is already installed and running, Ansible won't try to reinstall it, saving time and preventing unintended changes.\n\nThis declarative approach is incredibly powerful for maintaining consistency across environments and documenting infrastructure configurations. I'm finding that understanding the structure of plays, tasks, and modules is key to unlocking Ansible's full potential for infrastructure automation. It's a fundamental concept for anyone exploring DevOps and IaC.",
+    "hook": "A common initial thought when learning about Ansible is that it's just a way to run commands on multiple servers. While true, that's just scratching the surface. I've been diving into Ansible playbooks lately, and realizing they offer so much more.",
+    "hashtags": [
+      "#Ansible",
+      "#Automation",
+      "#DevOps",
+      "#InfrastructureAsCode",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "ansible",
+      "playbook",
+      "automation"
+    ],
+    "generatedAt": "2026-09-28T23:50:26.771Z",
+    "publishedAt": "2026-09-28T23:50:38.378Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7510486149866483712",
+    "contentHash": "b808d74fe905d7995cd741e602f313b2f619f6b35da8d735aff8887cadbeecf4"
   }
 ]
