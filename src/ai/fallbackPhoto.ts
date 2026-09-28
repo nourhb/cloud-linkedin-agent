@@ -2,109 +2,61 @@ import { deflateSync } from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { ClassifiedError } from '../types.js';
 import { logger } from '../utils/logger.js';
-import { visualSceneFor } from './imagePrompt.js';
+import { selectCatalogImage } from './imageCatalog.js';
 import type { GeneratedImageAsset } from './aiClient.js';
 import type { GeneratedPost } from '../types.js';
 
-const USER_AGENT = 'CloudLinkedInAgent/1.0 (personal LinkedIn publishing bot; https://github.com/nourhb/cloud-linkedin-agent)';
+const USER_AGENT =
+  'CloudLinkedInAgent/1.0 (personal LinkedIn publishing bot; https://github.com/nourhb/cloud-linkedin-agent)';
 
 /**
- * Free photo fallback when Gemini image models have no quota.
- * Prefers Wikimedia Commons (real, topic-relevant photos, no watermark),
- * then a short Pollinations prompt, then a local branded PNG.
+ * Downloads a hand-picked Commons photo that matches the post topic.
+ * Random image search and Pollinations are intentionally not used.
  */
 export async function fetchFallbackPhoto(
   _prompt: string,
-  post: Pick<GeneratedPost, 'topic' | 'category'>,
+  post: Pick<GeneratedPost, 'topic' | 'category'> & { keywords?: string[] },
 ): Promise<GeneratedImageAsset> {
-  const scene = visualSceneFor(post);
-
+  const choice = selectCatalogImage(post);
+  logger.info('Selected curated post image', { file: choice.file, topic: post.topic, category: post.category });
   try {
-    return await fetchWikimediaPhoto(scene);
+    return await fetchCommonsFile(choice.file);
   } catch (error) {
-    logger.warn('Wikimedia photo lookup failed, trying generated photo', {
-      error: error instanceof Error ? error.message : String(error),
-    });
-  }
-
-  try {
-    return await fetchPollinationsPhoto(scene);
-  } catch (error) {
-    logger.warn('Generated photo fallback failed, synthesizing a local branded image', {
+    logger.warn('Curated Commons download failed, synthesizing a local branded image', {
+      file: choice.file,
       error: error instanceof Error ? error.message : String(error),
     });
     return synthesizeBrandedPng(post.topic);
   }
 }
 
-async function fetchWikimediaPhoto(scene: string): Promise<GeneratedImageAsset> {
+async function fetchCommonsFile(file: string): Promise<GeneratedImageAsset> {
   const api = new URL('https://commons.wikimedia.org/w/api.php');
   api.searchParams.set('action', 'query');
   api.searchParams.set('format', 'json');
-  api.searchParams.set('origin', '*');
-  api.searchParams.set('generator', 'search');
-  api.searchParams.set('gsrsearch', `filetype:bitmap ${scene}`);
-  api.searchParams.set('gsrnamespace', '6');
-  api.searchParams.set('gsrlimit', '8');
+  api.searchParams.set('titles', `File:${file}`);
   api.searchParams.set('prop', 'imageinfo');
   api.searchParams.set('iiprop', 'url|mime|size');
   api.searchParams.set('iiurlwidth', '1200');
 
   const response = await fetch(api, { headers: { 'User-Agent': USER_AGENT } });
   if (!response.ok) {
-    throw new ClassifiedError('AI_NETWORK_ERROR', `Wikimedia search HTTP ${response.status}`, { retryable: true });
+    throw new ClassifiedError('AI_NETWORK_ERROR', `Wikimedia file lookup HTTP ${response.status}`, { retryable: true });
   }
 
   const json = (await response.json()) as {
     query?: {
-      pages?: Record<
-        string,
-        { imageinfo?: Array<{ mime?: string; thumburl?: string; url?: string }> }
-      >;
+      pages?: Record<string, { imageinfo?: Array<{ mime?: string; thumburl?: string; url?: string }> }>;
     };
   };
-
-  const pages = Object.values(json.query?.pages ?? {});
-  for (const page of pages) {
-    const info = page.imageinfo?.[0];
-    const imageUrl = info?.thumburl ?? info?.url;
-    const mime = info?.mime ?? '';
-    if (!imageUrl || (!mime.includes('jpeg') && !mime.includes('jpg') && !mime.includes('png'))) {
-      continue;
-    }
-    return downloadImage(imageUrl);
+  const page = Object.values(json.query?.pages ?? {})[0];
+  const info = page?.imageinfo?.[0];
+  const imageUrl = info?.thumburl ?? info?.url;
+  if (!imageUrl) {
+    throw new ClassifiedError('AI_INVALID_RESPONSE', `Wikimedia file not found: ${file}`);
   }
 
-  throw new ClassifiedError('AI_INVALID_RESPONSE', `No Wikimedia photo found for "${scene}".`);
-}
-
-async function fetchPollinationsPhoto(scene: string): Promise<GeneratedImageAsset> {
-  const prompt = `${scene}, indoor, documentary tech photography, no text, no watermark, no sky, no landscape`;
-  const url = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(prompt));
-  url.searchParams.set('width', '1200');
-  url.searchParams.set('height', '628');
-  url.searchParams.set('nologo', 'true');
-  url.searchParams.set('nofeed', 'true');
-  url.searchParams.set('model', 'flux');
-
-  const response = await fetch(url, { headers: { Accept: 'image/*', 'User-Agent': USER_AGENT } });
-  if (!response.ok) {
-    throw new ClassifiedError('AI_NETWORK_ERROR', `Photo fallback HTTP ${response.status}`, { retryable: true });
-  }
-
-  const bytes = Buffer.from(await response.arrayBuffer());
-  if (bytes.length < 100) {
-    throw new ClassifiedError('AI_INVALID_RESPONSE', 'Photo fallback returned an empty image.');
-  }
-
-  const contentType = response.headers.get('content-type') ?? '';
-  const mimeType: GeneratedImageAsset['mimeType'] = contentType.includes('png')
-    ? 'image/png'
-    : contentType.includes('gif')
-      ? 'image/gif'
-      : 'image/jpeg';
-
-  return { bytes, mimeType };
+  return downloadImage(imageUrl);
 }
 
 async function downloadImage(url: string): Promise<GeneratedImageAsset> {
@@ -125,7 +77,7 @@ async function downloadImage(url: string): Promise<GeneratedImageAsset> {
   return { bytes, mimeType };
 }
 
-/** Minimal RGB PNG so a post still gets an image with zero network. */
+/** Last-resort local PNG so publishing never depends on the network. */
 export function synthesizeBrandedPng(topic: string): GeneratedImageAsset {
   const width = 1200;
   const height = 628;

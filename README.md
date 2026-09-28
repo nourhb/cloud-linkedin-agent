@@ -427,9 +427,10 @@ in a different AI or LinkedIn client in the future, keep this guarantee.
 
 - No web research / fact-checking pipeline (SPEC §39/40) - content comes
   from the model's own knowledge plus the curated topic catalog.
-- Image generation is on: each published post uploads a Gemini-generated
-  photo via the current LinkedIn Images API, then attaches `urn:li:image:{id}`
-  on `POST /rest/posts`.
+- Each published post includes a photo via the current LinkedIn Images API.
+  Gemini image models are tried first; if they have no quota, the agent
+  attaches a hand-picked Wikimedia Commons photo matched to the topic
+  category (no random search, no Pollinations landscapes).
 - No weekly summary or email notifications (SPEC §52/53) - only the
   optional failure-issue notification is implemented.
 - No `src/research/` module - the directory structure is intentionally left

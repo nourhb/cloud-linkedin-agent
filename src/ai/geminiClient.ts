@@ -49,7 +49,10 @@ export class GeminiClient implements AiClient {
 
   async generateImage(
     prompt: string,
-    post: { topic: string; category: string } = { topic: 'cloud infrastructure', category: 'Cloud Computing' },
+    post: { topic: string; category: string; keywords?: string[] } = {
+      topic: 'cloud infrastructure',
+      category: 'Cloud Computing',
+    },
   ): Promise<GeneratedImageAsset> {
     try {
       return await this.generateWithGeminiImage(prompt);
