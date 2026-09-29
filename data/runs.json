@@ -139,5 +139,16 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7510486149866483712",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260929182253_564",
+    "startedAt": "2026-09-29T18:22:53.086Z",
+    "completedAt": "2026-09-29T18:23:15.157Z",
+    "status": "failed",
+    "generationAttempts": 0,
+    "publicationAttempts": 0,
+    "error": "Failed to generate a valid, non-duplicate post after 3 attempts. Last error: Validation failed: contains forbidden filler phrase: \"game-changer\". Post will NOT be published.",
+    "errorCategory": "VALIDATION_ERROR",
+    "dryRun": false
   }
 ]
