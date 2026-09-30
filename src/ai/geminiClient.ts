@@ -98,8 +98,14 @@ function classifyGeminiError(error: unknown): ClassifiedError {
   const message = error instanceof Error ? error.message : String(error);
   const lower = message.toLowerCase();
 
-  if (lower.includes('429') || lower.includes('rate limit') || lower.includes('quota')) {
+  if (lower.includes('429') || lower.includes('rate limit') || lower.includes('quota') || lower.includes('resource_exhausted')) {
     return new ClassifiedError('AI_RATE_LIMIT', `Gemini rate limit/quota error: ${message}`, {
+      retryable: true,
+      cause: error,
+    });
+  }
+  if (lower.includes('503') || lower.includes('unavailable') || lower.includes('high demand') || lower.includes('overloaded')) {
+    return new ClassifiedError('AI_NETWORK_ERROR', `Gemini temporarily unavailable: ${message}`, {
       retryable: true,
       cause: error,
     });

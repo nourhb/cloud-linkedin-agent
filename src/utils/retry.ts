@@ -13,7 +13,7 @@ export interface RetryOptions {
 
 const DEFAULT_DELAYS_MS = [5_000, 15_000];
 
-function sleep(ms: number): Promise<void> {
+export function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { generatePost } from '../src/ai/postGenerator.js';
 import type { AiClient, GeneratedImageAsset } from '../src/ai/aiClient.js';
-import type { GeneratedPost, TopicCandidate } from '../src/types.js';
+import { ClassifiedError, type GeneratedPost, type TopicCandidate } from '../src/types.js';
 import { buildTestStrategy } from './fixtures/strategy.js';
 
 const sentence =
@@ -59,5 +59,31 @@ describe('generatePost', () => {
     expect(userPrompts[0]).not.toContain('PREVIOUS DRAFT REJECTED');
     expect(userPrompts[1]).toContain('PREVIOUS DRAFT REJECTED');
     expect(userPrompts[1]).toMatch(/too long/i);
+  });
+
+  it('rethrows Gemini rate-limit errors instead of wrapping them as validation failures', async () => {
+    const client: AiClient = {
+      async generateJson() {
+        throw new ClassifiedError('AI_RATE_LIMIT', 'quota exceeded', { retryable: true });
+      },
+      async generateImage(): Promise<GeneratedImageAsset> {
+        return { bytes: Buffer.from('x'), mimeType: 'image/png' };
+      },
+    };
+
+    await expect(
+      generatePost({
+        strategy: buildTestStrategy(),
+        topic,
+        contentType: 'technical_explanation',
+        difficulty: 'intermediate',
+        recentPosts: [],
+        recentTopics: [],
+        existingHashes: new Set(),
+        aiClient: client,
+        maxAttempts: 3,
+        retryDelayMs: 0,
+      }),
+    ).rejects.toMatchObject({ category: 'AI_RATE_LIMIT' });
   });
 });

@@ -6,6 +6,7 @@ import type { ContentType, DifficultyLevel, GeneratedPost, StoredPost, TopicCand
 import { ClassifiedError } from '../types.js';
 import type { AiClient } from './aiClient.js';
 import { buildUserPrompt, pickWritingFormat, SYSTEM_PROMPT } from './promptBuilder.js';
+import { sleep } from '../utils/retry.js';
 
 export interface PostGenerationInput {
   strategy: ContentStrategy;
@@ -17,6 +18,8 @@ export interface PostGenerationInput {
   existingHashes: Set<string>;
   aiClient: AiClient;
   maxAttempts: number;
+  /** Override wait between retryable AI failures. Tests can set this to 0. */
+  retryDelayMs?: number;
 }
 
 export interface PostGenerationResult {
@@ -78,6 +81,8 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
   const recentPostTexts = recentPosts.map((p) => `${p.hook}\n\n${p.content}`);
 
   let lastError: string | undefined;
+  let lastAiError: ClassifiedError | undefined;
+  let sawQualityOrParseFailure = false;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     logger.info('Generating content', { attempt, maxAttempts, topic: topic.topic, contentType });
@@ -102,7 +107,17 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
         throw error; // permanent errors (e.g. auth) should not be retried (SPEC section 33)
       }
       lastError = error instanceof Error ? error.message : String(error);
+      lastAiError = error instanceof ClassifiedError
+        ? error
+        : new ClassifiedError('UNKNOWN_ERROR', lastError, { retryable: true, cause: error });
       logger.warn('AI generation attempt failed', { attempt, error: lastError });
+      if (attempt < maxAttempts && lastAiError.retryable) {
+        const delayMs = input.retryDelayMs ?? (lastAiError.category === 'AI_RATE_LIMIT' ? 60_000 : 8_000);
+        if (delayMs > 0) {
+          logger.warn('Waiting before AI retry', { attempt, delayMs, category: lastAiError.category });
+          await sleep(delayMs);
+        }
+      }
       continue;
     }
 
@@ -111,6 +126,7 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
       post = parseGeneratedPost(rawResponse);
     } catch (error) {
       lastError = error instanceof Error ? error.message : String(error);
+      sawQualityOrParseFailure = true;
       logger.warn('AI response failed to parse', { attempt, error: lastError });
       continue;
     }
@@ -118,6 +134,7 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
     const quality = checkQuality(post, { strategy, recentOpeningSentences, recentPostTexts });
     if (!quality.valid) {
       lastError = `Validation failed: ${quality.errors.join('; ')}`;
+      sawQualityOrParseFailure = true;
       logger.warn('Generated post failed quality validation', { attempt, errors: quality.errors });
       continue;
     }
@@ -125,6 +142,7 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
     const contentHash = hashContent(`${post.hook}\n\n${post.body}`);
     if (existingHashes.has(contentHash)) {
       lastError = 'Generated post content hash already exists in history (exact duplicate).';
+      sawQualityOrParseFailure = true;
       logger.warn('Duplicate content hash detected', { attempt, contentHash });
       continue;
     }
@@ -132,6 +150,10 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
     logger.info('Validation passed', { attempt });
     logger.info('Duplicate check passed', { attempt });
     return { post, contentHash, attempts: attempt };
+  }
+
+  if (lastAiError && !sawQualityOrParseFailure) {
+    throw lastAiError;
   }
 
   throw new ClassifiedError(
