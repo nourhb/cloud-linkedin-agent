@@ -7,7 +7,7 @@
   },
   "content": {
     "language": "English",
-    "postsPerDay": 1,
+    "postsPerDay": 2,
     "mainTopics": [
       "Cloud Computing",
       "Virtualization",
@@ -38,14 +38,14 @@
       "Interview concepts"
     ],
     "contentTypeWeights": {
-      "technical_explanation": 30,
-      "project_insight": 20,
-      "architecture": 15,
+      "technical_explanation": 28,
+      "project_insight": 8,
+      "architecture": 14,
       "troubleshooting": 10,
-      "comparison": 5,
-      "common_mistake": 5,
-      "learning_in_public": 10,
-      "question_discussion": 5
+      "comparison": 10,
+      "common_mistake": 12,
+      "learning_in_public": 3,
+      "question_discussion": 15
     }
   },
   "style": {
@@ -54,7 +54,7 @@
     "avoidCorporateLanguage": true,
     "avoidGenericMotivation": true,
     "avoidClickbait": true,
-    "usePersonalLearningPerspective": true
+    "usePersonalLearningPerspective": false
   },
   "hashtags": {
     "minimum": 3,
@@ -65,8 +65,9 @@
       "#DevOps",
       "#Kubernetes",
       "#Docker",
-      "#Cloud",
       "#Linux",
+      "#CloudEngineer",
+      "#InfrastructureAsCode",
       "#DevSecOps"
     ]
   },

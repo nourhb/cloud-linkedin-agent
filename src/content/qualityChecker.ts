@@ -1,6 +1,6 @@
 import type { ContentStrategy } from '../config/config.js';
 import type { GeneratedPost, QualityResult } from '../types.js';
-import { FABRICATED_EXPERIENCE_PATTERNS, FORBIDDEN_PHRASES, GENERIC_HASHTAG_BLACKLIST } from './contentRules.js';
+import { FABRICATED_EXPERIENCE_PATTERNS, FIRST_PERSON_MEMOIR_PATTERNS, FORBIDDEN_PHRASES, GENERIC_HASHTAG_BLACKLIST } from './contentRules.js';
 import { isTooSimilar } from './deduplication.js';
 
 /** Extracts the first sentence of a body of text (used for opening-repetition checks). */
@@ -88,6 +88,13 @@ export function checkQuality(
   for (const pattern of FABRICATED_EXPERIENCE_PATTERNS) {
     if (pattern.test(combinedText)) {
       errors.push(`possible fabricated professional experience detected (matched: ${pattern})`);
+    }
+  }
+
+  for (const pattern of FIRST_PERSON_MEMOIR_PATTERNS) {
+    if (pattern.test(combinedText)) {
+      errors.push('uses a first-person memoir opening; write generally instead of "when I" / "I first started"');
+      break;
     }
   }
 

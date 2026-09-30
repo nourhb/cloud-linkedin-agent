@@ -34,8 +34,8 @@ jobs:
       POST_TIMEZONE: ${{ vars.POST_TIMEZONE || 'America/Toronto' }}
       MOCK_LINKEDIN: ${{ vars.MOCK_LINKEDIN || 'false' }}
       MOCK_GEMINI: ${{ vars.MOCK_GEMINI || 'false' }}
-      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '1' }}
-      MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '1' }}
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '2' }}
+      MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '2' }}
       MAX_AI_REQUESTS_PER_RUN: ${{ vars.MAX_AI_REQUESTS_PER_RUN || '3' }}
     steps:
       - name: Checkout repository

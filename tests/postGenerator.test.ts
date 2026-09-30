@@ -12,7 +12,7 @@ function validPost(overrides: Partial<GeneratedPost> = {}): GeneratedPost {
     topic: 'Kubernetes namespaces',
     category: 'Kubernetes',
     contentType: 'technical_explanation',
-    hook: 'One Kubernetes concept I underestimated at first was namespaces.',
+    hook: 'Kubernetes namespaces split a cluster into isolated groups for teams and environments.',
     body: Array.from({ length: 3 }, () => sentence.repeat(3)).join('\n\n'),
     hashtags: ['#Kubernetes', '#CloudComputing', '#DevOps'],
     keywords: ['kubernetes', 'namespace', 'cluster'],

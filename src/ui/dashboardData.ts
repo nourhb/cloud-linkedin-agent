@@ -25,13 +25,20 @@ export interface DashboardSnapshot {
   topics: DashboardTopic[];
 }
 
-export function nextScheduledRun(now: Date, timeZone: string, hour = 9): Date {
+export const POST_HOURS = [8, 12];
+
+export function nextScheduledRun(now: Date, timeZone: string, hours: number[] = POST_HOURS): Date {
   const local = partsInZone(now, timeZone);
-  const alreadyPassed = local.hour > hour || (local.hour === hour && local.minute > 0);
-  const target = alreadyPassed
-    ? addDays(local.year, local.month, local.day, 1)
-    : { year: local.year, month: local.month, day: local.day };
-  return zonedDateToUtc(target.year, target.month, target.day, hour, timeZone);
+  const sortedHours = [...hours].sort((a, b) => a - b);
+  for (const hour of sortedHours) {
+    const alreadyPassed = local.hour > hour || (local.hour === hour && local.minute > 0);
+    if (!alreadyPassed) {
+      return zonedDateToUtc(local.year, local.month, local.day, hour, timeZone);
+    }
+  }
+  const tomorrow = addDays(local.year, local.month, local.day, 1);
+  const firstHour = sortedHours[0] ?? 8;
+  return zonedDateToUtc(tomorrow.year, tomorrow.month, tomorrow.day, firstHour, timeZone);
 }
 
 export function decorateTopics(topics: TopicRecord[], now: Date): DashboardTopic[] {
@@ -67,7 +74,7 @@ export function buildDashboardSnapshot(input: {
     generatedAt: now.toISOString(),
     profileName: input.profileName,
     timezone: input.timezone,
-    scheduleLabel: `Every day at 09:00 ${input.timezone}`,
+    scheduleLabel: `Twice a day at 08:00 and 12:00 ${input.timezone}`,
     nextRunAt: nextScheduledRun(now, input.timezone).toISOString(),
     stats: {
       published: posts.filter((p) => p.status === 'published').length,

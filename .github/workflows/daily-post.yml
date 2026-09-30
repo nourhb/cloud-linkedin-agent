@@ -13,7 +13,10 @@ name: Daily LinkedIn Post
 # workflow, or push any commit to reset the inactivity clock (SPEC section 50).
 on:
   schedule:
-    - cron: '0 9 * * *'
+    # Two LinkedIn B2B peaks in America/Toronto: morning feed + lunch scroll.
+    - cron: '0 8 * * *'
+      timezone: 'America/Toronto'
+    - cron: '0 12 * * *'
       timezone: 'America/Toronto'
   workflow_dispatch:
     inputs:
@@ -45,8 +48,8 @@ jobs:
       LINKEDIN_API_VERSION: ${{ vars.LINKEDIN_API_VERSION || '202609' }}
       POST_TIMEZONE: ${{ vars.POST_TIMEZONE || 'America/Toronto' }}
       DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
-      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '1' }}
-      MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '1' }}
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '2' }}
+      MAX_POSTS_PER_DAY: ${{ vars.MAX_POSTS_PER_DAY || '2' }}
       MAX_AI_REQUESTS_PER_RUN: ${{ vars.MAX_AI_REQUESTS_PER_RUN || '3' }}
     steps:
       - name: Checkout repository

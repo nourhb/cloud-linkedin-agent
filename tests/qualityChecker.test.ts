@@ -14,7 +14,7 @@ function basePost(overrides: Partial<GeneratedPost> = {}): GeneratedPost {
     topic: 'Kubernetes namespaces',
     category: 'Kubernetes',
     contentType: 'technical_explanation',
-    hook: 'One Kubernetes concept I underestimated at first was namespaces.',
+    hook: 'Kubernetes namespaces split a cluster into isolated groups for teams and environments.',
     body: longEnoughBody(3),
     hashtags: ['#Kubernetes', '#CloudComputing', '#DevOps'],
     keywords: ['kubernetes', 'namespace', 'cluster'],
@@ -83,7 +83,7 @@ describe('qualityChecker', () => {
   it('rejects posts whose opening sentence repeats a recent post', () => {
     const result = checkQuality(basePost(), {
       strategy,
-      recentOpeningSentences: ['One Kubernetes concept I underestimated at first was namespaces.'],
+      recentOpeningSentences: ['Kubernetes namespaces split a cluster into isolated groups for teams and environments.'],
     });
     expect(result.valid).toBe(false);
     expect(result.errors.some((e) => e.includes('opening sentence'))).toBe(true);
@@ -98,6 +98,17 @@ describe('qualityChecker', () => {
     );
     expect(result.valid).toBe(false);
     expect(result.errors.some((e) => e.includes('domain-like'))).toBe(true);
+  });
+
+  it('rejects memoir openings like "when I first started"', () => {
+    const result = checkQuality(
+      basePost({
+        hook: 'When I first started diving into Linux, chmod looked like a switch for execute.',
+      }),
+      { strategy },
+    );
+    expect(result.valid).toBe(false);
+    expect(result.errors.some((e) => e.includes('memoir'))).toBe(true);
   });
 
   it('flags missing required fields', () => {

@@ -3,11 +3,13 @@ import { buildDashboardSnapshot, decorateTopics, nextScheduledRun } from '../src
 import type { RunRecord, StoredPost, TopicRecord } from '../src/types.js';
 
 describe('nextScheduledRun', () => {
-  it('picks the next 09:00 in America/Toronto', () => {
-    const before = nextScheduledRun(new Date('2026-09-25T12:00:00.000Z'), 'America/Toronto');
-    const after = nextScheduledRun(new Date('2026-09-25T14:00:00.000Z'), 'America/Toronto');
-    expect(before.toISOString()).toBe('2026-09-25T13:00:00.000Z');
-    expect(after.toISOString()).toBe('2026-09-26T13:00:00.000Z');
+  it('picks the next 08:00 or 12:00 in America/Toronto', () => {
+    const beforeMorning = nextScheduledRun(new Date('2026-09-25T11:30:00.000Z'), 'America/Toronto');
+    const afterMorning = nextScheduledRun(new Date('2026-09-25T12:30:00.000Z'), 'America/Toronto');
+    const afterNoon = nextScheduledRun(new Date('2026-09-25T16:30:00.000Z'), 'America/Toronto');
+    expect(beforeMorning.toISOString()).toBe('2026-09-25T12:00:00.000Z');
+    expect(afterMorning.toISOString()).toBe('2026-09-25T16:00:00.000Z');
+    expect(afterNoon.toISOString()).toBe('2026-09-26T12:00:00.000Z');
   });
 });
 

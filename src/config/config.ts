@@ -154,8 +154,8 @@ export function loadConfig(): AppConfig {
       timezone: env.POST_TIMEZONE ?? 'America/Toronto',
     },
     dryRun: readBool(env.DRY_RUN, true),
-    postsPerDay: readInt(env.POSTS_PER_DAY, 1),
-    maxPostsPerDay: readInt(env.MAX_POSTS_PER_DAY, 1),
+    postsPerDay: readInt(env.POSTS_PER_DAY, 2),
+    maxPostsPerDay: readInt(env.MAX_POSTS_PER_DAY, 2),
     maxAiRequestsPerRun: readInt(env.MAX_AI_REQUESTS_PER_RUN, 3),
     paths: {
       root: PROJECT_ROOT,

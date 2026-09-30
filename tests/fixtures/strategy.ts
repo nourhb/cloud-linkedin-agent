@@ -10,7 +10,7 @@ export function buildTestStrategy(overrides: Partial<ContentStrategy> = {}): Con
     },
     content: {
       language: 'English',
-      postsPerDay: 1,
+      postsPerDay: 2,
       mainTopics: [
         'Cloud Computing',
         'Virtualization',
@@ -46,7 +46,7 @@ export function buildTestStrategy(overrides: Partial<ContentStrategy> = {}): Con
       avoidCorporateLanguage: true,
       avoidGenericMotivation: true,
       avoidClickbait: true,
-      usePersonalLearningPerspective: true,
+      usePersonalLearningPerspective: false,
     },
     hashtags: {
       minimum: 3,

@@ -27,6 +27,10 @@ export const FORBIDDEN_PHRASES: string[] = [
   "it's no secret that",
   'in conclusion',
   'at the end of the day',
+  'when i first started',
+  'when i first heard',
+  "i've been diving",
+  'i used to think',
 ];
 
 /** Generic hashtags to avoid unless truly relevant (SPEC section 61). */
@@ -61,4 +65,13 @@ export const FABRICATED_EXPERIENCE_PATTERNS: RegExp[] = [
   /\bcertified (aws|azure|gcp|kubernetes|ckad|cka)\b/i,
   /\bwhen i worked at\b/i,
   /\bduring my \d+ years? of experience\b/i,
+];
+
+/** Memoir-style openings that underperform vs a general technical explainer. */
+export const FIRST_PERSON_MEMOIR_PATTERNS: RegExp[] = [
+  /\bwhen i\b/i,
+  /\bi first (started|heard|learned|saw|thought)\b/i,
+  /\bi['’]ve been (diving|exploring|learning|looking)\b/i,
+  /\bi admit i\b/i,
+  /\bwhat i learned\b/i,
 ];

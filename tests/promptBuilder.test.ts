@@ -15,6 +15,8 @@ describe('promptBuilder', () => {
 
   it('system prompt forbids fabricated experience and demands structured JSON', () => {
     expect(SYSTEM_PROMPT).toContain('Do not invent personal experiences');
+    expect(SYSTEM_PROMPT).toContain('Never use');
+    expect(SYSTEM_PROMPT).toContain('when I first started');
     expect(SYSTEM_PROMPT).toContain('Return structured JSON only');
   });
 
@@ -36,6 +38,8 @@ describe('promptBuilder', () => {
     expect(prompt).toContain('HARD length limit');
     expect(prompt).toContain('Never go over');
     expect(prompt).toContain('game-changer');
+    expect(prompt).toContain('Voice: general and useful');
+    expect(prompt).toContain('SEO:');
     expect(prompt).toContain('Format A');
   });
 
