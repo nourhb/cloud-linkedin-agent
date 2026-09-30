@@ -172,5 +172,18 @@
     "error": "Gemini temporarily unavailable: {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
     "errorCategory": "AI_NETWORK_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260930143435_755",
+    "startedAt": "2026-09-30T14:34:35.494Z",
+    "completedAt": "2026-09-30T14:34:46.735Z",
+    "status": "success",
+    "topic": "Linux file permissions explained",
+    "category": "Linux",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7511071043197820928",
+    "dryRun": false
   }
 ]

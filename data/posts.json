@@ -232,5 +232,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7510486149866483712",
     "contentHash": "b808d74fe905d7995cd741e602f313b2f619f6b35da8d735aff8887cadbeecf4"
+  },
+  {
+    "id": "post_20260930143435_484",
+    "topic": "Linux file permissions explained",
+    "category": "Linux",
+    "contentType": "technical_explanation",
+    "difficulty": "beginner",
+    "content": "When I first started diving into Linux, I often saw `chmod` commands and initially thought it was just about making a file executable or not. That's a common misconception, and understanding the full picture is far more critical.\n\nThe reality is that Linux file permissions are fundamental for system security and stability, especially when managing servers in cloud or virtualized environments. They define exactly who can do what with a file or directory, preventing unauthorized access and modifications.\n\nAt its core, permissions break down into three types: Read (r), Write (w), and Execute (x). These permissions are then applied to three distinct user categories: the Owner (u) of the file, the Group (g) that owns the file, and Others (o) – everyone else.\n\nEach permission type has a numeric value: Read is 4, Write is 2, and Execute is 1. When you combine these, you get the octal notation used with `chmod`.\n\nFor example, `chmod 755 filename` isn't arbitrary. The '7' (4+2+1) grants full Read, Write, and Execute permissions to the file's owner. The '5' (4+1) grants Read and Execute permissions to the group and others. This setup is common for scripts or directories where the owner needs full control, but others only need to view or run them without making changes. Getting these permissions right is a key step in building secure and reliable infrastructure.",
+    "hook": "When I first started diving into Linux, I often saw `chmod` commands and initially thought it was just about making a file executable or not. That's a common misconception, and understanding the full picture is far more critical.",
+    "hashtags": [
+      "#Linux",
+      "#CloudComputing",
+      "#Virtualization",
+      "#CloudSecurity",
+      "#DevOps"
+    ],
+    "keywords": [
+      "linux",
+      "permissions",
+      "chmod"
+    ],
+    "generatedAt": "2026-09-30T14:34:35.494Z",
+    "publishedAt": "2026-09-30T14:34:46.733Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7511071043197820928",
+    "contentHash": "029d8136e0d7c602d65e4fb463bcf88cc64cf39fcb7d78e8130327562792209a"
   }
 ]
