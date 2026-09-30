@@ -78,6 +78,20 @@ describe('topicEngine.selectTopic', () => {
     expect(result.topic.topic).toBe(oldestTopic);
   });
 
+  it('never selects a topic listed in excludeTopics', () => {
+    const excluded = 'Object storage explained';
+    for (let i = 0; i < 30; i++) {
+      const result = selectTopic({
+        strategy,
+        recentPosts: [],
+        topicHistory: [],
+        excludeTopics: [excluded],
+        random: Math.random,
+      });
+      expect(result.topic.topic.toLowerCase()).not.toBe(excluded.toLowerCase());
+    }
+  });
+
   it('prefers underrepresented categories', () => {
     const heavilyUsedCategory = 'Kubernetes';
     const recentPosts: StoredPost[] = Array.from({ length: 10 }, (_, i) =>

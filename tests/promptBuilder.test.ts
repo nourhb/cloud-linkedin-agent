@@ -33,6 +33,9 @@ describe('promptBuilder', () => {
     expect(prompt).toContain('category: Kubernetes');
     expect(prompt).toContain('technical_explanation');
     expect(prompt).toContain('intermediate');
+    expect(prompt).toContain('HARD length limit');
+    expect(prompt).toContain('Never go over');
+    expect(prompt).toContain('game-changer');
     expect(prompt).toContain('Format A');
   });
 
@@ -95,6 +98,22 @@ describe('promptBuilder', () => {
 
     expect(prompt).toContain('Topic 19');
     expect(prompt).not.toContain('Topic 20');
+  });
+
+  it('includes previous rejection so retries can correct length and filler', () => {
+    const prompt = buildUserPrompt({
+      strategy,
+      topic,
+      contentType: 'technical_explanation',
+      difficulty: 'intermediate',
+      recentPosts: [],
+      recentTopics: [],
+      formatHint: 'Format A',
+      previousRejection: 'Validation failed: content too long (1516 chars, maximum 1500)',
+    });
+
+    expect(prompt).toContain('PREVIOUS DRAFT REJECTED');
+    expect(prompt).toContain('content too long (1516 chars, maximum 1500)');
   });
 
   it('pickWritingFormat rotates through all defined formats', () => {

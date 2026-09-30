@@ -78,6 +78,25 @@ function generatePostId(startedAt: Date): string {
   return `post_${stamp}_${suffix}`;
 }
 
+export function localDayKey(date: Date, timeZone: string): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(date);
+}
+
+export function countPublishedOnLocalDay(posts: StoredPost[], timeZone: string, now: Date): number {
+  const today = localDayKey(now, timeZone);
+  return posts.filter(
+    (post) =>
+      post.status === 'published' &&
+      Boolean(post.publishedAt) &&
+      localDayKey(new Date(post.publishedAt as string), timeZone) === today,
+  ).length;
+}
+
 /**
  * Runs the full daily pipeline described in SPEC section 56/78:
  * load config+history -> select topic -> generate -> validate -> dedupe ->
@@ -98,6 +117,31 @@ export async function runDailyWorkflow(
 
   logger.info('Starting daily content generation', { runId, dryRun });
 
+  if (!dryRun) {
+    const publishedToday = countPublishedOnLocalDay(
+      postRepo.getAll(),
+      config.schedule.timezone,
+      startedAt,
+    );
+    if (publishedToday >= config.maxPostsPerDay) {
+      logger.info('Daily post limit already reached, skipping', {
+        publishedToday,
+        maxPostsPerDay: config.maxPostsPerDay,
+      });
+      const run: RunRecord = {
+        runId,
+        startedAt: startedAt.toISOString(),
+        completedAt: new Date().toISOString(),
+        status: 'skipped',
+        generationAttempts: 0,
+        publicationAttempts: 0,
+        dryRun: false,
+      };
+      runRepo.add(run);
+      return { run };
+    }
+  }
+
   const recentPosts = postRepo.getRecent(config.strategy.quality.recentTopicsWindow);
   const topicHistory = topicRepo.getAll();
   const existingHashes = new Set(postRepo.getAll().map((p) => p.contentHash));
@@ -106,25 +150,63 @@ export async function runDailyWorkflow(
   let publicationAttempts = 0;
 
   try {
-    const selection = selectTopic({ strategy: config.strategy, recentPosts, topicHistory });
-    logger.info('Selected category', { category: selection.topic.category });
-    logger.info('Selected topic', { topic: selection.topic.topic, reason: selection.reason });
-
     const aiClient = createAiClient(config);
+    const excludedTopics: string[] = [];
+    const maxTopicTries = 3;
+    let selection: ReturnType<typeof selectTopic> | undefined;
+    let generation: Awaited<ReturnType<typeof generatePost>> | undefined;
 
-    const generation = await generatePost({
-      strategy: config.strategy,
-      topic: selection.topic,
-      contentType: selection.contentType,
-      difficulty: selection.difficulty,
-      recentPosts,
-      recentTopics: recentPosts.map((p) => p.topic),
-      existingHashes,
-      aiClient,
-      maxAttempts: config.maxAiRequestsPerRun,
-    });
-    generationAttempts = generation.attempts;
-    logger.info('Content generated', { attempts: generationAttempts });
+    for (let topicTry = 1; topicTry <= maxTopicTries; topicTry++) {
+      selection = selectTopic({
+        strategy: config.strategy,
+        recentPosts,
+        topicHistory,
+        excludeTopics: excludedTopics,
+      });
+      logger.info('Selected category', { category: selection.topic.category, topicTry });
+      logger.info('Selected topic', { topic: selection.topic.topic, reason: selection.reason, topicTry });
+
+      try {
+        generation = await generatePost({
+          strategy: config.strategy,
+          topic: selection.topic,
+          contentType: selection.contentType,
+          difficulty: selection.difficulty,
+          recentPosts,
+          recentTopics: recentPosts.map((p) => p.topic),
+          existingHashes,
+          aiClient,
+          maxAttempts: config.maxAiRequestsPerRun,
+        });
+        generationAttempts += generation.attempts;
+        break;
+      } catch (error) {
+        generationAttempts += config.maxAiRequestsPerRun;
+        const canSwitchTopic =
+          error instanceof ClassifiedError &&
+          error.category === 'VALIDATION_ERROR' &&
+          topicTry < maxTopicTries;
+        if (canSwitchTopic) {
+          logger.warn('Topic failed quality checks, switching topic', {
+            failedTopic: selection.topic.topic,
+            topicTry,
+            error: error.message,
+          });
+          excludedTopics.push(selection.topic.topic);
+          continue;
+        }
+        throw error;
+      }
+    }
+
+    if (!generation || !selection) {
+      throw new ClassifiedError(
+        'VALIDATION_ERROR',
+        'Failed to generate a valid post after trying multiple topics. Post will NOT be published.',
+      );
+    }
+
+    logger.info('Content generated', { attempts: generationAttempts, topic: selection.topic.topic });
 
     const fullText = `${generation.post.hook}\n\n${generation.post.body}`;
 

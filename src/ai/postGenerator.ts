@@ -91,6 +91,7 @@ export async function generatePost(input: PostGenerationInput): Promise<PostGene
       recentPosts,
       recentTopics,
       formatHint: `${format.name} (${format.structure})`,
+      previousRejection: lastError,
     });
 
     let rawResponse: string;

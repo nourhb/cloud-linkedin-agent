@@ -11,6 +11,8 @@ export interface TopicSelectionInput {
   now?: Date;
   /** Injectable RNG for deterministic tests. Returns a float in [0, 1). */
   random?: () => number;
+  /** Topics already tried this run that failed quality checks. */
+  excludeTopics?: string[];
 }
 
 export interface TopicSelectionResult {
@@ -90,6 +92,7 @@ export function selectTopic(input: TopicSelectionInput): TopicSelectionResult {
   const { strategy, recentPosts, topicHistory } = input;
   const now = input.now ?? new Date();
   const random = input.random ?? Math.random;
+  const excluded = new Set((input.excludeTopics ?? []).map((t) => t.toLowerCase()));
 
   const recentWindow = strategy.quality.recentTopicsWindow;
   const recentTopicTexts = recentPosts.slice(0, recentWindow).map((p) => p.topic);
@@ -97,7 +100,9 @@ export function selectTopic(input: TopicSelectionInput): TopicSelectionResult {
   const topicRecordByName = new Map(topicHistory.map((t) => [t.topic.toLowerCase(), t]));
 
   // 1. Build candidates from configured categories.
-  const allCandidates = getCatalogByCategories(strategy.content.mainTopics);
+  const allCandidates = getCatalogByCategories(strategy.content.mainTopics).filter(
+    (c) => !excluded.has(c.topic.toLowerCase()),
+  );
 
   // 2. Remove topics currently in cooldown.
   let candidates = allCandidates.filter(
