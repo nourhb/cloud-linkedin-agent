@@ -198,5 +198,14 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7511131138241789952",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260930204022_461",
+    "startedAt": "2026-09-30T20:40:22.222Z",
+    "completedAt": "2026-09-30T20:40:22.236Z",
+    "status": "skipped",
+    "generationAttempts": 0,
+    "publicationAttempts": 0,
+    "dryRun": false
   }
 ]
