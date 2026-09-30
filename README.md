@@ -435,3 +435,6 @@ in a different AI or LinkedIn client in the future, keep this guarantee.
   optional failure-issue notification is implemented.
 - No `src/research/` module - the directory structure is intentionally left
   out of V1 since nothing currently uses it; add it when V2 research is implemented.
+<img width="1911" height="908" alt="Screenshot 2026-09-30 150444" src="https://github.com/user-attachments/assets/fb583ffc-6f25-40f4-88d7-b15ed2b8e677" />
+<img width="1920" height="4644" alt="screencapture-127-0-0-1-3030-2026-09-30-15_01_09" src="https://github.com/user-attachments/assets/88bfccc3-46ac-4cd3-b220-5f78143cd5d7" />
+<img width="1882" height="908" alt="Screenshot 2026-09-30 150559" src="https://github.com/user-attachments/assets/f6418567-740a-4c12-8724-b03becebf83c" />
