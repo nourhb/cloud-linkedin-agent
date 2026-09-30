@@ -34,7 +34,12 @@ function createAiClient(config: AppConfig): AiClient {
   if (!config.gemini.apiKey) {
     throw new Error('GEMINI_API_KEY is missing and MOCK_GEMINI is not enabled.');
   }
-  return new GeminiClient(config.gemini.apiKey, config.gemini.model, config.gemini.imageModel);
+  return new GeminiClient(
+    config.gemini.apiKey,
+    config.gemini.model,
+    config.gemini.imageModel,
+    config.gemini.fallbackModel,
+  );
 }
 
 /**

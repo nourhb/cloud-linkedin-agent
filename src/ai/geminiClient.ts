@@ -15,18 +15,45 @@ import type { AiClient, GeneratedImageAsset } from './aiClient.js';
 export class GeminiClient implements AiClient {
   private readonly client: GoogleGenAI;
   private readonly model: string;
+  private readonly fallbackModel: string;
   private readonly imageModel: string;
 
-  constructor(apiKey: string, model: string, imageModel: string) {
+  constructor(apiKey: string, model: string, imageModel: string, fallbackModel = 'gemini-2.0-flash') {
     this.client = new GoogleGenAI({ apiKey });
     this.model = model;
+    this.fallbackModel = fallbackModel;
     this.imageModel = imageModel;
   }
 
   async generateJson(systemPrompt: string, userPrompt: string): Promise<string> {
     try {
+      return await this.generateJsonWithModel(this.model, systemPrompt, userPrompt);
+    } catch (error) {
+      const classified = error instanceof ClassifiedError ? error : classifyGeminiError(error);
+      if (
+        classified.retryable &&
+        this.fallbackModel &&
+        this.fallbackModel !== this.model
+      ) {
+        logger.warn('Primary Gemini model failed, trying fallback', {
+          model: this.model,
+          fallback: this.fallbackModel,
+          category: classified.category,
+        });
+        return this.generateJsonWithModel(this.fallbackModel, systemPrompt, userPrompt);
+      }
+      throw classified;
+    }
+  }
+
+  private async generateJsonWithModel(
+    model: string,
+    systemPrompt: string,
+    userPrompt: string,
+  ): Promise<string> {
+    try {
       const response = await this.client.models.generateContent({
-        model: this.model,
+        model,
         contents: userPrompt,
         config: {
           systemInstruction: systemPrompt,
