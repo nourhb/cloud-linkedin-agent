@@ -258,5 +258,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7511071043197820928",
     "contentHash": "029d8136e0d7c602d65e4fb463bcf88cc64cf39fcb7d78e8130327562792209a"
+  },
+  {
+    "id": "post_20260930183322_933",
+    "topic": "VM snapshots",
+    "category": "Virtualization",
+    "contentType": "architecture",
+    "difficulty": "beginner",
+    "content": "A common misconception in virtualization is treating VM snapshots as a primary backup strategy for critical virtual machines.\n\nWhile VM snapshots offer a quick way to revert a VM to a previous state, they are fundamentally different from a robust backup. A snapshot captures the state of a virtual machine at a specific point in time by creating a delta disk. All subsequent changes are written to this new delta disk, leaving the original base disk untouched.\n\nThis approach is excellent for short-term rollbacks, like before applying patches or making configuration changes. If something goes wrong, you can quickly revert. However, snapshots introduce performance overhead due to the read/write operations across multiple disks. Crucially, they are dependent on the parent disk. If the base disk is corrupted or deleted, all associated snapshots become unusable. Prolonged use or chaining many snapshots can also lead to significant storage consumption and increase the risk of data loss.\n\nFor true data protection and disaster recovery, dedicated backup solutions are essential. These solutions typically copy VM data to separate, resilient storage, ensuring data integrity independently of the running VM's disk chain.\n\nHow does your team manage the lifecycle of VM snapshots in your virtualization environment?",
+    "hook": "A common misconception in virtualization is treating VM snapshots as a primary backup strategy for critical virtual machines.",
+    "hashtags": [
+      "#VMSnapshots",
+      "#Virtualization",
+      "#CloudComputing",
+      "#Infrastructure"
+    ],
+    "keywords": [
+      "vm",
+      "snapshot",
+      "backup",
+      "virtualization",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-09-30T18:33:22.274Z",
+    "publishedAt": "2026-09-30T18:33:34.576Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7511131138241789952",
+    "contentHash": "b25a995ae51374452000b50832d8abfbf723585181330eb20c209f45b32ca815"
   }
 ]

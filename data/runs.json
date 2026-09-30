@@ -185,5 +185,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7511071043197820928",
     "dryRun": false
+  },
+  {
+    "runId": "run_20260930183322_169",
+    "startedAt": "2026-09-30T18:33:22.274Z",
+    "completedAt": "2026-09-30T18:33:34.578Z",
+    "status": "success",
+    "topic": "VM snapshots",
+    "category": "Virtualization",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7511131138241789952",
+    "dryRun": false
   }
 ]
