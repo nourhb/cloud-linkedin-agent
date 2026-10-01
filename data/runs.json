@@ -207,5 +207,18 @@
     "generationAttempts": 0,
     "publicationAttempts": 0,
     "dryRun": false
+  },
+  {
+    "runId": "run_20261001180531_541",
+    "startedAt": "2026-10-01T18:05:31.914Z",
+    "completedAt": "2026-10-01T18:06:02.681Z",
+    "status": "success",
+    "topic": "Understanding the Linux filesystem hierarchy",
+    "category": "Linux",
+    "contentType": "interview_concept",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7511486597880598529",
+    "dryRun": false
   }
 ]

@@ -285,5 +285,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7511131138241789952",
     "contentHash": "b25a995ae51374452000b50832d8abfbf723585181330eb20c209f45b32ca815"
+  },
+  {
+    "id": "post_20261001180531_376",
+    "topic": "Understanding the Linux filesystem hierarchy",
+    "category": "Linux",
+    "contentType": "interview_concept",
+    "difficulty": "beginner",
+    "content": "Understanding the Linux filesystem hierarchy is crucial for navigating any Linux-based system, from virtual machines to containers. It provides a logical structure that helps you locate system binaries, user data, and configuration files.\n\nA common mistake for those new to Linux is treating the filesystem like a typical Windows drive, where applications might install anywhere. In Linux, the Filesystem Hierarchy Standard (FHS) defines a precise layout. For instance, `/bin` holds essential user commands, `/etc` contains system-wide configuration files, and `/var` stores variable data like logs. Knowing this standard helps in troubleshooting, managing applications, and understanding how cloud-native tools like Docker and Kubernetes leverage the underlying Linux host. When you encounter an issue or need to find a specific log file, you can quickly narrow down the search by understanding the FHS. For example, application logs are typically found in `/var/log`, while temporary files reside in `/tmp`. This standardized approach ensures consistency across different Linux distributions, making it easier to work in diverse environments and build robust cloud infrastructure. Without a grasp of the FHS, even basic tasks can become time-consuming.",
+    "hook": "Understanding the Linux filesystem hierarchy is crucial for navigating any Linux-based system, from virtual machines to containers. It provides a logical structure that helps you locate system binaries, user data, and configuration files.",
+    "hashtags": [
+      "#Linux",
+      "#CloudComputing",
+      "#Virtualization",
+      "#DevOps",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "linux",
+      "filesystem",
+      "fhs",
+      "cloud computing",
+      "virtualization",
+      "devops",
+      "system administration"
+    ],
+    "generatedAt": "2026-10-01T18:05:31.914Z",
+    "publishedAt": "2026-10-01T18:06:02.680Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7511486597880598529",
+    "contentHash": "58f8ddab080082427dbf25c064e555072272e97663098c6b42172dbeaede011c"
   }
 ]
