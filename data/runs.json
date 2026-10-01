@@ -220,5 +220,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7511486597880598529",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261001205407_321",
+    "startedAt": "2026-10-01T20:54:07.645Z",
+    "completedAt": "2026-10-01T20:54:31.645Z",
+    "status": "success",
+    "topic": "Cloud regions and availability zones",
+    "category": "Cloud Computing",
+    "contentType": "technical_explanation",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7511529000125546496",
+    "dryRun": false
   }
 ]
