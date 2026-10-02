@@ -82,5 +82,12 @@
     "lastUsed": "2026-10-01T20:54:07.645Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "VM cloning",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-02T17:31:56.752Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
