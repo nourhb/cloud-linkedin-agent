@@ -89,5 +89,12 @@
     "lastUsed": "2026-10-02T17:31:56.752Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Azure Virtual Machines fundamentals",
+    "category": "Microsoft Azure",
+    "lastUsed": "2026-10-02T20:31:44.975Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

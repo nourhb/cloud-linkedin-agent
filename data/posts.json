@@ -367,5 +367,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7511840447577657344",
     "contentHash": "6eaf6429213e30065344c13db0a3e57db432d57e30d64b200cbe3a8e57bdda5f"
+  },
+  {
+    "id": "post_20261002203144_299",
+    "topic": "Azure Virtual Machines fundamentals",
+    "category": "Microsoft Azure",
+    "contentType": "question_discussion",
+    "difficulty": "beginner",
+    "content": "Many teams leveraging cloud computing encounter a foundational service in Azure Virtual Machines (VMs). These are on-demand, scalable computing resources that provide the flexibility of a physical server without the overhead of hardware maintenance.\n\nAn Azure VM comprises several key components: an operating system (Windows or Linux), storage (for OS and data disks), networking (virtual networks, NICs, public IPs), and compute resources (vCPUs, memory). You can choose from various VM sizes and series optimized for different workloads, from general purpose to memory-optimized or GPU-enabled.\n\nFor instance, if you need to host a backend API or a specialized application, you can quickly provision an Azure VM. You choose the OS, size, and region, then install your software. This provides a dedicated environment much like a traditional server, but with the agility of the cloud. You have full control over the operating system, allowing for custom software installations and configurations not always possible with Platform as a Service (PaaS) offerings.\n\nUnderstanding these core components is crucial for designing resilient and performant cloud infrastructure. It allows you to tailor your compute resources precisely to application needs, optimizing both performance and cost. What's one common configuration mistake you've seen with Azure VMs, and how did you address it?",
+    "hook": "Many teams leveraging cloud computing encounter a foundational service in Azure Virtual Machines (VMs). These are on-demand, scalable computing resources that provide the flexibility of a physical server without the overhead of hardware maintenance.",
+    "hashtags": [
+      "#Azure",
+      "#CloudComputing",
+      "#Virtualization",
+      "#Compute",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "azure",
+      "vm",
+      "compute"
+    ],
+    "generatedAt": "2026-10-02T20:31:44.975Z",
+    "publishedAt": "2026-10-02T20:31:53.688Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7511885692973613056",
+    "contentHash": "9491361421b05d6222d655159d7773fe17d313d47514118d6bacd447ae503ffa"
   }
 ]
