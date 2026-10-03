@@ -393,5 +393,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7511885692973613056",
     "contentHash": "9491361421b05d6222d655159d7773fe17d313d47514118d6bacd447ae503ffa"
+  },
+  {
+    "id": "post_20261003154739_214",
+    "topic": "Object storage explained",
+    "category": "Cloud Computing",
+    "contentType": "technical_explanation",
+    "difficulty": "beginner",
+    "content": "Object storage is a fundamental component of modern cloud computing, offering a highly scalable and cost-effective way to store unstructured data.\n\nUnlike traditional file systems or block storage, object storage manages data as discrete units called objects. Each object includes the data itself, a unique identifier, and rich metadata that describes the object. When you upload a file, it's stored alongside its metadata and given an ID, allowing systems to find it later without knowing its physical location.\n\nAccessing objects is typically done via APIs, often HTTP-based, which makes it incredibly flexible for web applications and microservices. This distributed architecture means data is replicated across multiple devices and locations, ensuring high durability and availability, even in the event of hardware failures. Solutions like Amazon S3 exemplify this model.\n\nFor practical use, object storage excels at hosting static website content, backing up large datasets, and serving as a data lake for big data analytics. It's designed for massive scale and offers a pay-as-you-go model, making it a powerful choice for many cloud infrastructure needs where rapid retrieval and frequent modifications aren't the primary concerns. Understanding its capabilities is key for effective cloud architecture.\n\nWhat's a common use case for object storage you've encountered that surprised you with its effectiveness?",
+    "hook": "Object storage is a fundamental component of modern cloud computing, offering a highly scalable and cost-effective way to store unstructured data.",
+    "hashtags": [
+      "#ObjectStorage",
+      "#CloudComputing",
+      "#CloudEngineer",
+      "#DataStorage"
+    ],
+    "keywords": [
+      "object storage",
+      "cloud",
+      "S3",
+      "data storage",
+      "scalability",
+      "durability"
+    ],
+    "generatedAt": "2026-10-03T15:47:39.065Z",
+    "publishedAt": "2026-10-03T15:47:49.113Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7512176589544034304",
+    "contentHash": "ed29f61be3639f54187de6b5cc1a7abbab516982b98dfb86d54fbd71748899b2"
   }
 ]
