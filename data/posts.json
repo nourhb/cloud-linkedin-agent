@@ -421,5 +421,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7512176589544034304",
     "contentHash": "ed29f61be3639f54187de6b5cc1a7abbab516982b98dfb86d54fbd71748899b2"
+  },
+  {
+    "id": "post_20261003190634_544",
+    "topic": "Kubernetes Deployments",
+    "category": "Kubernetes",
+    "contentType": "project_insight",
+    "difficulty": "beginner",
+    "content": "A common misconception about updating applications in Kubernetes is that it's just about replacing a container image in a Pod definition.\n\nIn reality, a Kubernetes Deployment manages this process with sophisticated rollout strategies to maintain application availability.\n\nA `Deployment` object provides declarative updates for Pods and ReplicaSets. Instead of simply shutting down all old instances and starting new ones, a `Deployment` orchestrates a gradual update. It ensures a specified number of replicas are always running, incrementally replacing old Pods with new ones.\n\nThis controlled `rollout` process is crucial for maintaining high availability, especially in production environments. It also allows for easy rollbacks if issues arise during an update, using commands like `kubectl rollout undo`. Understanding how `Deployment` objects handle application lifecycle management is fundamental for effective Kubernetes operations.\n\nWhat `Deployment` strategy (e.g., RollingUpdate, Recreate) have you found most effective for your critical applications, and why?",
+    "hook": "A common misconception about updating applications in Kubernetes is that it's just about replacing a container image in a Pod definition.",
+    "hashtags": [
+      "#Kubernetes",
+      "#DevOps",
+      "#CloudComputing",
+      "#Virtualization",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "kubernetes",
+      "deployment",
+      "rollout",
+      "replicaset"
+    ],
+    "generatedAt": "2026-10-03T19:06:34.803Z",
+    "publishedAt": "2026-10-03T19:06:45.396Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7512226652374962176",
+    "contentHash": "6b0f3d6ee94ff6fa06a823315943a48784180c48cbb1fee02724e5c5aef5ff3a"
   }
 ]
