@@ -448,5 +448,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7512226652374962176",
     "contentHash": "6b0f3d6ee94ff6fa06a823315943a48784180c48cbb1fee02724e5c5aef5ff3a"
+  },
+  {
+    "id": "post_20261004163002_931",
+    "topic": "TCP vs UDP for cloud engineers",
+    "category": "Networking",
+    "contentType": "architecture",
+    "difficulty": "beginner",
+    "content": "Navigating cloud networking often involves understanding fundamental protocols like TCP and UDP. But how do you choose the right one for your application's architecture?\n\nWhen building cloud applications, a common architectural decision is selecting between TCP and UDP. What factors drive this choice?\n\nTCP (Transmission Control Protocol) is a connection-oriented, reliable protocol. It guarantees delivery, maintains packet order, and handles retransmissions, making it ideal for data integrity. UDP (User Datagram Protocol), conversely, is connectionless and unreliable. It prioritizes speed over guaranteed delivery, sending data without establishing a session or confirming receipt.\n\nFor web traffic (HTTP/HTTPS), email (SMTP), or file transfers (FTP) in cloud environments, TCP is essential to ensure all data arrives correctly. Think of database connections or SSH sessions. UDP is preferred for real-time applications where minor packet loss is acceptable, like video streaming, online gaming, or DNS queries. Its lower overhead allows for faster communication.\n\nThe architectural choice between TCP and UDP fundamentally impacts application performance and reliability. Understanding their core differences is key to designing robust cloud infrastructure. How do you typically decide which protocol to use when designing new services, especially for latency-sensitive applications?",
+    "hook": "Navigating cloud networking often involves understanding fundamental protocols like TCP and UDP. But how do you choose the right one for your application's architecture?",
+    "hashtags": [
+      "#Networking",
+      "#CloudComputing",
+      "#TCP",
+      "#UDP",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "tcp",
+      "udp",
+      "networking"
+    ],
+    "generatedAt": "2026-10-04T16:30:02.127Z",
+    "publishedAt": "2026-10-04T16:30:19.388Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7512549674382172160",
+    "contentHash": "a17a24be1f8c9e7572027b691319f7161b3e997c2128020e368479de6c8b1691"
   }
 ]
