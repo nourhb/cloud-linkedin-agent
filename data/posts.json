@@ -474,5 +474,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7512549674382172160",
     "contentHash": "a17a24be1f8c9e7572027b691319f7161b3e997c2128020e368479de6c8b1691"
+  },
+  {
+    "id": "post_20261004192051_650",
+    "topic": "Container image signing",
+    "category": "DevSecOps",
+    "contentType": "common_mistake",
+    "difficulty": "beginner",
+    "content": "A common oversight in DevSecOps practices is failing to implement robust container image signing and verification.\n\nWithout proper image signing, it's impossible to guarantee that a container image hasn't been tampered with or originates from an untrusted source. This introduces significant security risks into your supply chain, potentially leading to the deployment of malicious or vulnerable software. The solution involves cryptographically signing container images as part of your build process. This digital signature acts as a tamper-evident seal and proof of origin. Tools like Cosign simplify this by integrating into existing workflows. By enforcing signature verification in your CI/CD pipelines and at runtime, you ensure that only authorized and unaltered images are deployed into your infrastructure. This practice is crucial for strengthening cloud security and maintaining the integrity of your deployments. How does your team currently verify the authenticity and integrity of container images?",
+    "hook": "A common oversight in DevSecOps practices is failing to implement robust container image signing and verification.",
+    "hashtags": [
+      "#DevSecOps",
+      "#CloudSecurity",
+      "#ContainerSecurity",
+      "#ImageSigning"
+    ],
+    "keywords": [
+      "image signing",
+      "devsecops",
+      "security",
+      "container security",
+      "supply chain security"
+    ],
+    "generatedAt": "2026-10-04T19:20:51.981Z",
+    "publishedAt": "2026-10-04T19:21:49.319Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7512592834676350976",
+    "contentHash": "cb0c894abcb6c171f8b10e8139587328c25eb515357f4e661f6a2e11bfd067e2"
   }
 ]
