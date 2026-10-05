@@ -324,5 +324,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7512968912687427585",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261005222437_510",
+    "startedAt": "2026-10-05T22:24:37.744Z",
+    "completedAt": "2026-10-05T22:24:57.423Z",
+    "status": "success",
+    "topic": "Kubernetes Services",
+    "category": "Kubernetes",
+    "contentType": "question_discussion",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7513001309675925504",
+    "dryRun": false
   }
 ]

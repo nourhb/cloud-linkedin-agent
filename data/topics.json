@@ -131,5 +131,12 @@
     "lastUsed": "2026-10-05T20:15:49.189Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes Services",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-05T22:24:37.744Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
