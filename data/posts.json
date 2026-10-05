@@ -501,5 +501,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7512592834676350976",
     "contentHash": "cb0c894abcb6c171f8b10e8139587328c25eb515357f4e661f6a2e11bfd067e2"
+  },
+  {
+    "id": "post_20261005201549_602",
+    "topic": "IaaS vs PaaS vs SaaS explained",
+    "category": "Cloud Computing",
+    "contentType": "technical_explanation",
+    "difficulty": "beginner",
+    "content": "Many teams mistakenly think IaaS, PaaS, and SaaS are just different levels of abstraction without fully considering the cloud shared responsibility model.\n\nIaaS (Infrastructure as a Service) provides fundamental computing, networking, and storage resources. You manage the operating systems, applications, and data, retaining significant control. Think virtual machines, networks, and storage accounts.\n\nPaaS (Platform as a Service) offers a complete development and deployment environment. The cloud provider manages the underlying infrastructure, including servers, operating systems, and databases. You focus entirely on your application code and data. Examples include managed databases or application platforms.\n\nSaaS (Software as a Service) delivers a complete, ready-to-use application over the internet. The provider manages everything from the infrastructure to the application itself. Users simply access the software via a web browser or client, like email services or CRM platforms.\n\nThe key distinction lies in what you manage versus what the cloud provider manages. Understanding this shared responsibility is crucial for effective cloud security, operational efficiency, and cost management.",
+    "hook": "Many teams mistakenly think IaaS, PaaS, and SaaS are just different levels of abstraction without fully considering the cloud shared responsibility model.",
+    "hashtags": [
+      "#CloudComputing",
+      "#IaaS",
+      "#PaaS",
+      "#SaaS",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "iaas",
+      "paas",
+      "saas"
+    ],
+    "generatedAt": "2026-10-05T20:15:49.189Z",
+    "publishedAt": "2026-10-05T20:16:13.420Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7512968912687427585",
+    "contentHash": "e9b7d8108e515b849141251fe2dc0c457be216676a1722637d74328795b2fae4"
   }
 ]
