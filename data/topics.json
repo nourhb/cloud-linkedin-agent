@@ -145,5 +145,12 @@
     "lastUsed": "2026-10-06T17:59:12.905Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "AWS VPC fundamentals",
+    "category": "AWS",
+    "lastUsed": "2026-10-06T20:51:31.945Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

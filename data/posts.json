@@ -582,5 +582,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7513296870459236352",
     "contentHash": "dea8651f73d008c332e91df47145d14f8a14c6f5ce635701f6e3eee739848543"
+  },
+  {
+    "id": "post_20261006205131_152",
+    "topic": "AWS VPC fundamentals",
+    "category": "AWS",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake in AWS VPC networking involves misconfiguring public and private subnets, leading to unexpected exposure or connectivity issues for applications.\n\nMany teams initially assume that any subnet with an Internet Gateway route is simply \"public,\" but fail to secure instances within it, or they might place sensitive databases in public subnets inadvertently. This can create significant security vulnerabilities. Conversely, private subnets are designed to host resources that do not need direct internet ingress, like application servers and databases. However, these private resources often still require outbound internet access for updates or external APIs. Without a properly configured NAT Gateway in a public subnet, instances in private subnets will lack this crucial connectivity.\n\nAlways design your AWS VPC with a clear separation of concerns. Public subnets are for resources that must be directly accessible from the internet, like Load Balancers or bastion hosts. Private subnets should host your application servers, databases, and other internal services, leveraging NAT Gateways for controlled outbound access. Effective use of Network Access Control Lists (NACLs) and Security Groups is essential to control traffic within and between these subnets, adding defense-in-depth to your AWS infrastructure.\n\nHow do you ensure proper segregation and connectivity in your AWS VPC designs for both security and operational needs?",
+    "hook": "A common mistake in AWS VPC networking involves misconfiguring public and private subnets, leading to unexpected exposure or connectivity issues for applications.",
+    "hashtags": [
+      "#AWS",
+      "#VPC",
+      "#CloudNetworking",
+      "#CloudSecurity",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "aws",
+      "vpc",
+      "networking",
+      "subnets",
+      "security",
+      "nat gateway"
+    ],
+    "generatedAt": "2026-10-06T20:51:31.945Z",
+    "publishedAt": "2026-10-06T20:52:09.814Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7513340343799484416",
+    "contentHash": "97446615731f5771f71e945bd8937b43657736be0608329e9072c65950aa80cb"
   }
 ]
