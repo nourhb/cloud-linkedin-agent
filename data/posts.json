@@ -556,5 +556,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7513001309675925504",
     "contentHash": "0b5596f70d3901c5bc1b9f068d78c53d935867c3c80803a7f8f7d85ed2f1def0"
+  },
+  {
+    "id": "post_20261006175912_207",
+    "topic": "Subnetting fundamentals",
+    "category": "Networking",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "Understanding subnetting is crucial for efficient IP address management, yet it's a frequent source of misconfigurations that lead to network segmentation problems.\n\nThe solution lies in a solid grasp of CIDR (Classless Inter-Domain Routing) notation and subnet masks. CIDR allows you to allocate IP addresses precisely by dividing a larger network into smaller, manageable subnets. You define a network address and a prefix length (e.g., /24), which dictates the number of available host IP addresses within that segment. This careful segmentation is vital for managing resources effectively, preventing IP address overlap, and optimizing network traffic flow.Why does this matter so much? Proper subnetting directly impacts network security, performance, and scalability. It enables you to logically isolate different services or departments into their own virtual networks, limiting potential attack surfaces. For cloud engineers, accurately planning your IP address space ensures your infrastructure as code deployments are robust and your applications can communicate without unexpected bottlenecks or security gaps. It's foundational for building resilient cloud environments.What's the most common subnetting mistake you've encountered in a production environment?",
+    "hook": "Understanding subnetting is crucial for efficient IP address management, yet it's a frequent source of misconfigurations that lead to network segmentation problems.",
+    "hashtags": [
+      "#Networking",
+      "#Subnetting",
+      "#CloudComputing",
+      "#CIDR",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "subnet",
+      "cidr",
+      "networking"
+    ],
+    "generatedAt": "2026-10-06T17:59:12.905Z",
+    "publishedAt": "2026-10-06T17:59:25.308Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7513296870459236352",
+    "contentHash": "dea8651f73d008c332e91df47145d14f8a14c6f5ce635701f6e3eee739848543"
   }
 ]

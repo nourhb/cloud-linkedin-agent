@@ -337,5 +337,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7513001309675925504",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261006175912_246",
+    "startedAt": "2026-10-06T17:59:12.905Z",
+    "completedAt": "2026-10-06T17:59:25.311Z",
+    "status": "success",
+    "topic": "Subnetting fundamentals",
+    "category": "Networking",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7513296870459236352",
+    "dryRun": false
   }
 ]
