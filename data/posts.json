@@ -637,5 +637,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7513667005946945539",
     "contentHash": "4fe3a4685e6192efbb85a5d80435c86124cd6a78f8510a0f89a2e1c130a03815"
+  },
+  {
+    "id": "post_20261007210721_674",
+    "topic": "Kubernetes ConfigMaps",
+    "category": "Kubernetes",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Kubernetes ConfigMaps are often overlooked for managing application configurations, with many teams still hardcoding values directly into container images or deployment files. This common practice introduces significant overhead and reduces flexibility in your #Kubernetes deployments.\n\nThe reality is that hardcoding configuration ties your application's settings directly to its build artifacts. When a configuration needs to change, it often requires a full rebuild and redeployment of the container image, even if the code itself hasn't changed. This goes against best practices for modern cloud-native applications.\n\nConfigMaps offer a robust solution by separating configuration data from your application code. They allow you to store non-confidential data in key-value pairs within the Kubernetes cluster. Pods can then consume this data in two primary ways: as environment variables or by mounting the ConfigMap as a file inside the container.\n\nThis decoupling means you can update configuration independently of your application, making it easier to manage different environments (development, staging, production) and to roll out configuration changes without modifying the container image. It improves agility and maintainability.\n\nHow do you manage common configuration patterns across multiple applications or namespaces in your Kubernetes clusters?",
+    "hook": "Kubernetes ConfigMaps are often overlooked for managing application configurations, with many teams still hardcoding values directly into container images or deployment files. This common practice introduces significant overhead and reduces flexibility in your #Kubernetes deployments.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#Configuration"
+    ],
+    "keywords": [
+      "kubernetes",
+      "configmap",
+      "configuration"
+    ],
+    "generatedAt": "2026-10-07T21:07:21.420Z",
+    "publishedAt": "2026-10-07T21:07:40.264Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7513706635039600640",
+    "contentHash": "7f2233927d5a3da66bcd695fb2d1e871abe25190a2e44dfab034f8b856c19a38"
   }
 ]
