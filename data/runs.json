@@ -363,5 +363,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7513340343799484416",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261007182925_423",
+    "startedAt": "2026-10-07T18:29:25.928Z",
+    "completedAt": "2026-10-07T18:30:12.619Z",
+    "status": "success",
+    "topic": "Virtual networks in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "interview_concept",
+    "generationAttempts": 4,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7513667005946945539",
+    "dryRun": false
   }
 ]

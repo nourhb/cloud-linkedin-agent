@@ -611,5 +611,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7513340343799484416",
     "contentHash": "97446615731f5771f71e945bd8937b43657736be0608329e9072c65950aa80cb"
+  },
+  {
+    "id": "post_20261007182925_351",
+    "topic": "Virtual networks in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "interview_concept",
+    "difficulty": "intermediate",
+    "content": "Understanding virtual networks in the cloud, often referred to as Virtual Private Clouds (VPCs), is fundamental for anyone building scalable and secure cloud infrastructure.\n\nA VPC provides an isolated, private section of a public cloud where you can launch resources. Within this virtual network, you define your IP address ranges, create subnets to segment your network, and configure route tables to direct traffic. Network Access Control Lists (NACLs) and security groups act as firewalls, controlling inbound and outbound traffic at different levels, ensuring resources are protected. This level of control mirrors traditional data center networking but with the added benefits of cloud elasticity and programmability. For an interview, demonstrating a grasp of VPC components and their interplay is key. You can discuss how proper subnetting supports multi-tier applications, or how understanding route tables helps in isolating public and private resources. A common mistake is not planning IP address allocation carefully, leading to re-architecting later. Effective VPC design is crucial for both security posture and operational efficiency.",
+    "hook": "Understanding virtual networks in the cloud, often referred to as Virtual Private Clouds (VPCs), is fundamental for anyone building scalable and secure cloud infrastructure.",
+    "hashtags": [
+      "#VPC",
+      "#CloudComputing",
+      "#Virtualization",
+      "#CloudEngineer",
+      "#Networking"
+    ],
+    "keywords": [
+      "vpc",
+      "virtual network",
+      "cloud"
+    ],
+    "generatedAt": "2026-10-07T18:29:25.928Z",
+    "publishedAt": "2026-10-07T18:30:12.617Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7513667005946945539",
+    "contentHash": "4fe3a4685e6192efbb85a5d80435c86124cd6a78f8510a0f89a2e1c130a03815"
   }
 ]
