@@ -402,5 +402,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7514029246160244736",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261008211119_633",
+    "startedAt": "2026-10-08T21:11:19.015Z",
+    "completedAt": "2026-10-08T21:11:29.814Z",
+    "status": "success",
+    "topic": "Kubernetes ReplicaSets",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7514069984487190528",
+    "dryRun": false
   }
 ]

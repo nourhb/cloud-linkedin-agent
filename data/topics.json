@@ -173,5 +173,12 @@
     "lastUsed": "2026-10-08T18:28:40.336Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes ReplicaSets",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-08T21:11:19.015Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
