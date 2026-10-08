@@ -389,5 +389,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7513706635039600640",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261008182840_170",
+    "startedAt": "2026-10-08T18:28:40.336Z",
+    "completedAt": "2026-10-08T18:29:37.043Z",
+    "status": "success",
+    "topic": "Cloud monitoring fundamentals",
+    "category": "Observability",
+    "contentType": "comparison",
+    "generationAttempts": 4,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7514029246160244736",
+    "dryRun": false
   }
 ]
