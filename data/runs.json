@@ -415,5 +415,16 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7514069984487190528",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261009180032_376",
+    "startedAt": "2026-10-09T18:00:32.312Z",
+    "completedAt": "2026-10-09T18:01:05.485Z",
+    "status": "failed",
+    "generationAttempts": 3,
+    "publicationAttempts": 0,
+    "error": "Gemini request failed: {\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\",\"status\":\"NOT_FOUND\"}}",
+    "errorCategory": "UNKNOWN_ERROR",
+    "dryRun": false
   }
 ]
