@@ -180,5 +180,12 @@
     "lastUsed": "2026-10-08T21:11:19.015Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Dependency scanning in CI/CD",
+    "category": "DevSecOps",
+    "lastUsed": "2026-10-09T20:41:30.810Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

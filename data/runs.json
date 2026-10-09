@@ -426,5 +426,18 @@
     "error": "Gemini request failed: {\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).\",\"status\":\"NOT_FOUND\"}}",
     "errorCategory": "UNKNOWN_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261009204130_861",
+    "startedAt": "2026-10-09T20:41:30.810Z",
+    "completedAt": "2026-10-09T20:42:07.466Z",
+    "status": "success",
+    "topic": "Dependency scanning in CI/CD",
+    "category": "DevSecOps",
+    "contentType": "learning_in_public",
+    "generationAttempts": 4,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7514424979149553664",
+    "dryRun": false
   }
 ]

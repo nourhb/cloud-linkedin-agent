@@ -716,5 +716,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7514069984487190528",
     "contentHash": "8542b105176fe29d0042313dd56385c4fcbbc6b86522311c64cdcd51190064ef"
+  },
+  {
+    "id": "post_20261009204130_361",
+    "topic": "Dependency scanning in CI/CD",
+    "category": "DevSecOps",
+    "contentType": "learning_in_public",
+    "difficulty": "intermediate",
+    "content": "Dependency scanning in CI/CD is a critical practice for identifying known vulnerabilities in your project's libraries and packages.\n\nA common mistake teams make is focusing solely on the security of their own code, overlooking the significant attack surface introduced by third-party dependencies. Open-source libraries, while accelerating development, can harbor known vulnerabilities if not properly managed or updated. An unpatched flaw in a widely used component can expose an entire application, making your software supply chain a weak link.\n\nThe solution is to integrate automated dependency scanning tools directly into your continuous integration and continuous delivery (CI/CD) pipelines. These tools analyze your project's manifest files against comprehensive vulnerability databases. They can automatically flag outdated or vulnerable components early in the development lifecycle, preventing them from reaching production environments.\n\nImplementing dependency scanning proactively improves your overall DevSecOps posture. It shifts security 'left', making it far less costly and complex to address vulnerabilities. This practice is essential for maintaining software integrity and achieving compliance, ensuring you're building secure applications from the ground up, rather than patching them reactively.\n\nWhat's one common challenge your team faces when managing and updating dependencies identified by scanning tools?",
+    "hook": "Dependency scanning in CI/CD is a critical practice for identifying known vulnerabilities in your project's libraries and packages.",
+    "hashtags": [
+      "#DevSecOps",
+      "#CISecurity",
+      "#SoftwareSupplyChain",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "dependency scanning",
+      "devsecops",
+      "ci/cd",
+      "software supply chain security"
+    ],
+    "generatedAt": "2026-10-09T20:41:30.810Z",
+    "publishedAt": "2026-10-09T20:42:07.463Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7514424979149553664",
+    "contentHash": "0e2cd59f8a77fcbeae85a133c2c7308dd2b9c6d05dd30da91ff386f2c956dd6f"
   }
 ]
