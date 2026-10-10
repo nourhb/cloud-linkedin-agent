@@ -439,5 +439,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7514424979149553664",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261010170056_749",
+    "startedAt": "2026-10-10T17:00:56.393Z",
+    "completedAt": "2026-10-10T17:01:52.226Z",
+    "status": "success",
+    "topic": "GitOps explained",
+    "category": "DevOps",
+    "contentType": "technical_explanation",
+    "generationAttempts": 3,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7514731941846401025",
+    "dryRun": false
   }
 ]

@@ -187,5 +187,12 @@
     "lastUsed": "2026-10-09T20:41:30.810Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "GitOps explained",
+    "category": "DevOps",
+    "lastUsed": "2026-10-10T17:00:56.393Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
