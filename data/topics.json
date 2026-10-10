@@ -194,5 +194,12 @@
     "lastUsed": "2026-10-10T17:00:56.393Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Container image scanning explained",
+    "category": "DevSecOps",
+    "lastUsed": "2026-10-10T19:54:12.640Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

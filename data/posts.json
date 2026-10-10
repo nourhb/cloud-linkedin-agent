@@ -768,5 +768,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7514731941846401025",
     "contentHash": "4fcf4840648bac8abdedd371809c67e12ec5f56c822d41d84432840efdd0acea"
+  },
+  {
+    "id": "post_20261010195412_891",
+    "topic": "Container image scanning explained",
+    "category": "DevSecOps",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "Effective container image scanning is critical for cloud security, yet many teams overlook the differences between static and dynamic analysis.\n\nContainer image scanning involves analyzing an image for known vulnerabilities, misconfigurations, and compliance issues. There are two main approaches: static scanning and dynamic scanning. Static scanning analyzes the image layers and metadata without running it, checking against vulnerability databases. This is typically done early in the CI/CD pipeline. Dynamic scanning, on the other hand, runs the container in a sandbox environment and observes its behavior, often looking for runtime vulnerabilities or potential exploits. Consider building a Docker image: static scanning immediately flags an outdated library in your base image with a known CVE. Dynamic scanning, however, might uncover how your application handles unexpected inputs at runtime, even if static analysis found no issues in its constituent parts. Both approaches are crucial for comprehensive DevSecOps. Static scanning provides early feedback, catching most known issues before deployment. Dynamic scanning offers a deeper, runtime check, identifying vulnerabilities that only manifest when the application is active. Relying on just one leaves significant blind spots in your cloud security posture. How does your team integrate both static and dynamic scanning into your container build process?",
+    "hook": "Effective container image scanning is critical for cloud security, yet many teams overlook the differences between static and dynamic analysis.",
+    "hashtags": [
+      "#DevSecOps",
+      "#ContainerSecurity",
+      "#CloudSecurity",
+      "#Docker",
+      "#Kubernetes"
+    ],
+    "keywords": [
+      "scanning",
+      "devsecops",
+      "security"
+    ],
+    "generatedAt": "2026-10-10T19:54:12.640Z",
+    "publishedAt": "2026-10-10T19:54:34.926Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7514775403375288320",
+    "contentHash": "251b5e66c9c35d6c6af13918b18fe26631e6ed44f7c4ce4e3dc802937eb8713f"
   }
 ]

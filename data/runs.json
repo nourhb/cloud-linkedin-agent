@@ -452,5 +452,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7514731941846401025",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261010195412_647",
+    "startedAt": "2026-10-10T19:54:12.640Z",
+    "completedAt": "2026-10-10T19:54:34.927Z",
+    "status": "success",
+    "topic": "Container image scanning explained",
+    "category": "DevSecOps",
+    "contentType": "comparison",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7514775403375288320",
+    "dryRun": false
   }
 ]
