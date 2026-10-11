@@ -201,5 +201,12 @@
     "lastUsed": "2026-10-10T19:54:12.640Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Virtual memory in virtualized environments",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-11T17:23:44.525Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
