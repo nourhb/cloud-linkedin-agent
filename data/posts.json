@@ -820,5 +820,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7515099883033522176",
     "contentHash": "78f0bdab5c4b27bb7f184e985c5667bf9eba9e645579041f644b846c403b8c90"
+  },
+  {
+    "id": "post_20261011200403_451",
+    "topic": "Blue/green deployment explained",
+    "category": "DevOps",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "What is blue/green deployment and why is it so effective for minimizing downtime during application updates?\n\nBlue/green deployment is an application release strategy that uses two identical production environments, let's call them \"Blue\" and \"Green.\" At any given time, only one environment is live and serving user traffic (e.g., \"Blue\"). When you have a new version of your application ready, you deploy it to the inactive \"Green\" environment. This allows for thorough testing of the new version in a production-like setting without impacting live users. Once you're confident in the \"Green\" environment, you simply switch the router or load balancer to direct all incoming traffic from \"Blue\" to \"Green.\" This switch is typically fast, resulting in near-zero downtime for users. The old \"Blue\" environment is kept around as a standby. If any critical issues arise with the new \"Green\" version, you can quickly revert traffic back to the stable \"Blue\" environment, enabling instant rollback. If all goes well, \"Blue\" can be updated with the new version or decommissioned until the next release. This approach greatly reduces risk associated with deployments. What challenges have you encountered when implementing blue/green deployment strategies, especially regarding infrastructure costs or data migration?",
+    "hook": "What is blue/green deployment and why is it so effective for minimizing downtime during application updates?",
+    "hashtags": [
+      "#BlueGreenDeployment",
+      "#DevOps",
+      "#CloudComputing",
+      "#DeploymentStrategies",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "blue-green",
+      "deployment",
+      "devops",
+      "cloud computing",
+      "infrastructure"
+    ],
+    "generatedAt": "2026-10-11T20:04:03.512Z",
+    "publishedAt": "2026-10-11T20:04:12.907Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7515140216752394240",
+    "contentHash": "ee49599dc4a7336997374e3413d1c071e670ba42efb1a4a9877417e49e8eff05"
   }
 ]
