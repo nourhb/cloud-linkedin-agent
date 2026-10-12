@@ -876,5 +876,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7515516062524706817",
     "contentHash": "1426da3fa8ed765c2eccdb73779616860b800e80fb5f42d3678a3496ebb9ab12"
+  },
+  {
+    "id": "post_20261012224904_287",
+    "topic": "IAM fundamentals for cloud security",
+    "category": "Cloud Security",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "Misconfigured IAM fundamentals are a common source of cloud security vulnerabilities, often stemming from over-permissioning.\n\nMost teams understand the concept of least privilege but struggle to consistently apply it, especially early in a project. Granting broad permissions like full admin access to an application's service account or a developer's temporary role might seem efficient initially. However, this creates an unnecessary attack surface. If that identity is compromised, the blast radius is significantly larger than if it only had the specific permissions it truly needed. Effective access control relies on granular policies that define exactly what resources can be accessed and what actions can be performed. Regularly auditing these policies is crucial. You can simplify this by mapping specific application needs to tightly scoped IAM roles and permissions, ensuring that identities only have the privileges necessary to perform their intended functions. This reduces risk across your cloud infrastructure. What strategies or tools do you find most effective for auditing and enforcing least privilege in your cloud IAM configurations?",
+    "hook": "Misconfigured IAM fundamentals are a common source of cloud security vulnerabilities, often stemming from over-permissioning.",
+    "hashtags": [
+      "#CloudSecurity",
+      "#IAM",
+      "#AccessControl",
+      "#CloudComputing",
+      "#DevSecOps"
+    ],
+    "keywords": [
+      "iam",
+      "cloud security",
+      "access control"
+    ],
+    "generatedAt": "2026-10-12T22:49:04.534Z",
+    "publishedAt": "2026-10-12T22:49:14.806Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7515544134292787200",
+    "contentHash": "a8ec08a68aff793751db9d02f4566d4b9c05f6f5237926af8585665f4d0e8059"
   }
 ]

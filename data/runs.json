@@ -504,5 +504,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7515516062524706817",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261012224904_102",
+    "startedAt": "2026-10-12T22:49:04.534Z",
+    "completedAt": "2026-10-12T22:49:14.808Z",
+    "status": "success",
+    "topic": "IAM fundamentals for cloud security",
+    "category": "Cloud Security",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7515544134292787200",
+    "dryRun": false
   }
 ]
