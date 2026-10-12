@@ -848,5 +848,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7515140216752394240",
     "contentHash": "ee49599dc4a7336997374e3413d1c071e670ba42efb1a4a9877417e49e8eff05"
+  },
+  {
+    "id": "post_20261012205730_593",
+    "topic": "Deployment strategies overview",
+    "category": "DevOps",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Effective deployment strategies are crucial for delivering software reliably and efficiently in modern DevOps practices.\n\nNot all applications can afford downtime, making strategic deployments essential for continuous delivery. Two common approaches are Rolling Updates and Canary Deployments. Rolling Updates gradually replace old instances with new ones, ensuring continuous availability. This minimizes downtime by ensuring some instances are always serving traffic. Canary Deployments introduce new versions to a small, controlled subset of users first. This allows teams to monitor performance and identify issues with real user traffic before a wider rollout, mitigating risk. For instance, a Kubernetes deployment can be configured for Rolling Updates by default, replacing pods one by one. A Canary release might involve routing 5% of traffic to a new service version while 95% remains on the stable one. Selecting the appropriate strategy is key to minimizing disruption and enhancing user experience. Which deployment strategy has proven most effective for your team in minimizing rollback efforts?",
+    "hook": "Effective deployment strategies are crucial for delivering software reliably and efficiently in modern DevOps practices.",
+    "hashtags": [
+      "#Deployment",
+      "#DevOps",
+      "#CloudComputing",
+      "#Kubernetes"
+    ],
+    "keywords": [
+      "deployment",
+      "strategy",
+      "devops",
+      "continuous delivery",
+      "rolling updates",
+      "canary deployments"
+    ],
+    "generatedAt": "2026-10-12T20:57:30.494Z",
+    "publishedAt": "2026-10-12T20:57:41.518Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7515516062524706817",
+    "contentHash": "1426da3fa8ed765c2eccdb73779616860b800e80fb5f42d3678a3496ebb9ab12"
   }
 ]
