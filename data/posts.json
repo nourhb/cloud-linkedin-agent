@@ -902,5 +902,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7515544134292787200",
     "contentHash": "a8ec08a68aff793751db9d02f4566d4b9c05f6f5237926af8585665f4d0e8059"
+  },
+  {
+    "id": "post_20261013185548_287",
+    "topic": "SAST vs DAST explained",
+    "category": "DevSecOps",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Effective DevSecOps strategies rely on a clear understanding of SAST and DAST, two critical application security testing methodologies.\n\nStatic Application Security Testing (SAST) examines source code, bytecode, or binaries without executing the application. It's like a code audit, detecting vulnerabilities such as SQL injection or cross-site scripting early in the development cycle. SAST tools help developers fix issues at the line-of-code level, making it efficient for catching known patterns and common coding flaws.\n\nDynamic Application Security Testing (DAST), on the other hand, actively tests a running application. It simulates external attacks against the application's deployed environment, uncovering runtime vulnerabilities like misconfigurations, authentication issues, or server-side request forgeries. DAST provides a \"black-box\" view, validating security from an attacker's perspective.\n\nThe power lies in combining both. SAST catches vulnerabilities early in development by analyzing the code, while DAST verifies the application's security posture in a live environment. Most robust DevSecOps pipelines integrate both to achieve comprehensive security coverage throughout the software development lifecycle, ensuring different types of flaws are addressed. What strategies do you find most effective for integrating both SAST and DAST into your CI/CD pipelines?",
+    "hook": "Effective DevSecOps strategies rely on a clear understanding of SAST and DAST, two critical application security testing methodologies.",
+    "hashtags": [
+      "#DevSecOps",
+      "#CloudSecurity",
+      "#ApplicationSecurity",
+      "#CI_CD"
+    ],
+    "keywords": [
+      "sast",
+      "dast",
+      "devsecops",
+      "application security",
+      "ci/cd"
+    ],
+    "generatedAt": "2026-10-13T18:55:48.392Z",
+    "publishedAt": "2026-10-13T18:56:19.319Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7515847906571149312",
+    "contentHash": "36b89ebbb8347002ff2b88e3bd26712036d954f7878a7cc8586c31e42f32afab"
   }
 ]

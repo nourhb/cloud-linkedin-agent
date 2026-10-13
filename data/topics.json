@@ -229,5 +229,12 @@
     "lastUsed": "2026-10-12T22:49:04.534Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "SAST vs DAST explained",
+    "category": "DevSecOps",
+    "lastUsed": "2026-10-13T18:55:48.392Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
