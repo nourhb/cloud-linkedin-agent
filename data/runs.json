@@ -530,5 +530,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7515847906571149312",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261013210514_614",
+    "startedAt": "2026-10-13T21:05:14.683Z",
+    "completedAt": "2026-10-13T21:05:45.373Z",
+    "status": "success",
+    "topic": "Virtual networking fundamentals",
+    "category": "Virtualization",
+    "contentType": "comparison",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7515880477417750528",
+    "dryRun": false
   }
 ]

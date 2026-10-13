@@ -236,5 +236,12 @@
     "lastUsed": "2026-10-13T18:55:48.392Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Virtual networking fundamentals",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-13T21:05:14.683Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
