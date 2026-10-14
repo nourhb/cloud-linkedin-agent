@@ -543,5 +543,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7515880477417750528",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261014163834_424",
+    "startedAt": "2026-10-14T16:38:34.642Z",
+    "completedAt": "2026-10-14T16:38:45.347Z",
+    "status": "success",
+    "topic": "Virtual CPUs",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7516175673351159808",
+    "dryRun": false
   }
 ]

@@ -958,5 +958,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7515880477417750528",
     "contentHash": "3df9fade576a987684f4b3812a275f6d9ec96cac950ba4639873313b65432ecf"
+  },
+  {
+    "id": "post_20261014163834_482",
+    "topic": "Virtual CPUs",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "When configuring virtual machines, a common misconception is that each virtual CPU (vCPU) directly maps to a dedicated physical CPU core.\n\nWhile it might seem intuitive, a vCPU is actually a virtualized representation of CPU time, not a one-to-one physical core assignment. The hypervisor is responsible for scheduling these vCPUs across the available physical cores. This advanced CPU scheduling allows for efficient resource utilization, enabling multiple VMs to share the underlying hardware. Understanding this is crucial for performance tuning in virtualization. Oversubscription, where more vCPUs are allocated than physical cores, is a common practice. However, excessive oversubscription can lead to CPU contention, impacting application performance. The hypervisor's scheduler constantly manages these allocations, ensuring that each vCPU gets its turn to execute instructions on the physical hardware. Properly sizing your VMs and monitoring CPU utilization are key to maintaining a healthy virtualized infrastructure.",
+    "hook": "When configuring virtual machines, a common misconception is that each virtual CPU (vCPU) directly maps to a dedicated physical CPU core.",
+    "hashtags": [
+      "#vCPU",
+      "#Virtualization",
+      "#CloudComputing",
+      "#Hypervisor",
+      "#CPUScheduling"
+    ],
+    "keywords": [
+      "vcpu",
+      "cpu",
+      "scheduling",
+      "virtualization",
+      "hypervisor",
+      "performance"
+    ],
+    "generatedAt": "2026-10-14T16:38:34.642Z",
+    "publishedAt": "2026-10-14T16:38:45.345Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7516175673351159808",
+    "contentHash": "032a4d8cd421ac85023b069b5082d5f67de35094190daf9a67347e1f02495afd"
   }
 ]
