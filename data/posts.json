@@ -987,5 +987,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7516175673351159808",
     "contentHash": "032a4d8cd421ac85023b069b5082d5f67de35094190daf9a67347e1f02495afd"
+  },
+  {
+    "id": "post_20261014200428_302",
+    "topic": "How load balancers work in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Effectively distributing incoming traffic to maintain application performance and reliability is a core challenge in cloud environments. This is where a load balancer becomes indispensable.\n\nA load balancer acts as a traffic cop, sitting in front of a group of servers (or instances) and efficiently routing client requests across them. Instead of directly accessing individual backend servers, all traffic first hits the load balancer. It then intelligently forwards each request to an available and healthy server, ensuring no single server is overwhelmed. This is fundamental for robust cloud networking.\n\nIn cloud computing, load balancers continuously monitor the health of these backend targets, which are often virtual machines or containers across multiple availability zones. If a server becomes unhealthy, traffic is automatically diverted, preventing service interruptions and enhancing overall system resilience.\n\nThere are two main types: Layer 4 (L4) load balancers operate at the transport layer (TCP/UDP), routing based on IP addresses and ports. Layer 7 (L7) load balancers work at the application layer (HTTP/HTTPS), allowing advanced routing based on URL paths, headers, or cookies. This intelligent traffic management is crucial for scalable and fault-tolerant cloud applications. What's a critical factor your team considers when choosing between Layer 4 and Layer 7 load balancing for a new cloud application?",
+    "hook": "Effectively distributing incoming traffic to maintain application performance and reliability is a core challenge in cloud environments. This is where a load balancer becomes indispensable.",
+    "hashtags": [
+      "#CloudComputing",
+      "#LoadBalancer",
+      "#Networking",
+      "#CloudEngineer",
+      "#Architecture"
+    ],
+    "keywords": [
+      "load balancer",
+      "cloud",
+      "networking"
+    ],
+    "generatedAt": "2026-10-14T20:04:28.449Z",
+    "publishedAt": "2026-10-14T20:05:04.951Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7516227599036198912",
+    "contentHash": "06ae3fe9713262415635554a1e838fa853eb3df9f5b25c3a4472442f13a0528d"
   }
 ]

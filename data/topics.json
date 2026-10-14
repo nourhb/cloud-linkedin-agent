@@ -250,5 +250,12 @@
     "lastUsed": "2026-10-14T16:38:34.642Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "How load balancers work in the cloud",
+    "category": "Cloud Computing",
+    "lastUsed": "2026-10-14T20:04:28.449Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
