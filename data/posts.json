@@ -1044,5 +1044,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7516534307583246336",
     "contentHash": "941a253e43e9d0dfe5b1e72622ec5863be0e2b6e5fbae60689b3f414ea7d57b8"
+  },
+  {
+    "id": "post_20261015194643_015",
+    "topic": "Linux processes and systemd basics",
+    "category": "Linux",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake with Linux processes involves assuming a service will just run without proper supervision, especially when systemd isn't fully understood.\n\nMany teams overlook the nuances of systemd unit files, leading to services that crash silently or fail to restart reliably. This often stems from not fully grasping how systemd manages the lifecycle of a process.\n\nsystemd is the init system that manages services and processes on modern Linux distributions. It uses unit files (e.g., .service files) to define how a service should start, stop, restart, and interact with the system. Without correctly configured Restart policies (like on-failure or always) or proper Type directives, a service might exit unexpectedly without systemd attempting recovery. Forgetting to set a robust Restart policy is a frequent oversight that impacts reliability.\n\nTo avoid these issues, always define explicit Restart policies in your systemd unit files. Use Journalctl to inspect logs for your service units to understand failures. Understand the Type directive (e.g., simple, forking, oneshot) to ensure systemd correctly tracks the main process. For applications with dependencies, leverage Requires and After directives to manage the startup order effectively. This ensures your Linux services are robust and self-healing.\n\nWhat's one systemd directive you've found most critical for ensuring application reliability in production?",
+    "hook": "A common mistake with Linux processes involves assuming a service will just run without proper supervision, especially when systemd isn't fully understood.",
+    "hashtags": [
+      "#Linux",
+      "#systemd",
+      "#DevOps",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "linux",
+      "systemd",
+      "process"
+    ],
+    "generatedAt": "2026-10-15T19:46:43.753Z",
+    "publishedAt": "2026-10-15T19:46:55.489Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7516585416024735744",
+    "contentHash": "acfbf19d80579fccb3a0af717ed9f115bb7008a9be47b90198b7716a60dc2235"
   }
 ]
