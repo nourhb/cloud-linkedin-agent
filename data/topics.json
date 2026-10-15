@@ -257,5 +257,12 @@
     "lastUsed": "2026-10-14T20:04:28.449Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes Secrets",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-15T16:23:30.247Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

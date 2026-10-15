@@ -1013,5 +1013,36 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7516227599036198912",
     "contentHash": "06ae3fe9713262415635554a1e838fa853eb3df9f5b25c3a4472442f13a0528d"
+  },
+  {
+    "id": "post_20261015162330_904",
+    "topic": "Kubernetes Secrets",
+    "category": "Kubernetes",
+    "contentType": "question_discussion",
+    "difficulty": "intermediate",
+    "content": "Kubernetes Secrets are a critical component for managing sensitive information like passwords, API keys, and certificates within your cluster.\n\nThese objects allow you to store and distribute confidential data to your pods. While incredibly useful for application configuration, it's crucial to understand how Kubernetes Secrets actually work to avoid common security pitfalls. By default, Secrets are stored in etcd, the cluster's key-value store, as base64 encoded strings. A common misconception is that base64 encoding provides encryption. It does not; it merely obfuscates the data. Anyone with appropriate Kubernetes RBAC permissions can retrieve a Secret and easily decode its contents. For true data protection, especially for secrets at rest, additional measures are essential. You can configure etcd to encrypt its data at rest, but this secures the entire etcd database, not individual Secrets. More robust approaches involve integrating with external secret management systems like HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault. These systems handle encryption, access control, and rotation more securely. Alternatively, using a Kubernetes KMS provider can encrypt Secrets directly within the cluster before they are stored in etcd. Understanding these layers of security is vital for any team operating Kubernetes at scale. What strategies do you use for ensuring strong encryption for your Kubernetes Secrets at rest?",
+    "hook": "Kubernetes Secrets are a critical component for managing sensitive information like passwords, API keys, and certificates within your cluster.",
+    "hashtags": [
+      "#KubernetesSecrets",
+      "#Kubernetes",
+      "#CloudSecurity",
+      "#DevSecOps",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "kubernetes",
+      "secrets",
+      "security",
+      "etcd",
+      "encryption",
+      "base64",
+      "RBAC",
+      "secret management"
+    ],
+    "generatedAt": "2026-10-15T16:23:30.247Z",
+    "publishedAt": "2026-10-15T16:23:50.031Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7516534307583246336",
+    "contentHash": "941a253e43e9d0dfe5b1e72622ec5863be0e2b6e5fbae60689b3f414ea7d57b8"
   }
 ]
