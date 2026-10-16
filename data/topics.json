@@ -278,5 +278,12 @@
     "lastUsed": "2026-10-16T16:09:24.149Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "VM resource allocation",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-16T19:27:46.185Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
