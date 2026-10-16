@@ -1069,5 +1069,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7516585416024735744",
     "contentHash": "acfbf19d80579fccb3a0af717ed9f115bb7008a9be47b90198b7716a60dc2235"
+  },
+  {
+    "id": "post_20261016160924_599",
+    "topic": "Autoscaling fundamentals",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Autoscaling is a fundamental capability in cloud computing, allowing your applications to automatically adjust resources to match demand.\n\nAt its core, autoscaling relies on monitoring key metrics like CPU utilization, network traffic, or custom application-specific metrics. When these metrics cross predefined thresholds, scaling policies are triggered. For example, if CPU usage exceeds 70% for five minutes, the autoscaler might add a new virtual machine or container instance to a group. Conversely, if demand drops and CPU usage falls below 30%, instances can be removed. Cooldown periods are crucial to prevent 'flapping,' where instances are added and removed too rapidly, ensuring stability.This dynamic adjustment prevents over-provisioning (saving costs) and under-provisioning (maintaining performance and availability). Most teams leverage autoscaling to ensure their services remain responsive during peak traffic and cost-effective during off-peak hours, a cornerstone of resilient cloud architecture. What metric do you find most challenging to use effectively for autoscaling decisions?",
+    "hook": "Autoscaling is a fundamental capability in cloud computing, allowing your applications to automatically adjust resources to match demand.",
+    "hashtags": [
+      "#Autoscaling",
+      "#CloudComputing",
+      "#CloudArchitecture",
+      "#DevOps"
+    ],
+    "keywords": [
+      "autoscaling",
+      "cloud",
+      "scaling"
+    ],
+    "generatedAt": "2026-10-16T16:09:24.149Z",
+    "publishedAt": "2026-10-16T16:09:35.121Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7516893109515997184",
+    "contentHash": "294c644713c67855685fe11cb1d4fcc9bd801d3a43f1d816e039311719216848"
   }
 ]

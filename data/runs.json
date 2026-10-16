@@ -595,5 +595,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7516585416024735744",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261016160924_897",
+    "startedAt": "2026-10-16T16:09:24.149Z",
+    "completedAt": "2026-10-16T16:09:35.123Z",
+    "status": "success",
+    "topic": "Autoscaling fundamentals",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7516893109515997184",
+    "dryRun": false
   }
 ]
