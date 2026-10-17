@@ -292,5 +292,12 @@
     "lastUsed": "2026-10-17T15:01:55.812Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes namespaces",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-17T18:18:28.586Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

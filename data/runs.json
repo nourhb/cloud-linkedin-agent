@@ -634,5 +634,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7517238532785102848",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261017181828_124",
+    "startedAt": "2026-10-17T18:18:28.586Z",
+    "completedAt": "2026-10-17T18:19:10.210Z",
+    "status": "success",
+    "topic": "Kubernetes namespaces",
+    "category": "Kubernetes",
+    "contentType": "comparison",
+    "generationAttempts": 4,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7517288107965243392",
+    "dryRun": false
   }
 ]

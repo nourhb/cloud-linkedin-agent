@@ -1149,5 +1149,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7517238532785102848",
     "contentHash": "f65c7dc90814b00eaca7b7dd97750c1b26575d82dd2fcad731efe5742bc6c0a9"
+  },
+  {
+    "id": "post_20261017181828_738",
+    "topic": "Kubernetes namespaces",
+    "category": "Kubernetes",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "How do you effectively manage multiple applications or teams within a single Kubernetes cluster?\n\nKubernetes namespaces are fundamental for dividing your cluster's resources and providing logical isolation. Many teams start with all their deployments in the `default` namespace, which can quickly lead to naming conflicts, tangled permissions, and difficulty in resource management.Consider a scenario where you have a development team and a QA team sharing a cluster. Without namespaces, they might accidentally overwrite each other's deployments, or a bug in one application could impact another. By creating separate namespaces – for instance, `dev-environment` and `qa-environment` – you establish clear boundaries.This separation allows you to apply distinct resource quotas, limiting CPU and memory usage for each environment. Furthermore, Kubernetes' Role-Based Access Control (RBAC) becomes much more effective. You can grant developers permissions only within their `dev-environment` namespace, preventing unintended access or modifications to critical QA resources. It also simplifies managing object names, as resources like services or deployments can have the same name in different namespaces without conflict. It's a key practice for better organization and security in any multi-tenant or complex Kubernetes setup.How does your team currently leverage namespaces to organize resources and enhance security within your Kubernetes cluster?",
+    "hook": "How do you effectively manage multiple applications or teams within a single Kubernetes cluster?",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#Containerization"
+    ],
+    "keywords": [
+      "kubernetes",
+      "namespace",
+      "cluster"
+    ],
+    "generatedAt": "2026-10-17T18:18:28.586Z",
+    "publishedAt": "2026-10-17T18:19:10.208Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7517288107965243392",
+    "contentHash": "be50f8054ad11485f9e22d0066e94a914cba8b985b6388e41ae16db78cdf88d2"
   }
 ]
