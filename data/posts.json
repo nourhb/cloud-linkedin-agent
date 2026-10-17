@@ -1123,5 +1123,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7516943032869511168",
     "contentHash": "5d0497bcb7bd9373c238065d6fdb4804d683885b06c442c949b085128f08c344"
+  },
+  {
+    "id": "post_20261017150155_259",
+    "topic": "Terraform state explained",
+    "category": "Terraform",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake in managing Terraform state is underestimating the critical need for shared, remote storage.\n\nTerraform state is your Infrastructure as Code's (IaC) memory, mapping configured resources to actual cloud infrastructure. It's essential for Terraform to know what exists, what needs changing, and what to destroy. Mismanaging this state can lead to resource drift, unintended deletions, or failed deployments, undermining the reliability of your cloud computing environment.\n\nConsider a scenario where multiple team members use local Terraform state. One engineer deploys a new database. Another, working from an older local state, then tries to deploy an application that assumes the database doesn't exist, or even worse, tries to re-create it. This conflict arises because their local state files are out of sync, leading to resource conflicts and operational headaches.\n\nTo avoid these issues, always use a remote backend for your Terraform state (e.g., S3, Azure Blob Storage, Terraform Cloud). Remote state provides crucial features like state locking to prevent concurrent writes, versioning for audit trails and rollbacks, and secure, centralized access for your entire team. Treat your state file like sensitive data, protecting it with encryption and strict access policies.\n\nHow does your team ensure consistent and secure Terraform state management across multiple environments and engineers?",
+    "hook": "A common mistake in managing Terraform state is underestimating the critical need for shared, remote storage.",
+    "hashtags": [
+      "#Terraform",
+      "#InfrastructureAsCode",
+      "#DevOps",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "terraform",
+      "state",
+      "iac",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-10-17T15:01:55.812Z",
+    "publishedAt": "2026-10-17T15:02:10.703Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7517238532785102848",
+    "contentHash": "f65c7dc90814b00eaca7b7dd97750c1b26575d82dd2fcad731efe5742bc6c0a9"
   }
 ]

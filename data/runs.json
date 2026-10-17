@@ -621,5 +621,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7516943032869511168",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261017150155_681",
+    "startedAt": "2026-10-17T15:01:55.812Z",
+    "completedAt": "2026-10-17T15:02:10.705Z",
+    "status": "success",
+    "topic": "Terraform state explained",
+    "category": "Terraform",
+    "contentType": "common_mistake",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7517238532785102848",
+    "dryRun": false
   }
 ]

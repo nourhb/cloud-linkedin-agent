@@ -285,5 +285,12 @@
     "lastUsed": "2026-10-16T19:27:46.185Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Terraform state explained",
+    "category": "Terraform",
+    "lastUsed": "2026-10-17T15:01:55.812Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
