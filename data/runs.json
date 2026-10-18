@@ -647,5 +647,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7517288107965243392",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261018152654_956",
+    "startedAt": "2026-10-18T15:26:54.162Z",
+    "completedAt": "2026-10-18T15:27:10.585Z",
+    "status": "success",
+    "topic": "Load balancers: Layer 4 vs Layer 7",
+    "category": "Networking",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7517607213230907392",
+    "dryRun": false
   }
 ]

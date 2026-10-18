@@ -299,5 +299,12 @@
     "lastUsed": "2026-10-17T18:18:28.586Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Load balancers: Layer 4 vs Layer 7",
+    "category": "Networking",
+    "lastUsed": "2026-10-18T15:26:54.162Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

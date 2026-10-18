@@ -1174,5 +1174,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7517288107965243392",
     "contentHash": "be50f8054ad11485f9e22d0066e94a914cba8b985b6388e41ae16db78cdf88d2"
+  },
+  {
+    "id": "post_20261018152654_563",
+    "topic": "Load balancers: Layer 4 vs Layer 7",
+    "category": "Networking",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Understanding the difference between Layer 4 and Layer 7 load balancers is crucial for designing resilient and performant cloud architectures. These components are vital for distributing traffic, ensuring high availability and scalability.\n\nA Layer 4 load balancer operates at the transport layer (TCP/UDP), inspecting IP addresses and port numbers. It's a fast, packet-level forwarder, distributing connections with basic algorithms like round-robin. Its strength lies in high performance and low latency for simple, high-volume traffic, as it doesn't inspect packet content. A Layer 7 load balancer works at the application layer (HTTP/HTTPS), inspecting request content like URL paths, headers, and cookies. This enables intelligent routing decisions, content-based routing, and features like SSL termination or Web Application Firewall (WAF) integration. This added intelligence allows for more flexibility but introduces slightly higher processing overhead. The choice depends on your application's requirements. For raw speed and simple traffic distribution without application-aware routing, Layer 4 is efficient. For complex web applications demanding intelligent routing, content manipulation, or advanced security, Layer 7 provides the necessary flexibility. What specific application requirement has most often guided your team's decision to implement a Layer 7 load balancer?",
+    "hook": "Understanding the difference between Layer 4 and Layer 7 load balancers is crucial for designing resilient and performant cloud architectures. These components are vital for distributing traffic, ensuring high availability and scalability.",
+    "hashtags": [
+      "#LoadBalancing",
+      "#Networking",
+      "#CloudComputing",
+      "#Architecture"
+    ],
+    "keywords": [
+      "load balancer",
+      "layer4",
+      "layer7",
+      "networking",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-10-18T15:26:54.162Z",
+    "publishedAt": "2026-10-18T15:27:10.582Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7517607213230907392",
+    "contentHash": "4b0a955d31fb5d65c3e8cd85bc369e7597aeedd38ba5ea48c2072edd172c3137"
   }
 ]
