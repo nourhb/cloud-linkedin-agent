@@ -660,5 +660,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7517607213230907392",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261018183124_458",
+    "startedAt": "2026-10-18T18:31:24.398Z",
+    "completedAt": "2026-10-18T18:31:34.885Z",
+    "status": "success",
+    "topic": "Secrets management fundamentals",
+    "category": "DevSecOps",
+    "contentType": "question_discussion",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7517653618137657345",
+    "dryRun": false
   }
 ]

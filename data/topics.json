@@ -306,5 +306,12 @@
     "lastUsed": "2026-10-18T15:26:54.162Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Secrets management fundamentals",
+    "category": "DevSecOps",
+    "lastUsed": "2026-10-18T18:31:24.398Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
