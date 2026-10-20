@@ -327,5 +327,12 @@
     "lastUsed": "2026-10-19T20:56:06.677Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Designing safe rollback strategies",
+    "category": "DevOps",
+    "lastUsed": "2026-10-20T16:25:02.754Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

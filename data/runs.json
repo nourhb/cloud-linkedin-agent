@@ -699,5 +699,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7518052568170860544",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261020162502_900",
+    "startedAt": "2026-10-20T16:25:02.754Z",
+    "completedAt": "2026-10-20T16:25:13.671Z",
+    "status": "success",
+    "topic": "Designing safe rollback strategies",
+    "category": "DevOps",
+    "contentType": "question_discussion",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7518346599127801856",
+    "dryRun": false
   }
 ]
