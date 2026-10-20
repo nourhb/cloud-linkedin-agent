@@ -712,5 +712,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7518346599127801856",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261020195523_235",
+    "startedAt": "2026-10-20T19:55:23.823Z",
+    "completedAt": "2026-10-20T19:55:46.033Z",
+    "status": "success",
+    "topic": "How the Kubernetes scheduler works",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7518399582544814080",
+    "dryRun": false
   }
 ]

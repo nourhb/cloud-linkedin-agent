@@ -334,5 +334,12 @@
     "lastUsed": "2026-10-20T16:25:02.754Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "How the Kubernetes scheduler works",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-20T19:55:23.823Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

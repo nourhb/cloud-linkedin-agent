@@ -1313,5 +1313,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7518346599127801856",
     "contentHash": "bff783bde5033eac02c3b02f5502f08f2b84b8b5b3cc6c538c1181fa5a1fcf30"
+  },
+  {
+    "id": "post_20261020195523_198",
+    "topic": "How the Kubernetes scheduler works",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "The Kubernetes scheduler is the brain that decides where your Pods run, a critical component in any robust cloud computing environment.\n\nIt operates in a two-phase process: Predication and Prioritization. During Predication, the scheduler filters out nodes that don't meet a Pod's requirements (like resource requests, node selectors, or taints/tolerations). Then, during Prioritization, it ranks the remaining viable nodes based on various scoring functions (e.g., least requested, balance resources) to find the optimal fit. This component, `kube-scheduler`, ensures efficient resource utilization and application availability across your Kubernetes clusters. For example, imagine a Pod needing 2 CPU cores and 4GB RAM. The scheduler first eliminates nodes without those available resources. Then, it scores the remaining nodes, perhaps preferring a node with fewer running Pods to spread the load, or one that balances resource usage evenly. Understanding this process is key to optimizing your Kubernetes deployments. Properly defined resource requests and limits are paramount, as are strategic use of node labels and taints, to guide the scheduler effectively and prevent resource contention or underutilization. What scheduling policies or custom schedulers have you found most effective in managing diverse workloads in your Kubernetes environments?",
+    "hook": "The Kubernetes scheduler is the brain that decides where your Pods run, a critical component in any robust cloud computing environment.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#Virtualization"
+    ],
+    "keywords": [
+      "kubernetes",
+      "scheduler",
+      "nodes"
+    ],
+    "generatedAt": "2026-10-20T19:55:23.823Z",
+    "publishedAt": "2026-10-20T19:55:46.031Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7518399582544814080",
+    "contentHash": "60f549e6055c4352ff257480de297bc9b4939578021c2e9f03228fb2e0102f76"
   }
 ]
