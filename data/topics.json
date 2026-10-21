@@ -348,5 +348,12 @@
     "lastUsed": "2026-10-21T16:41:27.747Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Resource overcommitment in virtualization",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-21T19:58:41.954Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

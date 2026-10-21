@@ -1368,5 +1368,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7518713127882969088",
     "contentHash": "a864966f5378fff4c376c2fcee8b999be4a970d846dcb7ef49d5c2868a12fe6c"
+  },
+  {
+    "id": "post_20261021195841_725",
+    "topic": "Resource overcommitment in virtualization",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "How does resource overcommitment in virtualization help maximize server capacity without sacrificing performance?\n\nResource overcommitment is a common strategy where a virtualization host allocates more virtual resources (CPU, memory) to virtual machines than its physical hardware actually possesses. Hypervisors achieve this by intelligently managing and distributing physical resources only when they are actively demanded. This works because, statistically, not all VMs on a host will concurrently utilize their full allocated resources.\n\nFor instance, a physical server with 64GB of RAM might host ten VMs, each configured with 8GB. This totals 80GB of *allocated* virtual RAM on a 64GB physical server. The hypervisor leverages techniques like memory ballooning and page sharing to ensure actual physical memory is only assigned as needed, allowing greater VM density and more efficient use of physical capacity.\n\nWhile overcommitment significantly improves hardware utilization and reduces operational costs in cloud computing environments, it requires careful monitoring. Over-aggressive overcommitment can lead to performance bottlenecks, especially during peak loads. Understanding your workloads is crucial to find the right balance. What strategies does your team use to balance resource overcommitment with performance guarantees?",
+    "hook": "How does resource overcommitment in virtualization help maximize server capacity without sacrificing performance?",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#CapacityPlanning",
+      "#Datacenter"
+    ],
+    "keywords": [
+      "resource overcommitment",
+      "virtualization",
+      "hypervisor",
+      "capacity",
+      "VM density"
+    ],
+    "generatedAt": "2026-10-21T19:58:41.954Z",
+    "publishedAt": "2026-10-21T19:58:52.481Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7518762752925052928",
+    "contentHash": "1c94afcc9efc57253e2be9cb80786ec8b419726249485ca9ec99b0916e8f296e"
   }
 ]
