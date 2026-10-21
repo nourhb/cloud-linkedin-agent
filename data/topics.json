@@ -341,5 +341,12 @@
     "lastUsed": "2026-10-20T19:55:23.823Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "What an SBOM actually is",
+    "category": "DevSecOps",
+    "lastUsed": "2026-10-21T16:41:27.747Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

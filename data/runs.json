@@ -725,5 +725,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7518399582544814080",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261021164127_932",
+    "startedAt": "2026-10-21T16:41:27.747Z",
+    "completedAt": "2026-10-21T16:41:41.260Z",
+    "status": "success",
+    "topic": "What an SBOM actually is",
+    "category": "DevSecOps",
+    "contentType": "comparison",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7518713127882969088",
+    "dryRun": false
   }
 ]
