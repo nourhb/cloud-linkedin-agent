@@ -751,5 +751,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7518762752925052928",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261022164212_912",
+    "startedAt": "2026-10-22T16:42:12.835Z",
+    "completedAt": "2026-10-22T16:42:25.530Z",
+    "status": "success",
+    "topic": "Terraform modules for reusable infrastructure",
+    "category": "Terraform",
+    "contentType": "learning_in_public",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7519075702848208896",
+    "dryRun": false
   }
 ]
