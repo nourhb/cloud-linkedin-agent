@@ -1478,5 +1478,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7519435739932160000",
     "contentHash": "1a55d5db66a26169e8b4facf817045c0997bdc757a02ed38bcef572263a49437"
+  },
+  {
+    "id": "post_20261023195228_975",
+    "topic": "Observability: logs, metrics, and traces",
+    "category": "Observability",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "Observability is crucial for understanding distributed systems, yet many teams conflate simply having logs, metrics, and traces with having a truly observable system.\n\nWhile logs record discrete events, metrics provide aggregated numeric data over time, and traces map the full journey of a request across multiple services. Each offers a unique lens: logs answer \"what happened?\", metrics \"when and how much?\", and traces \"why did it happen across the system?\". Effective troubleshooting requires correlating these different signals.For a slow API response, logs might show an error in a specific microservice. Metrics could reveal elevated latency. A trace connects these, showing the full sequence of calls and identifying which downstream dependency or database query caused the bottleneck across your cloud infrastructure.Integrating logs, metrics, and traces provides a holistic understanding of application behavior and performance. This integrated approach moves beyond basic monitoring, enabling engineers to diagnose issues rapidly and maintain reliable services in complex cloud environments.How do you prioritize investing in tools for each of the three pillars (logs, metrics, traces) within your organization?",
+    "hook": "Observability is crucial for understanding distributed systems, yet many teams conflate simply having logs, metrics, and traces with having a truly observable system.",
+    "hashtags": [
+      "#Observability",
+      "#CloudComputing",
+      "#DevOps",
+      "#Troubleshooting",
+      "#SRE"
+    ],
+    "keywords": [
+      "observability",
+      "logs",
+      "metrics",
+      "traces",
+      "troubleshooting",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-10-23T19:52:28.090Z",
+    "publishedAt": "2026-10-23T19:52:38.779Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7519485961253343232",
+    "contentHash": "7b88bbcea41da536aed7beb4ad25c4d7025392bc1d4d0732c04d8bad08d66984"
   }
 ]
