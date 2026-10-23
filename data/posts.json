@@ -1448,5 +1448,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7519123293577240576",
     "contentHash": "d68536b537e04b6d1fd56b5715e022944b8c9a836b3da652212bf8d43a8f63f0"
+  },
+  {
+    "id": "post_20261023163222_888",
+    "topic": "Live migration of virtual machines",
+    "category": "Virtualization",
+    "contentType": "question_discussion",
+    "difficulty": "intermediate",
+    "content": "Live migration of virtual machines is a powerful feature in virtualization platforms that allows you to move running VMs between physical hosts without any perceived downtime.\n\nThis process involves several steps: first, the VM's memory state is copied from the source to the destination host. While this initial copy happens, any changes to the VM's memory are tracked. These changes are then incrementally transferred until the remaining delta is small enough to be sent over very quickly. Finally, the VM's CPU state and network pointers are switched to the new host, completing the live migration.The primary benefit is maintaining application uptime during maintenance, hardware upgrades, or workload balancing across your infrastructure. It's a cornerstone of high availability in a virtualized environment. However, successful live migration depends heavily on robust network connectivity, shared storage accessible by both hosts, and careful planning, especially for VMs with large memory footprints or high I/O.What's one unexpected challenge you've encountered when performing a live migration of a critical VM, and how did your team address it?",
+    "hook": "Live migration of virtual machines is a powerful feature in virtualization platforms that allows you to move running VMs between physical hosts without any perceived downtime.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#VMware",
+      "#LiveMigration",
+      "#Infrastructure"
+    ],
+    "keywords": [
+      "live migration",
+      "vmotion",
+      "vm",
+      "virtualization",
+      "downtime",
+      "high availability",
+      "maintenance"
+    ],
+    "generatedAt": "2026-10-23T16:32:22.903Z",
+    "publishedAt": "2026-10-23T16:33:05.240Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7519435739932160000",
+    "contentHash": "1a55d5db66a26169e8b4facf817045c0997bdc757a02ed38bcef572263a49437"
   }
 ]
