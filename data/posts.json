@@ -1507,5 +1507,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7519485961253343232",
     "contentHash": "7b88bbcea41da536aed7beb4ad25c4d7025392bc1d4d0732c04d8bad08d66984"
+  },
+  {
+    "id": "post_20261024152700_713",
+    "topic": "Kubernetes networking model",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Many assume Kubernetes networking is just about NATing traffic between containers and hosts.\n\nThe reality is that the Kubernetes networking model is built on a flatter network design, ensuring every Pod gets its own unique IP address. This fundamental design principle allows Pods to communicate directly with each other without Network Address Translation (NAT), simplifying application development and troubleshooting within a Kubernetes cluster.\n\nThe core of this model relies on the Container Network Interface (CNI). CNI defines a specification for network plugins, which are responsible for configuring network interfaces for Pods. When a Pod is scheduled, a CNI plugin assigns it an IP address from a cluster-wide CIDR block and sets up the necessary network routes so that Pods can reach any other Pod in the cluster, regardless of which node they reside on.\n\nThis direct, flat network approach is fundamental to how Kubernetes operates, enabling services to discover and communicate with Pods seamlessly. It avoids the complexities often associated with traditional container networking where intricate port mapping and NAT rules would otherwise be required.\n\nWhat specific challenges have you encountered or overcome while configuring your CNI plugin in a Kubernetes environment?",
+    "hook": "Many assume Kubernetes networking is just about NATing traffic between containers and hosts.",
+    "hashtags": [
+      "#KubernetesNetworking",
+      "#Kubernetes",
+      "#CNI",
+      "#CloudComputing",
+      "#DevOps"
+    ],
+    "keywords": [
+      "kubernetes",
+      "networking",
+      "cni",
+      "cloud computing",
+      "virtualization"
+    ],
+    "generatedAt": "2026-10-24T15:27:00.583Z",
+    "publishedAt": "2026-10-24T15:27:11.817Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7519781544903892992",
+    "contentHash": "d24739ed97423f657e70557bfe291ad7ac2a88ff1b68e0f0da643f19abf3623d"
   }
 ]

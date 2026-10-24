@@ -383,5 +383,12 @@
     "lastUsed": "2026-10-23T19:52:28.090Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes networking model",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-24T15:27:00.583Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

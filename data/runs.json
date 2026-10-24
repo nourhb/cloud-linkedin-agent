@@ -803,5 +803,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7519485961253343232",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261024152700_224",
+    "startedAt": "2026-10-24T15:27:00.583Z",
+    "completedAt": "2026-10-24T15:27:11.819Z",
+    "status": "success",
+    "topic": "Kubernetes networking model",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7519781544903892992",
+    "dryRun": false
   }
 ]
