@@ -1535,5 +1535,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7519781544903892992",
     "contentHash": "d24739ed97423f657e70557bfe291ad7ac2a88ff1b68e0f0da643f19abf3623d"
+  },
+  {
+    "id": "post_20261024183952_986",
+    "topic": "Infrastructure as Code fundamentals",
+    "category": "DevOps",
+    "contentType": "project_insight",
+    "difficulty": "intermediate",
+    "content": "How do you manage infrastructure configurations without manual errors or drift? This is where Infrastructure as Code (IaC) becomes essential.\n\nIaC treats infrastructure like application code, defining resources such as virtual machines, networks, and security policies in declarative configuration files. This eliminates manual provisioning, reducing human error and configuration drift. By applying DevOps principles, teams can version control, test, and automate infrastructure deployments, ensuring environments are consistent and reproducible across development, staging, and production.\n\nFor instance, using a tool like Terraform, a single configuration file can describe an entire cloud environment. When executed, this code provisions all specified resources, from compute instances to databases and load balancers, in a predictable and auditable manner. This approach standardizes environments, making scaling and disaster recovery much simpler.\n\nWhat's a common challenge your team has encountered when implementing or scaling Infrastructure as Code in your projects?",
+    "hook": "How do you manage infrastructure configurations without manual errors or drift? This is where Infrastructure as Code (IaC) becomes essential.",
+    "hashtags": [
+      "#InfrastructureAsCode",
+      "#DevOps",
+      "#CloudComputing",
+      "#Terraform"
+    ],
+    "keywords": [
+      "iac",
+      "terraform",
+      "devops"
+    ],
+    "generatedAt": "2026-10-24T18:39:52.679Z",
+    "publishedAt": "2026-10-24T18:41:04.406Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7519830333937111041",
+    "contentHash": "2c5a30faeaaa1209e40d9178448218df4f764e4a5818d7919bdae6ccf101f42f"
   }
 ]

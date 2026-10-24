@@ -816,5 +816,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7519781544903892992",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261024183952_959",
+    "startedAt": "2026-10-24T18:39:52.679Z",
+    "completedAt": "2026-10-24T18:41:04.409Z",
+    "status": "success",
+    "topic": "Infrastructure as Code fundamentals",
+    "category": "DevOps",
+    "contentType": "project_insight",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7519830333937111041",
+    "dryRun": false
   }
 ]
