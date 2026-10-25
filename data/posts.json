@@ -1560,5 +1560,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7519830333937111041",
     "contentHash": "2c5a30faeaaa1209e40d9178448218df4f764e4a5818d7919bdae6ccf101f42f"
+  },
+  {
+    "id": "post_20261025153725_901",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "Many engineers think DNS is a simple static mapping of hostnames to IP addresses. While true at a basic level, this understanding often overlooks the dynamic and distributed nature of DNS resolution, especially in complex cloud infrastructure.\n\nThe reality is that modern cloud environments rely heavily on a sophisticated DNS architecture for service discovery, load balancing, and secure communication. It's not just about 'A' records anymore. You'll frequently encounter 'CNAME' records for aliasing services, 'TXT' records for domain verification and security policies (like SPF and DKIM), and 'SRV' records for locating specific services within a domain.\n\nIn cloud computing, DNS is segmented into public and private zones. Public DNS handles external traffic routing to your applications, often integrated with Content Delivery Networks (CDNs) and global load balancers. Private DNS, on the other hand, is critical for internal service-to-service communication within a Virtual Private Cloud (VPC), allowing instances to resolve internal hostnames without exposing them to the internet. Understanding this distinction is fundamental for robust cloud networking and security. Incorrect DNS configuration can lead to service outages, routing failures, or security vulnerabilities in your infrastructure.\n\nHow do you typically manage internal DNS resolution for microservices in your cloud environment?",
+    "hook": "Many engineers think DNS is a simple static mapping of hostnames to IP addresses. While true at a basic level, this understanding often overlooks the dynamic and distributed nature of DNS resolution, especially in complex cloud infrastructure.",
+    "hashtags": [
+      "#DNS",
+      "#CloudNetworking",
+      "#CloudComputing",
+      "#Networking",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "dns",
+      "networking",
+      "resolution",
+      "cloud infrastructure",
+      "service discovery"
+    ],
+    "generatedAt": "2026-10-25T15:37:25.614Z",
+    "publishedAt": "2026-10-25T15:37:42.875Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520146579132116992",
+    "contentHash": "e03624140d65abedd61050700f6c0d05f9ae2b7bf8d89765a328d92f563d5d2a"
   }
 ]

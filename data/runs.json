@@ -829,5 +829,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7519830333937111041",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261025153725_826",
+    "startedAt": "2026-10-25T15:37:25.614Z",
+    "completedAt": "2026-10-25T15:37:42.877Z",
+    "status": "success",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "comparison",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7520146579132116992",
+    "dryRun": false
   }
 ]
