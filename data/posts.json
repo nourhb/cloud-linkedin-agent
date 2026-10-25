@@ -1588,5 +1588,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520146579132116992",
     "contentHash": "e03624140d65abedd61050700f6c0d05f9ae2b7bf8d89765a328d92f563d5d2a"
+  },
+  {
+    "id": "post_20261025184842_425",
+    "topic": "Kubernetes security basics",
+    "category": "DevSecOps",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "Ever faced 'Error from server (Forbidden)' in Kubernetes, leaving you wondering why a user or application lacks access?\n\nThis common message points directly to Kubernetes Role-Based Access Control (RBAC). RBAC is fundamental to cloud security, allowing you to define granular permissions: who can do what on which resources. It uses Roles and ClusterRoles to specify permissions, and RoleBindings and ClusterRoleBindings to grant those permissions to users or service accounts. A frequent troubleshooting scenario involves an application failing to access resources. You might suspect network issues, but often it's an RBAC misconfiguration. The simplest way to debug is using `kubectl auth can-i <verb> <resource> --as=<user_or_service_account> -n <namespace>`. This command reveals if the specified identity has the necessary permission, helping pinpoint missing roles or incorrect bindings. Conversely, a common security mistake is granting overly broad permissions, like `cluster-admin`, unnecessarily. Adopting the principle of least privilege with RBAC is crucial for securing your Kubernetes clusters and preventing unauthorized actions. Carefully reviewing and auditing your RBAC policies minimizes your attack surface. What's your preferred method for auditing RBAC permissions in a complex Kubernetes environment?",
+    "hook": "Ever faced 'Error from server (Forbidden)' in Kubernetes, leaving you wondering why a user or application lacks access?",
+    "hashtags": [
+      "#DevSecOps",
+      "#Kubernetes",
+      "#CloudSecurity",
+      "#RBAC"
+    ],
+    "keywords": [
+      "kubernetes",
+      "security",
+      "rbac",
+      "access control"
+    ],
+    "generatedAt": "2026-10-25T18:48:42.050Z",
+    "publishedAt": "2026-10-25T18:48:54.849Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520194696845885440",
+    "contentHash": "c2f22b848ac86e2156abbdb0beada568073d88c3fc242263951be8bafec7f45c"
   }
 ]

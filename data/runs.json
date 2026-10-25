@@ -842,5 +842,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7520146579132116992",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261025184842_247",
+    "startedAt": "2026-10-25T18:48:42.050Z",
+    "completedAt": "2026-10-25T18:48:54.879Z",
+    "status": "success",
+    "topic": "Kubernetes security basics",
+    "category": "DevSecOps",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7520194696845885440",
+    "dryRun": false
   }
 ]
