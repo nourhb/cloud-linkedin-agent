@@ -404,5 +404,12 @@
     "lastUsed": "2026-10-26T18:18:23.820Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Canary deployments explained",
+    "category": "DevOps",
+    "lastUsed": "2026-10-26T20:56:35.774Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

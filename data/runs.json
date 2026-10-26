@@ -868,5 +868,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7520549445948698624",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261026205635_598",
+    "startedAt": "2026-10-26T20:56:35.774Z",
+    "completedAt": "2026-10-26T20:56:47.101Z",
+    "status": "success",
+    "topic": "Canary deployments explained",
+    "category": "DevOps",
+    "contentType": "comparison",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7520589263059652609",
+    "dryRun": false
   }
 ]

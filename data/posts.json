@@ -1646,5 +1646,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520549445948698624",
     "contentHash": "3594c57ad196a1c0a02dc34d16a8705cc52e3d7dd9eaec7bc2657eba3fcedbc8"
+  },
+  {
+    "id": "post_20261026205635_280",
+    "topic": "Canary deployments explained",
+    "category": "DevOps",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "Shipping new software versions can be risky. A common concern for DevOps teams is how to introduce changes without impacting all users if a critical bug emerges. Traditional \"big bang\" deployments push updates to everyone simultaneously, making rollbacks a scramble and magnifying potential issues.\n\nThis is where canary deployments offer a more controlled approach. Instead of updating all instances at once, a new version (the \"canary\") is deployed to a small subset of servers or users. Traffic is gradually shifted to this new version, typically starting with 1-5% of users.\n\nDuring this phase, robust monitoring is crucial. Teams observe key metrics like error rates, latency, and system resource utilization for the canary group. If the new version performs as expected, more traffic is progressively routed to it. If any anomalies or regressions are detected, the traffic to the canary can be immediately rolled back to the stable, old version, limiting the blast radius of any defect.\n\nThis iterative process allows for real-world testing with minimal user exposure to potential problems. It provides early feedback, builds confidence in the new release, and significantly reduces the overall risk associated with continuous deployment pipelines. It's a key strategy for maintaining high availability and ensuring a smooth user experience in modern cloud computing environments.\n\nWhat critical metrics do you prioritize when monitoring a canary deployment?",
+    "hook": "Shipping new software versions can be risky. A common concern for DevOps teams is how to introduce changes without impacting all users if a critical bug emerges. Traditional \"big bang\" deployments push updates to everyone simultaneously, making rollbacks a scramble and magnifying potential issues.",
+    "hashtags": [
+      "#CanaryDeployment",
+      "#DevOps",
+      "#CloudComputing",
+      "#DeploymentStrategies"
+    ],
+    "keywords": [
+      "canary",
+      "deployment",
+      "devops",
+      "cloud computing",
+      "continuous delivery",
+      "risk management"
+    ],
+    "generatedAt": "2026-10-26T20:56:35.774Z",
+    "publishedAt": "2026-10-26T20:56:47.099Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520589263059652609",
+    "contentHash": "cd0a4671e898e3a0c314eac90fe7ebadddc53df1fc5a10e16ab295d6a2b88b7b"
   }
 ]
