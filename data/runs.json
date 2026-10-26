@@ -855,5 +855,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7520194696845885440",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261026181823_240",
+    "startedAt": "2026-10-26T18:18:23.820Z",
+    "completedAt": "2026-10-26T18:18:34.022Z",
+    "status": "success",
+    "topic": "High availability for virtual machines",
+    "category": "Virtualization",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7520549445948698624",
+    "dryRun": false
   }
 ]

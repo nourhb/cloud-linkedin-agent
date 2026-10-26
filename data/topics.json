@@ -397,5 +397,12 @@
     "lastUsed": "2026-10-25T18:48:42.050Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "High availability for virtual machines",
+    "category": "Virtualization",
+    "lastUsed": "2026-10-26T18:18:23.820Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

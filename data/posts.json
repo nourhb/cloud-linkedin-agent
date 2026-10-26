@@ -1614,5 +1614,37 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520194696845885440",
     "contentHash": "c2f22b848ac86e2156abbdb0beada568073d88c3fc242263951be8bafec7f45c"
+  },
+  {
+    "id": "post_20261026181823_358",
+    "topic": "High availability for virtual machines",
+    "category": "Virtualization",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Ensuring high availability (HA) for virtual machines is paramount for maintaining business continuity and application uptime. But how do we architect systems to achieve this resilience, especially against host failures?\n\nThe core problem HA addresses is unexpected host failures. When a physical server hosting critical VMs goes offline, services can become unavailable. High availability solutions proactively monitor the health of hosts and their virtual machines.\nA common architectural solution involves clustering multiple physical hosts. These hosts often share storage (e.g., SAN, NAS) and communicate via a heartbeat network. If a host fails, the HA mechanism detects this and automatically restarts the affected virtual machines on another healthy host within the cluster. This automatic failover process ensures rapid recovery, minimizing downtime without manual intervention.\nImplementing HA for virtual machines fundamentally transforms infrastructure reliability. It provides a robust safety net, safeguarding applications from single points of failure at the host level. This proactive approach is a cornerstone of modern cloud computing and virtualization strategies, enabling predictable service delivery even amidst infrastructure challenges.\nWhat's a key consideration or challenge you've faced when implementing HA solutions for virtual machines?",
+    "hook": "Ensuring high availability (HA) for virtual machines is paramount for maintaining business continuity and application uptime. But how do we architect systems to achieve this resilience, especially against host failures?",
+    "hashtags": [
+      "#Virtualization",
+      "#HighAvailability",
+      "#CloudComputing",
+      "#Failover",
+      "#VM"
+    ],
+    "keywords": [
+      "high availability",
+      "virtual machines",
+      "HA",
+      "failover",
+      "VM",
+      "architecture",
+      "reliability",
+      "uptime",
+      "cluster"
+    ],
+    "generatedAt": "2026-10-26T18:18:23.820Z",
+    "publishedAt": "2026-10-26T18:18:34.019Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520549445948698624",
+    "contentHash": "3594c57ad196a1c0a02dc34d16a8705cc52e3d7dd9eaec7bc2657eba3fcedbc8"
   }
 ]
