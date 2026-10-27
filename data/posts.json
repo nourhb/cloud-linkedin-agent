@@ -1674,5 +1674,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520589263059652609",
     "contentHash": "cd0a4671e898e3a0c314eac90fe7ebadddc53df1fc5a10e16ab295d6a2b88b7b"
+  },
+  {
+    "id": "post_20261027173152_990",
+    "topic": "AWS EC2 fundamentals",
+    "category": "AWS",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "An AWS EC2 instance launches successfully, but you can't SSH into it or access its web service. This is a frequent troubleshooting point for anyone working with AWS compute resources.\n\nOften, the root cause lies in network access controls, specifically Security Groups. A Security Group acts as a virtual firewall for your EC2 instance, controlling inbound and outbound traffic. If ports like 22 for SSH or 80/443 for web traffic aren't explicitly allowed from your source, the connection will be dropped.Imagine launching an EC2 instance with a web server. You try accessing it, but the browser times out. A common mistake is forgetting to add an inbound rule to the instance's Security Group, allowing HTTP (port 80) or HTTPS (port 443) from \"Anywhere\" (0.0.0.0/0) or a specific IP. SSH failures often point to port 22 not being open.When troubleshooting connectivity to an EC2 instance, always review its associated Security Groups. Verify that inbound rules permit traffic on required ports from the correct source IP ranges. This check often resolves \"instance unreachable\" issues and is fundamental to cloud security.What's the most common network access issue you've encountered when setting up new EC2 instances?",
+    "hook": "An AWS EC2 instance launches successfully, but you can't SSH into it or access its web service. This is a frequent troubleshooting point for anyone working with AWS compute resources.",
+    "hashtags": [
+      "#AWSEC2",
+      "#CloudComputing",
+      "#CloudEngineer",
+      "#Networking",
+      "#Virtualization"
+    ],
+    "keywords": [
+      "aws",
+      "ec2",
+      "compute"
+    ],
+    "generatedAt": "2026-10-27T17:31:52.607Z",
+    "publishedAt": "2026-10-27T17:32:05.262Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520900137959911424",
+    "contentHash": "1dcb66e24629e06150c4a50eb5c8c80abc89eeada8cf71f68ed1829c9eb0ebf2"
   }
 ]
