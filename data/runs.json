@@ -894,5 +894,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7520900137959911424",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261027203054_913",
+    "startedAt": "2026-10-27T20:30:54.776Z",
+    "completedAt": "2026-10-27T20:31:15.863Z",
+    "status": "success",
+    "topic": "What is a hypervisor?",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7520945228820938752",
+    "dryRun": false
   }
 ]

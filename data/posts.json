@@ -1700,5 +1700,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520900137959911424",
     "contentHash": "1dcb66e24629e06150c4a50eb5c8c80abc89eeada8cf71f68ed1829c9eb0ebf2"
+  },
+  {
+    "id": "post_20261027203054_386",
+    "topic": "What is a hypervisor?",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Understanding the **hypervisor** is fundamental to grasping how **virtualization** truly works, yet a common misconception exists about where virtual machines actually run.\n\nMany assume virtual machines (VMs) run directly on physical hardware or that virtualization is merely software on top of an operating system. The reality is that the hypervisor is the essential layer enabling this efficiency.A hypervisor is specialized software, firmware, or hardware that creates and runs virtual machines. It serves as the core component of virtualization, allowing multiple operating systems to share a single physical hardware host. It abstracts physical resources like CPU, memory, and storage, allocating them to each VM as needed.There are two main types:Type 1 hypervisors, also known as bare-metal hypervisors (e.g., VMware ESXi, Microsoft Hyper-V), run directly on the host hardware. This design offers high efficiency, performance, and security, making them ideal for datacenter and cloud computing environments.Type 2 hypervisors (e.g., Oracle VirtualBox, VMware Workstation) run on top of a conventional operating system. While simpler for personal use and development, they introduce an extra layer of abstraction, which can impact performance compared to Type 1.Knowing the role of the hypervisor is key to understanding how cloud platforms achieve resource isolation and elasticity.",
+    "hook": "Understanding the **hypervisor** is fundamental to grasping how **virtualization** truly works, yet a common misconception exists about where virtual machines actually run.",
+    "hashtags": [
+      "#Virtualization",
+      "#Hypervisor",
+      "#CloudComputing",
+      "#VM"
+    ],
+    "keywords": [
+      "hypervisor",
+      "virtualization",
+      "vm",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-10-27T20:30:54.776Z",
+    "publishedAt": "2026-10-27T20:31:15.860Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7520945228820938752",
+    "contentHash": "8d03bc72fedb1578f0c2f039c3fe221750c413065e8e6af00dffc8da250719c7"
   }
 ]
