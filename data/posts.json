@@ -1755,5 +1755,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7521268678118735872",
     "contentHash": "8324691ec896103e3b35640cd8e134200e91081e536be92ba29593a0dc9c60c5"
+  },
+  {
+    "id": "post_20261028205217_087",
+    "topic": "Kubernetes Ingress",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake when configuring external access in Kubernetes involves misunderstanding the exact role of Ingress. Many teams define Ingress resources, expecting traffic to flow, without fully grasping that Ingress itself isn't a traffic proxy.\n\nKubernetes Ingress is an API object that manages external access to services in a cluster, typically HTTP/S. It defines rules for routing traffic, like hostname-based routing or path-based routing, to specific backend services. Crucially, Ingress relies on an Ingress Controller to actually implement these rules. Without a controller, the Ingress resource is just a set of instructions with no component to execute them.\n\nThe practical takeaway is to always consider your Ingress Controller as the critical component that fulfills the Ingress resource's directives. A common oversight is deploying Ingress resources without ensuring a robust Ingress Controller (like Nginx, Traefik, or a cloud provider's specific Ingress Controller) is running and correctly configured to watch for these resources. This can lead to silent failures where routes appear defined but are never actually published or serviced. Always verify your controller's logs and status when troubleshooting routing issues.\n\nWhat criteria do you prioritize when selecting an Ingress Controller for your Kubernetes environments?",
+    "hook": "A common mistake when configuring external access in Kubernetes involves misunderstanding the exact role of Ingress. Many teams define Ingress resources, expecting traffic to flow, without fully grasping that Ingress itself isn't a traffic proxy.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#Networking",
+      "#DevOps"
+    ],
+    "keywords": [
+      "kubernetes",
+      "ingress",
+      "routing"
+    ],
+    "generatedAt": "2026-10-28T20:52:17.874Z",
+    "publishedAt": "2026-10-28T20:52:40.796Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7521313007767990272",
+    "contentHash": "fde9ea78b2c6ff8218956340734293734909e72c25eee9de4d3680773e131cec"
   }
 ]

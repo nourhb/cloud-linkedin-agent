@@ -920,5 +920,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7521268678118735872",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261028205217_931",
+    "startedAt": "2026-10-28T20:52:17.874Z",
+    "completedAt": "2026-10-28T20:52:40.800Z",
+    "status": "success",
+    "topic": "Kubernetes Ingress",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7521313007767990272",
+    "dryRun": false
   }
 ]

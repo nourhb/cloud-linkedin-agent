@@ -418,5 +418,12 @@
     "lastUsed": "2026-10-28T17:56:22.421Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes Ingress",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-28T20:52:17.874Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]
