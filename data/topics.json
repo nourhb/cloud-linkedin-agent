@@ -411,5 +411,12 @@
     "lastUsed": "2026-10-26T20:56:35.774Z",
     "cooldownDays": 30,
     "useCount": 1
+  },
+  {
+    "topic": "Kubernetes DaemonSets",
+    "category": "Kubernetes",
+    "lastUsed": "2026-10-28T17:56:22.421Z",
+    "cooldownDays": 30,
+    "useCount": 1
   }
 ]

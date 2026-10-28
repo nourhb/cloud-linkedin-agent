@@ -1726,5 +1726,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7520945228820938752",
     "contentHash": "8d03bc72fedb1578f0c2f039c3fe221750c413065e8e6af00dffc8da250719c7"
+  },
+  {
+    "id": "post_20261028175622_925",
+    "topic": "Kubernetes DaemonSets",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "How do you ensure critical infrastructure services, like logging or monitoring agents, run on every single node in your Kubernetes cluster? This is where Kubernetes DaemonSets shine.\n\nDaemonSets guarantee that a copy of a specified pod runs on all (or a selection of) nodes. Unlike Deployments, which manage replica sets for application scaling, a DaemonSet's primary purpose is to provide node-level utilities. Think of it as a mechanism for deploying system-level services that need to be co-located with every node's workload. Common applications include running a #logging agent (e.g., Fluentd, Logstash) to collect node logs, a #monitoring agent (e.g., Prometheus Node Exporter) to gather host metrics, or even storage daemons on specific #nodes. When a new node joins the cluster, the DaemonSet automatically provisions a new pod instance on it. This ensures consistent service availability and simplifies the management of foundational components across your entire Kubernetes infrastructure. You can also use node selectors or tolerations to restrict DaemonSet pods to a subset of nodes. What foundational node-level service do you find most essential to run as a DaemonSet in your Kubernetes environments?",
+    "hook": "How do you ensure critical infrastructure services, like logging or monitoring agents, run on every single node in your Kubernetes cluster? This is where Kubernetes DaemonSets shine.",
+    "hashtags": [
+      "#KubernetesDaemonSet",
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps"
+    ],
+    "keywords": [
+      "kubernetes",
+      "daemonset",
+      "nodes",
+      "pod",
+      "logging",
+      "monitoring",
+      "agents"
+    ],
+    "generatedAt": "2026-10-28T17:56:22.421Z",
+    "publishedAt": "2026-10-28T17:56:32.496Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7521268678118735872",
+    "contentHash": "8324691ec896103e3b35640cd8e134200e91081e536be92ba29593a0dc9c60c5"
   }
 ]

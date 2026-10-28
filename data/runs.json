@@ -907,5 +907,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7520945228820938752",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261028175622_784",
+    "startedAt": "2026-10-28T17:56:22.421Z",
+    "completedAt": "2026-10-28T17:56:32.498Z",
+    "status": "success",
+    "topic": "Kubernetes DaemonSets",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7521268678118735872",
+    "dryRun": false
   }
 ]
