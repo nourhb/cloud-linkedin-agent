@@ -933,5 +933,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7521313007767990272",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261029180507_068",
+    "startedAt": "2026-10-29T18:05:07.235Z",
+    "completedAt": "2026-10-29T18:05:34.351Z",
+    "status": "success",
+    "topic": "What CI/CD actually means",
+    "category": "DevOps",
+    "contentType": "learning_in_public",
+    "generationAttempts": 3,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7521633338747609088",
+    "dryRun": false
   }
 ]

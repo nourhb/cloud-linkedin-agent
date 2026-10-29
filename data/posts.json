@@ -1780,5 +1780,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7521313007767990272",
     "contentHash": "fde9ea78b2c6ff8218956340734293734909e72c25eee9de4d3680773e131cec"
+  },
+  {
+    "id": "post_20261029180507_627",
+    "topic": "What CI/CD actually means",
+    "category": "DevOps",
+    "contentType": "learning_in_public",
+    "difficulty": "intermediate",
+    "content": "CI/CD is often treated as a single concept, but understanding the distinction between Continuous Integration, Continuous Delivery, and Continuous Deployment is key for effective DevOps.\n\nContinuous Integration (CI) is the practice of developers frequently merging their code changes into a central repository, followed by automated builds and tests. The core idea is to detect and address integration problems early in the development cycle. A well-configured CI pipeline ensures code quality and consistency.\n\nContinuous Delivery (CD) builds on CI. After code passes all integration tests, it's automatically prepared for release. This means it's deployed to a staging environment, tested further, and kept in a state where it can be released to production at any time, typically with a manual trigger. It focuses on having a reliably releasable product.\n\nContinuous Deployment takes Continuous Delivery a step further. Every change that passes the automated tests and quality gates is automatically released to production, without human intervention. This requires a high degree of trust in your automated testing and infrastructure as code practices. The entire software delivery pipeline is automated end-to-end.\n\nDistinguishing these phases helps teams strategically automate their release process and improve software velocity.\n\nHow does your team differentiate between Continuous Delivery and Continuous Deployment in practice?",
+    "hook": "CI/CD is often treated as a single concept, but understanding the distinction between Continuous Integration, Continuous Delivery, and Continuous Deployment is key for effective DevOps.",
+    "hashtags": [
+      "#DevOps",
+      "#CICD",
+      "#CloudComputing",
+      "#Automation"
+    ],
+    "keywords": [
+      "ci/cd",
+      "pipeline",
+      "devops"
+    ],
+    "generatedAt": "2026-10-29T18:05:07.235Z",
+    "publishedAt": "2026-10-29T18:05:34.348Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7521633338747609088",
+    "contentHash": "697aee8827001bcc70d5656427af8a2a46593866b602aa0223b59414d746a451"
   }
 ]
