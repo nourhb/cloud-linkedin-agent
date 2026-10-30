@@ -972,5 +972,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7521990692064362496",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261030203546_677",
+    "startedAt": "2026-10-30T20:35:46.461Z",
+    "completedAt": "2026-10-30T20:35:58.157Z",
+    "status": "success",
+    "topic": "Linux file permissions explained",
+    "category": "Linux",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7522033577233010688",
+    "dryRun": false
   }
 ]

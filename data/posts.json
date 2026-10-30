@@ -1862,5 +1862,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7521990692064362496",
     "contentHash": "0109bdc051bf54e77af6b9f2016cb178ea49123670dae1b4ea6c509781b11afd"
+  },
+  {
+    "id": "post_20261030203546_758",
+    "topic": "Linux file permissions explained",
+    "category": "Linux",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Understanding Linux file permissions goes beyond simply typing \"chmod 777\" for quick access. This common mistake overlooks the fundamental architecture designed for granular control over files and directories.\n\nIn Linux, permissions are structured around three categories: the User (owner), the Group, and Others. For each category, you can assign Read (r), Write (w), and Execute (x) permissions. These correspond to numerical values: Read is 4, Write is 2, and Execute is 1. The sum of these values creates the common octal permissions.\n\nFor example, `chmod 644 file.txt` grants the owner read and write access (4+2=6), while the group and others only have read access (4). This setup is ideal for files where the owner needs to modify content, but others only need to view it. Similarly, `chmod 755 script.sh` allows the owner to read, write, and execute the script, while groups and others can only read and execute it.\n\nApplying the principle of least privilege, where users and processes only have the permissions necessary to perform their tasks, is crucial. Overly permissive settings, like `chmod 777`, can expose your systems to significant security risks, especially in cloud computing environments where isolation and access control are paramount. Tools like `chown` and `chgrp` manage ownership, complementing `chmod` for complete control.\n\nWhat's a specific permission structure you've implemented to enhance security in a project?",
+    "hook": "Understanding Linux file permissions goes beyond simply typing \"chmod 777\" for quick access. This common mistake overlooks the fundamental architecture designed for granular control over files and directories.",
+    "hashtags": [
+      "#Linux",
+      "#CloudSecurity",
+      "#Virtualization",
+      "#DevOps"
+    ],
+    "keywords": [
+      "linux",
+      "permissions",
+      "chmod",
+      "security",
+      "access control"
+    ],
+    "generatedAt": "2026-10-30T20:35:46.461Z",
+    "publishedAt": "2026-10-30T20:35:58.153Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7522033577233010688",
+    "contentHash": "a8b3411f16c4099770e4e91540ef702c2db5803b60d3811b4c91df3187a11380"
   }
 ]
