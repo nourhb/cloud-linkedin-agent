@@ -1889,5 +1889,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7522033577233010688",
     "contentHash": "a8b3411f16c4099770e4e91540ef702c2db5803b60d3811b4c91df3187a11380"
+  },
+  {
+    "id": "post_20261031165308_168",
+    "topic": "Kubernetes Pods explained",
+    "category": "Kubernetes",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "When troubleshooting issues in Kubernetes, a common mistake is to treat a Pod as a persistent entity, leading to confusion when it unexpectedly restarts or gets replaced.\n\nA Kubernetes Pod is the smallest deployable unit, encapsulating one or more containers, storage resources, and a unique network IP. It's designed to be ephemeral. Unlike a traditional VM, a Pod is typically managed by a controller like a Deployment or ReplicaSet, which ensures a desired number of Pods are always running. If you manually delete a Pod that's part of a Deployment, the controller will immediately create a new one to maintain the desired state. This behavior is by design, promoting self-healing and resilience. To properly scale down or remove an application, you should interact with the managing controller, not the individual Pod. Understanding this distinction is crucial for effective troubleshooting and managing your containerized applications within Kubernetes. How do you typically approach debugging issues where Pods are unexpectedly restarting?",
+    "hook": "When troubleshooting issues in Kubernetes, a common mistake is to treat a Pod as a persistent entity, leading to confusion when it unexpectedly restarts or gets replaced.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#Containerization",
+      "#Troubleshooting"
+    ],
+    "keywords": [
+      "kubernetes",
+      "pod",
+      "container",
+      "troubleshooting",
+      "ephemeral"
+    ],
+    "generatedAt": "2026-10-31T16:53:08.913Z",
+    "publishedAt": "2026-10-31T16:53:19.181Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7522339932552691713",
+    "contentHash": "ba2f9d900fa8054b9a3ebf136af717150c390bc7ff15b0e6290d3ec185b620b2"
   }
 ]
