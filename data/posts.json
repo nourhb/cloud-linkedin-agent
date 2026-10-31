@@ -1917,5 +1917,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7522339932552691713",
     "contentHash": "ba2f9d900fa8054b9a3ebf136af717150c390bc7ff15b0e6290d3ec185b620b2"
+  },
+  {
+    "id": "post_20261031194834_212",
+    "topic": "Understanding the Linux filesystem hierarchy",
+    "category": "Linux",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "The Linux filesystem hierarchy (FHS) is a cornerstone of managing any Linux-based system, yet its structure can often seem complex.\n\nNavigating a Linux system effectively, whether a local machine or a cloud instance, relies heavily on understanding where files are stored and why. The Filesystem Hierarchy Standard (FHS) defines the purpose for each top-level directory. For instance, /bin contains essential user command binaries available to all users, even in single-user mode, crucial for system repair. In contrast, /usr/bin holds non-essential user commands, which are still widely used but not strictly necessary for basic system operation. This distinction helps separate critical system components from broader user applications. Consider /etc, dedicated to host-specific system-wide configuration files – settings for your network interfaces, services, and applications live here. Then look at /var, which stores variable data like logs (/var/log), mail queues, and temporary files (/var/tmp). These directories serve fundamentally different purposes: static configuration vs. dynamic, changing data. Grasping the FHS simplifies troubleshooting, automates deployments with tools like Ansible or Terraform, and improves cloud security posture by knowing where sensitive data or executables reside. It's fundamental for cloud computing professionals. Which Linux directory's specific purpose do you find most often misunderstood or confusing for new users?",
+    "hook": "The Linux filesystem hierarchy (FHS) is a cornerstone of managing any Linux-based system, yet its structure can often seem complex.",
+    "hashtags": [
+      "#Linux",
+      "#CloudComputing",
+      "#Virtualization",
+      "#DevOps",
+      "#Infrastructure"
+    ],
+    "keywords": [
+      "linux",
+      "filesystem",
+      "fhs",
+      "cloud computing",
+      "virtualization"
+    ],
+    "generatedAt": "2026-10-31T19:48:34.392Z",
+    "publishedAt": "2026-10-31T19:48:53.648Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7522384120077914113",
+    "contentHash": "301c1020117eb8f5a6a83ccb110e871d12f2a0fa6e0729d66eb3935e460ba511"
   }
 ]
