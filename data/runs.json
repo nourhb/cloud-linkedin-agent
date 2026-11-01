@@ -1011,5 +1011,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7522384120077914113",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261101181645_855",
+    "startedAt": "2026-11-01T18:16:45.327Z",
+    "completedAt": "2026-11-01T18:17:03.473Z",
+    "status": "success",
+    "topic": "Cloud regions and availability zones",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7522723396061806592",
+    "dryRun": false
   }
 ]

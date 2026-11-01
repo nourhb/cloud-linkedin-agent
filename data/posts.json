@@ -1945,5 +1945,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7522384120077914113",
     "contentHash": "301c1020117eb8f5a6a83ccb110e871d12f2a0fa6e0729d66eb3935e460ba511"
+  },
+  {
+    "id": "post_20261101181645_470",
+    "topic": "Cloud regions and availability zones",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "A common misconception in cloud computing is that a single cloud region offers sufficient fault tolerance for critical applications simply by spanning multiple subnets.\n\nWhile subnets provide network segmentation, true high availability and disaster recovery in the cloud depend on leveraging availability zones. An availability zone is a physically isolated location within a region, complete with independent power, cooling, and networking. These zones are connected by low-latency links. Distributing your application resources across multiple availability zones within a single region protects against localized failures like a power outage affecting one data center. If one zone experiences an issue, your application can continue running in another zone in the same region. For even greater resilience, especially against region-wide disasters or for data sovereignty requirements, you would consider a multi-region architecture. Understanding this distinction is fundamental for designing robust and resilient cloud infrastructure. How does your team decide between a multi-availability zone and a multi-region strategy for critical applications?",
+    "hook": "A common misconception in cloud computing is that a single cloud region offers sufficient fault tolerance for critical applications simply by spanning multiple subnets.",
+    "hashtags": [
+      "#CloudRegions",
+      "#AvailabilityZones",
+      "#CloudComputing",
+      "#CloudInfrastructure",
+      "#Architecture"
+    ],
+    "keywords": [
+      "region",
+      "availability zone",
+      "cloud"
+    ],
+    "generatedAt": "2026-11-01T18:16:45.327Z",
+    "publishedAt": "2026-11-01T18:17:03.470Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7522723396061806592",
+    "contentHash": "4600490e745585133c428fbf4c2e13844d1d4ea956bb7a494f4a95acb491a379"
   }
 ]
