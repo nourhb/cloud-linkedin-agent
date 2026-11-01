@@ -1971,5 +1971,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7522723396061806592",
     "contentHash": "4600490e745585133c428fbf4c2e13844d1d4ea956bb7a494f4a95acb491a379"
+  },
+  {
+    "id": "post_20261101210204_440",
+    "topic": "Azure Virtual Machines fundamentals",
+    "category": "Microsoft Azure",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "Are you inadvertently overspending on your Azure Virtual Machines by picking the wrong size?\n\nA common mistake in Azure VM management is failing to right-size instances for actual workload needs. Many teams provision a larger VM than necessary, fearing performance bottlenecks, which often leads to unnecessary compute costs. Azure offers a wide array of VM series and sizes, optimized for different scenarios like general purpose, compute optimized, memory optimized, and storage optimized. Selecting an overly powerful VM for a simple web server or development environment directly impacts your monthly bill. For instance, choosing a D4s_v3 (4 vCPUs, 16 GiB RAM) for a low-traffic internal application that only requires 2 vCPUs and 8 GiB RAM is a classic example. You're paying for unused compute and memory. Tools like Azure Advisor provide recommendations to identify underutilized VMs. Regularly reviewing your VM utilization metrics and adjusting sizes (downscaling) can lead to significant cost savings in your cloud computing budget without compromising performance. It's crucial to understand your application's resource demands before provisioning. How does your team approach right-sizing Azure VMs to balance performance and cost?",
+    "hook": "Are you inadvertently overspending on your Azure Virtual Machines by picking the wrong size?",
+    "hashtags": [
+      "#AzureVM",
+      "#CloudComputing",
+      "#MicrosoftAzure",
+      "#CostOptimization",
+      "#Virtualization"
+    ],
+    "keywords": [
+      "azure",
+      "vm",
+      "compute"
+    ],
+    "generatedAt": "2026-11-01T21:02:04.817Z",
+    "publishedAt": "2026-11-01T21:02:25.228Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7522765011438460928",
+    "contentHash": "b71e1a5b41fe803e899b7249842dbd0dd2ac471236e29a5238e6c6cf32f712fc"
   }
 ]

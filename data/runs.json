@@ -1024,5 +1024,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7522723396061806592",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261101210204_144",
+    "startedAt": "2026-11-01T21:02:04.817Z",
+    "completedAt": "2026-11-01T21:02:25.232Z",
+    "status": "success",
+    "topic": "Azure Virtual Machines fundamentals",
+    "category": "Microsoft Azure",
+    "contentType": "common_mistake",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7522765011438460928",
+    "dryRun": false
   }
 ]
