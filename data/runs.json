@@ -1050,5 +1050,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7523144531874152448",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261102234943_770",
+    "startedAt": "2026-11-02T23:49:43.618Z",
+    "completedAt": "2026-11-02T23:49:51.783Z",
+    "status": "success",
+    "topic": "Kubernetes Deployments",
+    "category": "Kubernetes",
+    "contentType": "learning_in_public",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7523169537610002432",
+    "dryRun": false
   }
 ]

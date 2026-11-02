@@ -2022,5 +2022,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523144531874152448",
     "contentHash": "353b82d0dceedd5f33ad9597eed0591f914c8f3ad5a751213533f27831c61a6c"
+  },
+  {
+    "id": "post_20261102234943_085",
+    "topic": "Kubernetes Deployments",
+    "category": "Kubernetes",
+    "contentType": "learning_in_public",
+    "difficulty": "intermediate",
+    "content": "A common misconception about Kubernetes Deployments is that they directly manage your application's Pods.\n\nIn reality, a Deployment manages ReplicaSets, which in turn ensure the desired number of Pods are running. Think of a Kubernetes Deployment as a higher-level controller. You declare the desired state of your application—what Docker image, how many replicas, resource limits, etc.—and the Deployment takes care of the underlying ReplicaSet creation and management. This enables declarative updates, allowing you to define a new version and let Kubernetes gracefully roll out changes, automatically creating new ReplicaSets, scaling down old ones, and handling rollbacks if issues arise. This controlled rollout ensures minimal downtime and a predictable update process for your applications running on Kubernetes. What's one feature of Kubernetes Deployments that you find most critical for your application's reliability?",
+    "hook": "A common misconception about Kubernetes Deployments is that they directly manage your application's Pods.",
+    "hashtags": [
+      "#Kubernetes",
+      "#DevOps",
+      "#CloudComputing",
+      "#Containerization"
+    ],
+    "keywords": [
+      "kubernetes",
+      "deployment",
+      "rollout"
+    ],
+    "generatedAt": "2026-11-02T23:49:43.618Z",
+    "publishedAt": "2026-11-02T23:49:51.781Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523169537610002432",
+    "contentHash": "16cc4902c3db0bdde1a832a027c8fdc2f73b94512027c0fb73668fa4743c498e"
   }
 ]
