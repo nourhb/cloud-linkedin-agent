@@ -1997,5 +1997,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7522765011438460928",
     "contentHash": "b71e1a5b41fe803e899b7249842dbd0dd2ac471236e29a5238e6c6cf32f712fc"
+  },
+  {
+    "id": "post_20261102221020_377",
+    "topic": "Object storage explained",
+    "category": "Cloud Computing",
+    "contentType": "question_discussion",
+    "difficulty": "intermediate",
+    "content": "Object storage fundamentally changes how we think about data storage in the cloud, moving away from traditional file systems.\n\nIt treats data as objects, each stored in a flat address space with a unique identifier and metadata. Unlike block storage that operates at a raw disk level or file storage with hierarchical directories, object storage uses a simple key-value model. This architecture allows for massive scalability and high durability, often replicating data across multiple facilities. Access is typically via RESTful APIs over HTTP, making it easy to integrate with a wide range of applications and services.\n\nThis model is ideal for unstructured data such as backups, archives, media files, and large data lakes. It excels where data needs to be highly available, durable, and accessed infrequently or through programmatic interfaces. It is generally not suited for operating systems, databases, or applications requiring low-latency block-level access or frequent updates to small portions of files. Cloud providers like AWS S3 exemplify this service, offering virtually unlimited capacity and built-in redundancy. Understanding when to leverage object storage versus other types is crucial for optimizing cloud infrastructure.\n\nWhen designing a new cloud application, what's a common data access pattern that would make you lean towards object storage over block or file storage?",
+    "hook": "Object storage fundamentally changes how we think about data storage in the cloud, moving away from traditional file systems.",
+    "hashtags": [
+      "#ObjectStorage",
+      "#CloudComputing",
+      "#S3",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "object storage",
+      "s3",
+      "cloud"
+    ],
+    "generatedAt": "2026-11-02T22:10:20.637Z",
+    "publishedAt": "2026-11-02T22:10:30.565Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523144531874152448",
+    "contentHash": "353b82d0dceedd5f33ad9597eed0591f914c8f3ad5a751213533f27831c61a6c"
   }
 ]

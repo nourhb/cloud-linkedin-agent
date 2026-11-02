@@ -1037,5 +1037,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7522765011438460928",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261102221020_428",
+    "startedAt": "2026-11-02T22:10:20.637Z",
+    "completedAt": "2026-11-02T22:10:30.568Z",
+    "status": "success",
+    "topic": "Object storage explained",
+    "category": "Cloud Computing",
+    "contentType": "question_discussion",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7523144531874152448",
+    "dryRun": false
   }
 ]
