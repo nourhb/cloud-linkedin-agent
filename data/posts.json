@@ -2076,5 +2076,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523473875523801089",
     "contentHash": "f79513b1a95609a9f7008f9aea83a2ffa3c4d0c6d885fd1ecbd0da95f3711d5f"
+  },
+  {
+    "id": "post_20261103221445_400",
+    "topic": "TCP vs UDP for cloud engineers",
+    "category": "Networking",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Understanding the fundamental differences between TCP and UDP is crucial for any cloud engineer designing or troubleshooting network services.\n\nTCP (Transmission Control Protocol) is connection-oriented, providing reliable, ordered, and error-checked delivery of data. It ensures data integrity through mechanisms like sequence numbers, acknowledgments, and retransmissions, but this introduces overhead for handshake and flow control.\n\nUDP (User Datagram Protocol), conversely, is connectionless and offers a best-effort delivery. It's faster and has lower overhead because it doesn't guarantee delivery, order, or error checking. The application layer is responsible for any reliability required.\n\nIn cloud environments, you'll see TCP used for web traffic (HTTP/HTTPS), SSH connections, and database communications, where reliability is paramount. UDP shines in scenarios like DNS lookups, live streaming, and online gaming, where speed is critical and minor packet loss is acceptable or handled by the application.\n\nChoosing the right protocol profoundly impacts application performance, reliability, and resource utilization. Knowing when to prioritize guaranteed delivery over raw speed is a key skill in cloud networking.\n\nWhat's an application or service in your cloud infrastructure where you explicitly chose UDP over TCP, and why?",
+    "hook": "Understanding the fundamental differences between TCP and UDP is crucial for any cloud engineer designing or troubleshooting network services.",
+    "hashtags": [
+      "#Networking",
+      "#CloudComputing",
+      "#TCP",
+      "#UDP",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "tcp",
+      "udp",
+      "networking",
+      "cloud computing",
+      "virtualization"
+    ],
+    "generatedAt": "2026-11-03T22:14:45.708Z",
+    "publishedAt": "2026-11-03T22:14:55.472Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523508032924905472",
+    "contentHash": "3c088985868f86000a3260b520c8ff37e1a0c4ae9cd4aa8d28ef5ca580392cfc"
   }
 ]
