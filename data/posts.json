@@ -2047,5 +2047,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523169537610002432",
     "contentHash": "16cc4902c3db0bdde1a832a027c8fdc2f73b94512027c0fb73668fa4743c498e"
+  },
+  {
+    "id": "post_20261103195828_016",
+    "topic": "Container image signing",
+    "category": "DevSecOps",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Container image signing is a critical DevSecOps practice that significantly enhances the security of your software supply chain.\n\nAt its core, container image signing establishes a chain of trust for your containerized applications. It works by cryptographically signing an immutable container image artifact with a private key owned by the image publisher. This digital signature acts as a tamper-proof seal, guaranteeing the image's origin and integrity.\n\nWhen a system (like a Kubernetes cluster or a CI/CD pipeline) attempts to pull or deploy this image, it uses a corresponding public key to verify the signature. If the signature is valid, the image is deemed authentic and untampered. If verification fails, the deployment is rejected, preventing potentially malicious or compromised images from running.\n\nThis architecture creates a robust gatekeeper, ensuring only trusted artifacts enter your production environment. Implementing image signing is a proactive measure against supply chain attacks, ensuring that the code you intend to run is exactly the code that gets executed. It integrates seamlessly into modern cloud security practices and infrastructure as code workflows.\n\nWhat strategies or tools has your team found most effective for integrating container image signing into your DevSecOps pipelines?",
+    "hook": "Container image signing is a critical DevSecOps practice that significantly enhances the security of your software supply chain.",
+    "hashtags": [
+      "#DevSecOps",
+      "#CloudSecurity",
+      "#ContainerSecurity",
+      "#Docker",
+      "#Kubernetes"
+    ],
+    "keywords": [
+      "image signing",
+      "devsecops",
+      "security",
+      "container security",
+      "supply chain security",
+      "trust"
+    ],
+    "generatedAt": "2026-11-03T19:58:28.243Z",
+    "publishedAt": "2026-11-03T19:59:12.134Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523473875523801089",
+    "contentHash": "f79513b1a95609a9f7008f9aea83a2ffa3c4d0c6d885fd1ecbd0da95f3711d5f"
   }
 ]
