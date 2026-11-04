@@ -2134,5 +2134,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523841190249578496",
     "contentHash": "b00022d917a804e0e0009e4c5456bd8bae4099a5714de723c71805284e63027c"
+  },
+  {
+    "id": "post_20261104222944_903",
+    "topic": "Kubernetes Services",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake with Kubernetes Services is overlooking their fundamental role in internal cluster networking.\n\nMany new users initially think of Services primarily as external load balancers. While `LoadBalancer` type Services do provide external access, the more fundamental purpose of a Kubernetes Service is to provide a stable network endpoint for a set of Pods. This abstracts away the ephemeral nature of Pods, which is crucial for reliable internal communication between microservices.\n\nFor example, if you have a frontend application running in Pods that needs to connect to a backend database also running in Pods within your Kubernetes cluster, you wouldn't use an `Ingress` or a `LoadBalancer` Service for the database.\n\nInstead, a `ClusterIP` Service provides a stable internal IP address and DNS name. Your frontend Pods can reliably connect to this `ClusterIP`, even as backend Pods scale, restart, or reschedule.\n\nRelying on external exposure mechanisms for internal communication adds unnecessary latency, potential security risks, and complexity. For robust communication *within* the cluster, `ClusterIP` Services are the workhorse, providing stable internal networking without exposing unnecessary endpoints.\n\nHow does your team ensure proper Service type selection for internal versus external Kubernetes networking?",
+    "hook": "A common mistake with Kubernetes Services is overlooking their fundamental role in internal cluster networking.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#Networking",
+      "#DevOps"
+    ],
+    "keywords": [
+      "kubernetes",
+      "service",
+      "networking"
+    ],
+    "generatedAt": "2026-11-04T22:29:44.250Z",
+    "publishedAt": "2026-11-04T22:30:02.137Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523874224097136640",
+    "contentHash": "c2f85ccb962e99d4cc4a49dbda93391456bb1559f1524533dd2572c88444749f"
   }
 ]
