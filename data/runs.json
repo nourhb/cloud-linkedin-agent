@@ -1089,5 +1089,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7523508032924905472",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261104201754_654",
+    "startedAt": "2026-11-04T20:17:54.277Z",
+    "completedAt": "2026-11-04T20:18:46.656Z",
+    "status": "success",
+    "topic": "VM snapshots",
+    "category": "Virtualization",
+    "contentType": "project_insight",
+    "generationAttempts": 5,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7523841190249578496",
+    "dryRun": false
   }
 ]

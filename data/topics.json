@@ -65,9 +65,9 @@
   {
     "topic": "VM snapshots",
     "category": "Virtualization",
-    "lastUsed": "2026-09-30T18:33:22.274Z",
+    "lastUsed": "2026-11-04T20:17:54.277Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Understanding the Linux filesystem hierarchy",

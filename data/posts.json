@@ -2104,5 +2104,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523508032924905472",
     "contentHash": "3c088985868f86000a3260b520c8ff37e1a0c4ae9cd4aa8d28ef5ca580392cfc"
+  },
+  {
+    "id": "post_20261104201754_234",
+    "topic": "VM snapshots",
+    "category": "Virtualization",
+    "contentType": "project_insight",
+    "difficulty": "intermediate",
+    "content": "Many teams treat VM snapshots as a primary backup strategy, but this approach can introduce significant operational risk and complexity. While a VM snapshot offers a quick rollback point, it's not a substitute for a robust data protection plan.\n\nA VM snapshot captures the state and data of a virtual machine at a specific moment in time. It's excellent for temporary, short-term recovery scenarios, like reverting before a critical OS patch or an application upgrade. Think of it as a 'undo' button for a specific task.\n\nHowever, keeping snapshots for extended periods can seriously degrade VM performance, consume excessive storage, and complicate underlying backup and replication processes. As changes accumulate, the snapshot chain grows, making disk merges resource-intensive and potentially impacting data integrity.\n\nFor optimal infrastructure health, integrate snapshots into a clear change management workflow, ensuring they are deleted promptly after their intended use or a successful validation. For long-term data retention and disaster recovery, always rely on dedicated backup solutions. Understanding this distinction is crucial for maintaining performance, managing storage costs, and ensuring reliable data recovery when you truly need it.",
+    "hook": "Many teams treat VM snapshots as a primary backup strategy, but this approach can introduce significant operational risk and complexity. While a VM snapshot offers a quick rollback point, it's not a substitute for a robust data protection plan.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#VMware",
+      "#HyperV",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "vm",
+      "snapshot",
+      "backup",
+      "virtualization",
+      "data protection",
+      "recovery",
+      "storage management"
+    ],
+    "generatedAt": "2026-11-04T20:17:54.277Z",
+    "publishedAt": "2026-11-04T20:18:46.653Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7523841190249578496",
+    "contentHash": "b00022d917a804e0e0009e4c5456bd8bae4099a5714de723c71805284e63027c"
   }
 ]
