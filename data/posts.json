@@ -2159,5 +2159,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7523874224097136640",
     "contentHash": "c2f85ccb962e99d4cc4a49dbda93391456bb1559f1524533dd2572c88444749f"
+  },
+  {
+    "id": "post_20261105202904_312",
+    "topic": "Subnetting fundamentals",
+    "category": "Networking",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Understanding subnetting fundamentals is crucial for designing efficient and secure networks. Without it, managing IP addresses in a large organization can quickly become a chaotic mess, leading to wasted resources and potential performance bottlenecks from excessive broadcast traffic.\n\nSubnetting solves this by dividing a larger network into smaller, more manageable subnetworks. This process uses a subnet mask to logically separate the network and host portions of an IP address, creating distinct broadcast domains. The modern approach, Classless Inter-Domain Routing (CIDR), offers flexibility in defining these boundaries, allowing for precise allocation of IP addresses. By segmenting your network with subnets, you drastically reduce broadcast traffic, which improves performance. It also enhances security by isolating different departments or services from each other, limiting potential attack surfaces. For cloud engineers, mastering subnetting is essential for designing Virtual Private Clouds (VPCs) and ensuring proper communication, routing, and access control within your cloud infrastructure. It's a foundational skill for building scalable and resilient cloud environments. What's the most challenging aspect you've encountered when designing a subnetting scheme for a new network segment or cloud VPC?",
+    "hook": "Understanding subnetting fundamentals is crucial for designing efficient and secure networks. Without it, managing IP addresses in a large organization can quickly become a chaotic mess, leading to wasted resources and potential performance bottlenecks from excessive broadcast traffic.",
+    "hashtags": [
+      "#Networking",
+      "#Subnetting",
+      "#CloudComputing",
+      "#CIDR",
+      "#Virtualization"
+    ],
+    "keywords": [
+      "subnet",
+      "cidr",
+      "networking",
+      "cloud",
+      "virtualization"
+    ],
+    "generatedAt": "2026-11-05T20:29:04.711Z",
+    "publishedAt": "2026-11-05T20:29:15.601Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7524206214260477952",
+    "contentHash": "18a7f510afa8395d5ad0ca270f632a60b66ddafce8c5e0cd18ba50a064940990"
   }
 ]
