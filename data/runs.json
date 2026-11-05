@@ -1128,5 +1128,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7524206214260477952",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261105223715_581",
+    "startedAt": "2026-11-05T22:37:15.434Z",
+    "completedAt": "2026-11-05T22:37:47.320Z",
+    "status": "success",
+    "topic": "AWS VPC fundamentals",
+    "category": "AWS",
+    "contentType": "learning_in_public",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7524238559004975105",
+    "dryRun": false
   }
 ]

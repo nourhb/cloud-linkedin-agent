@@ -2187,5 +2187,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7524206214260477952",
     "contentHash": "18a7f510afa8395d5ad0ca270f632a60b66ddafce8c5e0cd18ba50a064940990"
+  },
+  {
+    "id": "post_20261105223715_982",
+    "topic": "AWS VPC fundamentals",
+    "category": "AWS",
+    "contentType": "learning_in_public",
+    "difficulty": "intermediate",
+    "content": "How does AWS VPC provide the essential networking backbone for almost every resource in the AWS Cloud?\n\nAn Amazon Virtual Private Cloud (VPC) is your private, isolated virtual network within AWS, where you launch resources like EC2 instances. You define its IP range, create subnets, and configure route tables and gateways. This control over your virtual networking environment is foundational for security and isolation in cloud computing.VPC's power comes from segmentation. You create public subnets for internet-facing apps and private subnets for internal services (e.g., databases). Security Groups act as instance-level firewalls. Network Access Control Lists (NACLs) provide stateless subnet-level filtering. These AWS networking tools ensure precise traffic management and a robust security posture.Consider a multi-tier web application. You'd set up a VPC across multiple Availability Zones. Public subnets host load balancers and front-end web servers. Private subnets house database servers, inaccessible directly from the internet. A NAT Gateway in a public subnet allows private instances to make secure outbound connections. This structured approach, leveraging VPC, is a core pattern in modern cloud architectures.What's one common AWS VPC configuration challenge you've overcome, and what was your key learning?",
+    "hook": "How does AWS VPC provide the essential networking backbone for almost every resource in the AWS Cloud?",
+    "hashtags": [
+      "#AWS",
+      "#VPC",
+      "#CloudComputing",
+      "#Networking",
+      "#CloudSecurity"
+    ],
+    "keywords": [
+      "aws",
+      "vpc",
+      "networking",
+      "cloud computing",
+      "cloud security"
+    ],
+    "generatedAt": "2026-11-05T22:37:15.434Z",
+    "publishedAt": "2026-11-05T22:37:47.316Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7524238559004975105",
+    "contentHash": "644f5a5cdbfae671e1efaaf20bcc54ff0f6ed19053f259874f4008c00cb62f7e"
   }
 ]
