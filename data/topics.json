@@ -156,9 +156,9 @@
   {
     "topic": "Virtual networks in the cloud",
     "category": "Cloud Computing",
-    "lastUsed": "2026-10-07T18:29:25.928Z",
+    "lastUsed": "2026-11-06T19:52:02.861Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes ConfigMaps",

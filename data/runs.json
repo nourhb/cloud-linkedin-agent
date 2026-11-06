@@ -1141,5 +1141,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7524238559004975105",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261106195202_292",
+    "startedAt": "2026-11-06T19:52:02.861Z",
+    "completedAt": "2026-11-06T19:52:13.611Z",
+    "status": "success",
+    "topic": "Virtual networks in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "project_insight",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7524559283343032320",
+    "dryRun": false
   }
 ]

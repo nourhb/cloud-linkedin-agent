@@ -2215,5 +2215,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7524238559004975105",
     "contentHash": "644f5a5cdbfae671e1efaaf20bcc54ff0f6ed19053f259874f4008c00cb62f7e"
+  },
+  {
+    "id": "post_20261106195202_736",
+    "topic": "Virtual networks in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "project_insight",
+    "difficulty": "intermediate",
+    "content": "Virtual networks in the cloud, often called Virtual Private Clouds (VPCs), are foundational to building secure and scalable cloud infrastructure. They provide a logically isolated section of the cloud where you can launch resources in a virtual network that you define.\n\nUnderstanding these isolated environments is crucial. A virtual network allows you to define your own IP address range, create subnets, configure route tables, and implement network gateways. You gain full control over your network environment, including IP address allocation, network access control lists, and security groups. A common insight from many cloud projects is the critical importance of initial IP addressing and subnet design. Teams sometimes rush this phase, leading to overlapping IP ranges, insufficient CIDR blocks for future growth, or overly complex routing requirements as applications evolve. Careful planning ensures scalability, simplifies inter-service communication, and prevents costly re-architecture down the line. It's not just about getting resources online; it's about building a sustainable and manageable network backbone for your entire cloud presence.",
+    "hook": "Virtual networks in the cloud, often called Virtual Private Clouds (VPCs), are foundational to building secure and scalable cloud infrastructure. They provide a logically isolated section of the cloud where you can launch resources in a virtual network that you define.",
+    "hashtags": [
+      "#CloudComputing",
+      "#Virtualization",
+      "#CloudNetwork",
+      "#InfrastructureAsCode",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "vpc",
+      "virtual network",
+      "cloud",
+      "network design",
+      "ip addressing"
+    ],
+    "generatedAt": "2026-11-06T19:52:02.861Z",
+    "publishedAt": "2026-11-06T19:52:13.608Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7524559283343032320",
+    "contentHash": "b562a07f8505caa068a0074c93091056a11dad2c86d12f1df3e388e97b7be27c"
   }
 ]
