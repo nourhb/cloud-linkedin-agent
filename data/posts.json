@@ -2243,5 +2243,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7524559283343032320",
     "contentHash": "b562a07f8505caa068a0074c93091056a11dad2c86d12f1df3e388e97b7be27c"
+  },
+  {
+    "id": "post_20261106215911_579",
+    "topic": "Kubernetes ConfigMaps",
+    "category": "Kubernetes",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "A common troubleshooting challenge with Kubernetes ConfigMaps arises when applications behave unexpectedly due to stale or incorrect configuration.\n\nMany teams mistakenly assume that updating a ConfigMap will instantly reflect in all running Pods, leading to confusion and extended debugging sessions. The reality is more nuanced: while ConfigMaps effectively decouple configuration from container images, their updates don't always propagate immediately or predictably. When troubleshooting, verify how your application consumes the ConfigMap. If injected as environment variables, Pods require a restart to pick up changes. For ConfigMaps mounted as files, kubelet periodically updates the volume, but this isn't instantaneous, and some applications might cache the file content. Incorrect mounting paths or missing keys are also frequent culprits. Always check the Pod's YAML for accurate volume mounts or environment variable injection, and inspect the ConfigMap contents. Using `kubectl describe` for both the Pod and ConfigMap can quickly reveal discrepancies. What is your team's strategy for ensuring ConfigMap changes are propagated reliably and quickly to running applications without causing downtime?",
+    "hook": "A common troubleshooting challenge with Kubernetes ConfigMaps arises when applications behave unexpectedly due to stale or incorrect configuration.",
+    "hashtags": [
+      "#Kubernetes",
+      "#DevOps",
+      "#CloudComputing",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "kubernetes",
+      "configmap",
+      "configuration"
+    ],
+    "generatedAt": "2026-11-06T21:59:11.044Z",
+    "publishedAt": "2026-11-06T21:59:31.222Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7524591319772516353",
+    "contentHash": "a09cee95e4a1abd765cb30fe502bf73ce446d3e29e7773ba19454ee48f837bbb"
   }
 ]
