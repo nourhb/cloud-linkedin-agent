@@ -170,9 +170,9 @@
   {
     "topic": "Cloud monitoring fundamentals",
     "category": "Observability",
-    "lastUsed": "2026-10-08T18:28:40.336Z",
+    "lastUsed": "2026-11-07T20:43:58.917Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes ReplicaSets",
