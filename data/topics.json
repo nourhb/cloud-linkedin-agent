@@ -177,9 +177,9 @@
   {
     "topic": "Kubernetes ReplicaSets",
     "category": "Kubernetes",
-    "lastUsed": "2026-10-08T21:11:19.015Z",
+    "lastUsed": "2026-11-08T18:14:11.340Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Dependency scanning in CI/CD",

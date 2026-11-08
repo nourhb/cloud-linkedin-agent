@@ -1193,5 +1193,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7524934736365129728",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261108181411_878",
+    "startedAt": "2026-11-08T18:14:11.340Z",
+    "completedAt": "2026-11-08T18:14:18.938Z",
+    "status": "success",
+    "topic": "Kubernetes ReplicaSets",
+    "category": "Kubernetes",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7525259421438869504",
+    "dryRun": false
   }
 ]
