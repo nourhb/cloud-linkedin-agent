@@ -2352,5 +2352,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7525259421438869504",
     "contentHash": "249e1fade953e2bd202676fba9609396499735c7c4d09692d063bfbe4d5a03dc"
+  },
+  {
+    "id": "post_20261108210027_397",
+    "topic": "Autoscaling fundamentals",
+    "category": "Cloud Computing",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "Autoscaling is a core architectural principle in cloud computing, enabling applications to automatically adjust their compute capacity to match fluctuating demand. This capability is crucial for maintaining performance and optimizing costs.\n\nAt its heart, autoscaling works by monitoring specific metrics, such as CPU utilization, network traffic, or custom application-specific indicators. When these metrics cross predefined thresholds, the system initiates a scaling action. This can be horizontal scaling (adding or removing instances/containers) or vertical scaling (resizing existing instances).\n\nCloud platforms leverage various services to implement autoscaling. For instance, in a containerized environment, a Horizontal Pod Autoscaler in Kubernetes watches CPU/memory usage of Pods and adjusts the number of replicas. Similarly, cloud providers offer autoscaling groups for virtual machines, dynamically provisioning or de-provisioning instances based on policy.\n\nEffective autoscaling requires careful planning of scaling policies, including minimum and maximum capacity limits, cooldown periods to prevent 'flapping,' and accurate metric selection. Without it, applications can suffer from under-provisioning (poor performance) or over-provisioning (unnecessary costs).",
+    "hook": "Autoscaling is a core architectural principle in cloud computing, enabling applications to automatically adjust their compute capacity to match fluctuating demand. This capability is crucial for maintaining performance and optimizing costs.",
+    "hashtags": [
+      "#Autoscaling",
+      "#CloudComputing",
+      "#CloudEngineer",
+      "#Virtualization"
+    ],
+    "keywords": [
+      "autoscaling",
+      "cloud",
+      "scaling",
+      "virtualization",
+      "architecture"
+    ],
+    "generatedAt": "2026-11-08T21:00:27.464Z",
+    "publishedAt": "2026-11-08T21:01:45.207Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7525301556733235200",
+    "contentHash": "8031781aa2ac7930f757df0460a78ec237392b3ad2c4c6688eb4a5c35186ff77"
   }
 ]
