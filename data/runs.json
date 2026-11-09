@@ -1219,5 +1219,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7525301556733235200",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261109225302_079",
+    "startedAt": "2026-11-09T22:53:02.460Z",
+    "completedAt": "2026-11-09T22:53:25.206Z",
+    "status": "success",
+    "topic": "Dependency scanning in CI/CD",
+    "category": "DevSecOps",
+    "contentType": "question_discussion",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7525692046045777920",
+    "dryRun": false
   }
 ]

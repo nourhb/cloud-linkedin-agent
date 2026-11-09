@@ -184,9 +184,9 @@
   {
     "topic": "Dependency scanning in CI/CD",
     "category": "DevSecOps",
-    "lastUsed": "2026-10-09T20:41:30.810Z",
+    "lastUsed": "2026-11-09T22:53:02.460Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "GitOps explained",
