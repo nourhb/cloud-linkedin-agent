@@ -2437,5 +2437,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7525718146608087040",
     "contentHash": "a93b834e72d477d783095d3105067b6f0daebcc6934f8707f841508b91daf55d"
+  },
+  {
+    "id": "post_20261110201544_087",
+    "topic": "Container image scanning explained",
+    "category": "DevSecOps",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Container image scanning is a fundamental practice in modern DevSecOps, crucial for maintaining security in containerized environments.\n\nThis process involves analyzing container images for known vulnerabilities, misconfigurations, and potential malware before they are deployed. Tools perform static analysis, inspecting image layers against vulnerability databases like CVEs. The scanning can happen at various stages: during the build in your CI/CD pipeline, when images are pushed to a container registry, or even continuously while they reside in the registry. Integrating image scanning early in your pipeline identifies issues *before* deployment, preventing vulnerable images from reaching production. It helps teams understand the security posture of their applications, especially concerning third-party libraries and dependencies inherited from base images. A common mistake is only scanning once; continuous scanning ensures new vulnerabilities discovered post-build are also caught. For effective cloud security, prioritize remediation of critical findings and establish clear policies for what constitutes an acceptable risk.\n\nWhat's the biggest challenge your team faces when integrating container image scanning into your CI/CD pipelines?",
+    "hook": "Container image scanning is a fundamental practice in modern DevSecOps, crucial for maintaining security in containerized environments.",
+    "hashtags": [
+      "#DevSecOps",
+      "#CloudSecurity",
+      "#ContainerSecurity",
+      "#Kubernetes",
+      "#Docker"
+    ],
+    "keywords": [
+      "scanning",
+      "devsecops",
+      "security",
+      "container images",
+      "vulnerabilities",
+      "CI/CD",
+      "cloud security"
+    ],
+    "generatedAt": "2026-11-10T20:15:44.349Z",
+    "publishedAt": "2026-11-10T20:15:54.921Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7526014798107627520",
+    "contentHash": "0810cd405a5cd5764c78ddccf8a99546293f98e2d42eb49bd6ee7100f0b68b10"
   }
 ]
