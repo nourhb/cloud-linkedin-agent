@@ -205,9 +205,9 @@
   {
     "topic": "Virtual memory in virtualized environments",
     "category": "Virtualization",
-    "lastUsed": "2026-10-11T17:23:44.525Z",
+    "lastUsed": "2026-11-10T22:13:47.200Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Blue/green deployment explained",
