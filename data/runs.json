@@ -1232,5 +1232,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7525692046045777920",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261110003650_790",
+    "startedAt": "2026-11-10T00:36:50.719Z",
+    "completedAt": "2026-11-10T00:37:07.879Z",
+    "status": "success",
+    "topic": "GitOps explained",
+    "category": "DevOps",
+    "contentType": "common_mistake",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7525718146608087040",
+    "dryRun": false
   }
 ]
