@@ -2519,5 +2519,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7526373451662610433",
     "contentHash": "4d022ff620e5d0e8c142ab4eb2ad9eed694f842d00b26ce7be0164b9519b2f22"
+  },
+  {
+    "id": "post_20261111232323_881",
+    "topic": "Deployment strategies overview",
+    "category": "DevOps",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake in managing applications is underestimating the importance of choosing the right deployment strategy. Many teams default to the simplest method, unaware of the risks this introduces in complex cloud computing environments.\n\nSimply pushing updates directly to production, often termed a \"recreate\" deployment, forces an immediate cutover. While straightforward, this approach carries high risk: if the new version has a critical bug, it impacts all users simultaneously, potentially leading to significant downtime.More robust strategies like rolling updates, canary releases, or blue/green deployments offer ways to mitigate this risk. For instance, a rolling update gradually replaces old application instances with new ones. If an issue arises, only a small percentage of users are affected, allowing for a quick halt or rollback to minimize the blast radius. This approach significantly enhances system stability and availability.Understanding these different deployment strategies is crucial for building resilient systems. The choice depends on factors like application criticality, acceptable downtime, and desired risk tolerance. Integrating the right strategy into your DevOps pipeline is a foundational practice for stable software delivery.What deployment strategy has saved your team from a major outage, and why was it effective?",
+    "hook": "A common mistake in managing applications is underestimating the importance of choosing the right deployment strategy. Many teams default to the simplest method, unaware of the risks this introduces in complex cloud computing environments.",
+    "hashtags": [
+      "#DevOps",
+      "#DeploymentStrategy",
+      "#CloudComputing",
+      "#InfrastructureAsCode",
+      "#SoftwareDelivery"
+    ],
+    "keywords": [
+      "deployment",
+      "strategy",
+      "devops",
+      "cloud computing",
+      "rolling updates",
+      "canary releases",
+      "blue/green deployments"
+    ],
+    "generatedAt": "2026-11-11T23:23:23.997Z",
+    "publishedAt": "2026-11-11T23:23:33.290Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7526424407720742912",
+    "contentHash": "3dd7c6f63642e101ffd1dac1ce68deec7e8cb60576d9e1482c2c689ba7436bac"
   }
 ]

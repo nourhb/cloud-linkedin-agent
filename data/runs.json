@@ -1284,5 +1284,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7526373451662610433",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261111232323_041",
+    "startedAt": "2026-11-11T23:23:23.997Z",
+    "completedAt": "2026-11-11T23:23:33.295Z",
+    "status": "success",
+    "topic": "Deployment strategies overview",
+    "category": "DevOps",
+    "contentType": "common_mistake",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7526424407720742912",
+    "dryRun": false
   }
 ]
