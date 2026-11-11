@@ -1271,5 +1271,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7526044539879469056",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261111200054_587",
+    "startedAt": "2026-11-11T20:00:54.355Z",
+    "completedAt": "2026-11-11T20:01:05.196Z",
+    "status": "success",
+    "topic": "Blue/green deployment explained",
+    "category": "DevOps",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7526373451662610433",
+    "dryRun": false
   }
 ]
