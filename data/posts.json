@@ -2577,5 +2577,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7526745610734047232",
     "contentHash": "1c18269929d9e86dfd1e492951690006ccad0b466cb5c668eaee576fe7434de2"
+  },
+  {
+    "id": "post_20261112223916_729",
+    "topic": "Virtual networking fundamentals",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Many engineers might assume virtual switches are just software emulations of physical switches, offering identical capabilities and limitations.\n\nWhile functionally similar, understanding how virtual networking integrates with hypervisors and host hardware reveals crucial differences, especially regarding performance and isolation. A virtual switch, like those found in VMware ESXi or KVM, resides within the hypervisor. It enables virtual machines (VMs) on the same host to communicate with each other and with external networks. These switches can create virtual local area networks (VLANs) to segment traffic, just like physical switches. However, their forwarding decisions are made by the hypervisor kernel, leveraging host CPU and memory. Unlike physical switches, they don't have ASICs. This means careful configuration of networking policies and resource allocation is essential to avoid bottlenecks and ensure proper traffic isolation and security across your virtualized environment. What's one common networking challenge you've encountered when troubleshooting connectivity between VMs on the same hypervisor?",
+    "hook": "Many engineers might assume virtual switches are just software emulations of physical switches, offering identical capabilities and limitations.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#Networking",
+      "#VirtualSwitch"
+    ],
+    "keywords": [
+      "virtual switch",
+      "networking",
+      "vlan",
+      "virtualization",
+      "hypervisor"
+    ],
+    "generatedAt": "2026-11-12T22:39:16.843Z",
+    "publishedAt": "2026-11-12T22:39:36.072Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7526775730760986625",
+    "contentHash": "6a8be512311f01a4924c8deb6e916465aafed5a668b48173106320080df0c7c5"
   }
 ]
