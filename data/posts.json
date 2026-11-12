@@ -2549,5 +2549,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7526424407720742912",
     "contentHash": "3dd7c6f63642e101ffd1dac1ce68deec7e8cb60576d9e1482c2c689ba7436bac"
+  },
+  {
+    "id": "post_20261112203943_338",
+    "topic": "IAM fundamentals for cloud security",
+    "category": "Cloud Security",
+    "contentType": "comparison",
+    "difficulty": "intermediate",
+    "content": "Many teams grapple with the nuances of IAM policies in cloud environments, often encountering unexpected access issues.\n\nA key distinction lies between identity-based and resource-based policies. Identity-based policies define what an identity (user, role) can do across various resources. Resource-based policies, conversely, define who can access a specific resource itself and what actions they can perform on it.\n\nFor instance, consider an S3 bucket. You can grant a user permission to read from *any* S3 bucket via an identity-based policy attached to their user. Alternatively, you can attach a resource-based policy directly to a *specific* S3 bucket, allowing a particular user or even an external account to read from *only that bucket*. Both affect access, but from different angles.\n\nUnderstanding when and where to apply each type of policy is crucial for robust cloud security. Misconfigurations often arise when one policy type is expected to cover scenarios better handled by the other, leading to either overly permissive or insufficient access controls. This can become complex in multi-account or multi-service architectures.\n\nHow does your team ensure clear separation and effective management of identity-based versus resource-based policies in your cloud environment?",
+    "hook": "Many teams grapple with the nuances of IAM policies in cloud environments, often encountering unexpected access issues.",
+    "hashtags": [
+      "#CloudSecurity",
+      "#IAM",
+      "#CloudComputing",
+      "#DevSecOps",
+      "#AccessControl"
+    ],
+    "keywords": [
+      "iam",
+      "cloud security",
+      "access control",
+      "identity-based policies",
+      "resource-based policies"
+    ],
+    "generatedAt": "2026-11-12T20:39:43.246Z",
+    "publishedAt": "2026-11-12T20:39:54.202Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7526745610734047232",
+    "contentHash": "1c18269929d9e86dfd1e492951690006ccad0b466cb5c668eaee576fe7434de2"
   }
 ]
