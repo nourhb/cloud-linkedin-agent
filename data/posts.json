@@ -2630,5 +2630,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7527103280720793600",
     "contentHash": "c537bb0192d92e35c4bc3fb15586b4bf0236892dee5e6f7ae41d77837691c0cb"
+  },
+  {
+    "id": "post_20261113222544_065",
+    "topic": "SAST vs DAST explained",
+    "category": "DevSecOps",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "A common misconception in DevSecOps is viewing SAST and DAST as competing solutions, or that one can fully replace the other for application security.\n\nThe reality is that Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) address different vulnerability classes and stages of the software development lifecycle. SAST operates on static code, identifying issues like SQL injection, cross-site scripting, or buffer overflows *before* the application runs. It's like finding typos in a blueprint. SAST tools integrate early into the CI/CD pipeline, providing quick feedback to developers. In contrast, DAST scans the running application from the outside, simulating attacks to find vulnerabilities that only manifest at runtime. This includes configuration errors, authentication flaws, or server-side issues. DAST acts like a penetration tester, interacting with the live system. It's crucial for understanding how an application behaves in a real environment. For robust cloud security, combining SAST and DAST is not optional; it's essential. SAST catches design and coding flaws early, while DAST uncovers runtime weaknesses and configuration problems that SAST might miss. Together, they provide a much broader and deeper security posture, crucial for modern infrastructure as code and cloud-native applications. How do you prioritize integrating SAST and DAST into your CI/CD pipelines, especially in complex cloud environments?",
+    "hook": "A common misconception in DevSecOps is viewing SAST and DAST as competing solutions, or that one can fully replace the other for application security.",
+    "hashtags": [
+      "#DevSecOps",
+      "#SAST",
+      "#DAST",
+      "#CloudSecurity",
+      "#ApplicationSecurity"
+    ],
+    "keywords": [
+      "sast",
+      "dast",
+      "devsecops",
+      "cloud security",
+      "application security",
+      "infrastructure as code"
+    ],
+    "generatedAt": "2026-11-13T22:25:44.797Z",
+    "publishedAt": "2026-11-13T22:25:55.850Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7527134678487699456",
+    "contentHash": "1b194c33b8d1fe29ab7a1ddbe02692890d12a6f86ee2cfd3c24797407c715fdf"
   }
 ]

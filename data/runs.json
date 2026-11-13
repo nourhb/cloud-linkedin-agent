@@ -1336,5 +1336,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7527103280720793600",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261113222544_075",
+    "startedAt": "2026-11-13T22:25:44.797Z",
+    "completedAt": "2026-11-13T22:25:55.854Z",
+    "status": "success",
+    "topic": "SAST vs DAST explained",
+    "category": "DevSecOps",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7527134678487699456",
+    "dryRun": false
   }
 ]
