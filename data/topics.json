@@ -254,9 +254,9 @@
   {
     "topic": "How load balancers work in the cloud",
     "category": "Cloud Computing",
-    "lastUsed": "2026-10-14T20:04:28.449Z",
+    "lastUsed": "2026-11-13T20:21:00.208Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes Secrets",

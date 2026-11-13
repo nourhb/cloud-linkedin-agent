@@ -2604,5 +2604,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7526775730760986625",
     "contentHash": "6a8be512311f01a4924c8deb6e916465aafed5a668b48173106320080df0c7c5"
+  },
+  {
+    "id": "post_20261113202100_340",
+    "topic": "How load balancers work in the cloud",
+    "category": "Cloud Computing",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "Do you know a common mistake teams make when relying on a load balancer in the cloud for application resilience?\n\nMany assume a load balancer inherently fixes backend application issues. While a load balancer distributes traffic, its effectiveness hinges on properly configured health checks. If a backend server instance is failing but its health check is too lenient or incorrectly configured, the load balancer will continue sending traffic to it. This leads to frustrated users and ongoing application errors, despite the load balancer being in place. A robust cloud networking setup requires vigilance beyond simply deploying the balancer.\n\nConsider an auto-scaling group behind a load balancer. If an application crashes on an instance but the health check only verifies TCP port availability, the load balancer won't detect the application's unresponsiveness. It keeps routing requests to a failing server, resulting in intermittent service for users, even with multiple healthy instances running.\n\nThe critical takeaway is that a load balancer is only as smart as its health checks. They are fundamental to its operation and your application's reliability. What’s one health check configuration you've found critical for cloud application stability?",
+    "hook": "Do you know a common mistake teams make when relying on a load balancer in the cloud for application resilience?",
+    "hashtags": [
+      "#LoadBalancer",
+      "#CloudComputing",
+      "#CloudNetworking",
+      "#DevOps"
+    ],
+    "keywords": [
+      "load balancer",
+      "cloud",
+      "networking",
+      "health checks"
+    ],
+    "generatedAt": "2026-11-13T20:21:00.208Z",
+    "publishedAt": "2026-11-13T20:21:09.707Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7527103280720793600",
+    "contentHash": "c537bb0192d92e35c4bc3fb15586b4bf0236892dee5e6f7ae41d77837691c0cb"
   }
 ]
