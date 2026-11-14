@@ -1362,5 +1362,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7527440165536043008",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261114211345_735",
+    "startedAt": "2026-11-14T21:13:45.981Z",
+    "completedAt": "2026-11-14T21:14:06.269Z",
+    "status": "success",
+    "topic": "Linux processes and systemd basics",
+    "category": "Linux",
+    "contentType": "architecture",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7527478991809761281",
+    "dryRun": false
   }
 ]
