@@ -261,9 +261,9 @@
   {
     "topic": "Kubernetes Secrets",
     "category": "Kubernetes",
-    "lastUsed": "2026-10-15T16:23:30.247Z",
+    "lastUsed": "2026-11-14T18:39:39.795Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Linux processes and systemd basics",
