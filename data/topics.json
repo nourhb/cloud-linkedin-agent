@@ -247,9 +247,9 @@
   {
     "topic": "Virtual CPUs",
     "category": "Virtualization",
-    "lastUsed": "2026-10-14T16:38:34.642Z",
+    "lastUsed": "2026-11-15T19:15:25.753Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "How load balancers work in the cloud",

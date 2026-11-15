@@ -2711,5 +2711,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7527478991809761281",
     "contentHash": "d079467d13d674d56b1fd084573f47e229e7935754638c36850ded272d3443ba"
+  },
+  {
+    "id": "post_20261115191525_197",
+    "topic": "Virtual CPUs",
+    "category": "Virtualization",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "A common misconception regarding Virtual CPUs (vCPUs) is equating them directly with physical CPU cores.\n\nWhile a vCPU acts as an execution thread for a virtual machine, it doesn't always map 1:1 to a dedicated physical core. Instead, it represents a logical CPU presented to the guest OS, with its execution managed by the hypervisor.\n\nThe hypervisor's role is critical for CPU scheduling. It allocates physical CPU time slices to vCPUs, rapidly switching between them to create the illusion of continuous execution for each virtual machine. This time-sharing mechanism allows for CPU overcommitment, where more vCPUs are provisioned than available physical cores.\n\nWhile overcommitment can improve resource utilization and cost efficiency in virtualization, excessive levels can lead to performance degradation due to increased latency from frequent context switching and competition for physical CPU resources. Understanding how the hypervisor manages this scheduling is key to optimizing performance in any cloud computing environment.",
+    "hook": "A common misconception regarding Virtual CPUs (vCPUs) is equating them directly with physical CPU cores.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#CPU",
+      "#Hypervisor",
+      "#Performance"
+    ],
+    "keywords": [
+      "vcpu",
+      "cpu",
+      "scheduling",
+      "hypervisor",
+      "virtualization",
+      "overcommitment",
+      "performance"
+    ],
+    "generatedAt": "2026-11-15T19:15:25.753Z",
+    "publishedAt": "2026-11-15T19:15:37.001Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7527811559692099584",
+    "contentHash": "9f07e324fc2503c6c46533b3962e35c679166ce7cee623289229222b26e93b74"
   }
 ]
