@@ -282,9 +282,9 @@
   {
     "topic": "VM resource allocation",
     "category": "Virtualization",
-    "lastUsed": "2026-10-16T19:27:46.185Z",
+    "lastUsed": "2026-11-15T21:33:52.056Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Terraform state explained",

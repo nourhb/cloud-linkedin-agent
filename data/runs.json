@@ -1388,5 +1388,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7527811559692099584",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261115213352_273",
+    "startedAt": "2026-11-15T21:33:52.056Z",
+    "completedAt": "2026-11-15T21:34:02.364Z",
+    "status": "success",
+    "topic": "VM resource allocation",
+    "category": "Virtualization",
+    "contentType": "troubleshooting",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7527846396524339200",
+    "dryRun": false
   }
 ]
