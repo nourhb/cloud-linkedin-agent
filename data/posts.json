@@ -2770,5 +2770,30 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7527846396524339200",
     "contentHash": "8eb0fb3bff6d7e1557cd6c661b4eccf866a4c41c029efe8822ddf3ee3de78dc1"
+  },
+  {
+    "id": "post_20261116224507_269",
+    "topic": "Terraform state explained",
+    "category": "Terraform",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "A common mistake when starting with Terraform is underestimating the importance of its state file. Many teams initially manage Terraform state locally, which quickly leads to significant issues in collaborative environments.\n\nThe Terraform state file is crucial; it maps real-world resources to your configuration. It tracks infrastructure metadata, allowing Terraform to understand existing resources and necessary changes. Without correctly managed state, Terraform cannot reliably perform updates or deletions. Consider two engineers, Alice and Bob, applying changes from the same Terraform configuration but with local state files. Alice creates a new VM. Bob, unaware of Alice's change, might try to create a duplicate resource or accidentally delete Alice's deployment. This causes configuration drift and resource conflicts. Remote state management, using backends like S3 or Azure Blob Storage, combined with state locking, prevents these race conditions and ensures a single source of truth for your infrastructure as code. Always use a remote backend for your Terraform state, especially in team settings. Configure state locking to prevent concurrent modifications and ensure consistency. Remember that sensitive data should not be stored directly in state files; use secret management services instead. Proper state management is fundamental to robust Infrastructure as Code practices. How does your team handle Terraform state migrations or deal with state drift in production?",
+    "hook": "A common mistake when starting with Terraform is underestimating the importance of its state file. Many teams initially manage Terraform state locally, which quickly leads to significant issues in collaborative environments.",
+    "hashtags": [
+      "#Terraform",
+      "#InfrastructureAsCode",
+      "#DevOps",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "terraform",
+      "state",
+      "iac"
+    ],
+    "generatedAt": "2026-11-16T22:45:07.647Z",
+    "publishedAt": "2026-11-16T22:45:18.329Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7528226718323474432",
+    "contentHash": "6125e844a3393d09b400a959edb5019619444c0145476f5d8e6fb18258b0ed4f"
   }
 ]

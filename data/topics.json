@@ -289,9 +289,9 @@
   {
     "topic": "Terraform state explained",
     "category": "Terraform",
-    "lastUsed": "2026-10-17T15:01:55.812Z",
+    "lastUsed": "2026-11-16T22:45:07.647Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes namespaces",
