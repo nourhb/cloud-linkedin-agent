@@ -310,9 +310,9 @@
   {
     "topic": "Secrets management fundamentals",
     "category": "DevSecOps",
-    "lastUsed": "2026-10-18T18:31:24.398Z",
+    "lastUsed": "2026-11-17T23:47:55.226Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes StatefulSets",
