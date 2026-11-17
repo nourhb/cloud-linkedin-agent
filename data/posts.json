@@ -2821,5 +2821,34 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7528256218125979648",
     "contentHash": "b72ff105fb1c5a9bb29f4dd32768470ec352ddcf34b16f9933a335509baecd15"
+  },
+  {
+    "id": "post_20261117213135_952",
+    "topic": "Load balancers: Layer 4 vs Layer 7",
+    "category": "Networking",
+    "contentType": "mini_case_study",
+    "difficulty": "intermediate",
+    "content": "When should you choose a Layer 4 versus a Layer 7 load balancer for your application's traffic distribution? Understanding this choice is critical for designing efficient and scalable cloud networking.\n\nA Layer 4 load balancer operates at the transport layer, distributing traffic based on IP addresses and port numbers. It's fast and efficient for simple, high-volume TCP/UDP traffic, often used for distributing across identical backend servers, such as a database cluster or basic web server pool. Its main advantage is low overhead and high performance, as it doesn't inspect packet content beyond the network and transport headers.\n\nIn contrast, a Layer 7 load balancer functions at the application layer, allowing it to inspect HTTP/HTTPS request content like URLs, headers, and cookies. This enables advanced routing decisions, like sending requests to '/api/users' to a dedicated user service and '/api/products' to a product service within a microservices architecture. Layer 7 load balancers also handle SSL/TLS termination, offloading encryption work from your backend servers and centralizing certificate management. While offering greater flexibility and application-aware features, they introduce slightly more latency due to deeper packet inspection.\n\nWhat factors most influence your team's decision when choosing between Layer 4 and Layer 7 load balancing for new services?",
+    "hook": "When should you choose a Layer 4 versus a Layer 7 load balancer for your application's traffic distribution? Understanding this choice is critical for designing efficient and scalable cloud networking.",
+    "hashtags": [
+      "#LoadBalancing",
+      "#Networking",
+      "#CloudComputing",
+      "#DevOps",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "load balancer",
+      "layer4",
+      "layer7",
+      "networking",
+      "cloud architecture",
+      "microservices"
+    ],
+    "generatedAt": "2026-11-17T21:31:35.360Z",
+    "publishedAt": "2026-11-17T21:32:17.492Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7528570732105252864",
+    "contentHash": "aadc1208395208459d1a66835f45a363ccdd523ef5da24d836147fede2709783"
   }
 ]
