@@ -1414,5 +1414,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7528226718323474432",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261117004218_815",
+    "startedAt": "2026-11-17T00:42:18.485Z",
+    "completedAt": "2026-11-17T00:42:31.467Z",
+    "status": "success",
+    "topic": "Kubernetes namespaces",
+    "category": "Kubernetes",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7528256218125979648",
+    "dryRun": false
   }
 ]
