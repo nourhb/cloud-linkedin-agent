@@ -1466,5 +1466,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7528926960907976704",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261118231942_231",
+    "startedAt": "2026-11-18T23:19:42.157Z",
+    "completedAt": "2026-11-18T23:20:31.368Z",
+    "status": "success",
+    "topic": "Kubernetes StatefulSets",
+    "category": "Kubernetes",
+    "contentType": "troubleshooting",
+    "generationAttempts": 5,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7528960359601381376",
+    "dryRun": false
   }
 ]

@@ -2906,5 +2906,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7528926960907976704",
     "contentHash": "399732629beedb6166af128d233772d0f19004566f408037c26d1226b4bd2153"
+  },
+  {
+    "id": "post_20261118231942_712",
+    "topic": "Kubernetes StatefulSets",
+    "category": "Kubernetes",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "Kubernetes StatefulSets are crucial for deploying stateful applications, but managing their persistent storage lifecycle can often present troubleshooting challenges.\n\nUnlike stateless Deployments, StatefulSets provide stable, unique network identities and ordered deployment/scaling for applications such as databases or message queues. Each Pod receives a unique ordinal index and a stable hostname.\n\nThe power of StatefulSets lies in their integration with PersistentVolumeClaims (PVCs). They use `volumeClaimTemplates` to automatically provision a dedicated PVC for each replica. This ensures that every Pod has stable, persistent storage that remains even if the Pod restarts or moves to a different node.\n\nA common troubleshooting point arises when scaling down or deleting StatefulSets. By design, the associated PVCs are *not* automatically removed. This protects your data, but if not manually cleaned up, it can lead to orphaned PVCs and their underlying PersistentVolumes. Forgetting this step can result in unexpected cloud costs or prevent new StatefulSets from claiming desired storage, requiring manual intervention to resolve.\n\nHow does your team handle the lifecycle management of PersistentVolumeClaims when working with Kubernetes StatefulSets?",
+    "hook": "Kubernetes StatefulSets are crucial for deploying stateful applications, but managing their persistent storage lifecycle can often present troubleshooting challenges.",
+    "hashtags": [
+      "#KubernetesStatefulSets",
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#PersistentStorage"
+    ],
+    "keywords": [
+      "kubernetes",
+      "statefulset",
+      "persistent storage",
+      "PVCs"
+    ],
+    "generatedAt": "2026-11-18T23:19:42.157Z",
+    "publishedAt": "2026-11-18T23:20:31.364Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7528960359601381376",
+    "contentHash": "c15960b8d7253f6f331f2809174a67c1ec7dee7971b111e13d115923a6938992"
   }
 ]
