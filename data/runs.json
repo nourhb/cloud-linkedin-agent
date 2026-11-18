@@ -1453,5 +1453,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7528604914114232322",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261118210708_755",
+    "startedAt": "2026-11-18T21:07:08.784Z",
+    "completedAt": "2026-11-18T21:07:49.112Z",
+    "status": "success",
+    "topic": "Azure Resource Groups explained",
+    "category": "Microsoft Azure",
+    "contentType": "comparison",
+    "generationAttempts": 4,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7528926960907976704",
+    "dryRun": false
   }
 ]
