@@ -1492,5 +1492,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7529290623481389056",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261119232721_522",
+    "startedAt": "2026-11-19T23:27:21.063Z",
+    "completedAt": "2026-11-19T23:27:48.733Z",
+    "status": "success",
+    "topic": "IaaS vs PaaS vs SaaS explained",
+    "category": "Cloud Computing",
+    "contentType": "technical_explanation",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7529324580885385217",
+    "dryRun": false
   }
 ]
