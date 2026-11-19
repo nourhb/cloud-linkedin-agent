@@ -2933,5 +2933,32 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7528960359601381376",
     "contentHash": "c15960b8d7253f6f331f2809174a67c1ec7dee7971b111e13d115923a6938992"
+  },
+  {
+    "id": "post_20261119211215_253",
+    "topic": "How the Kubernetes scheduler works",
+    "category": "Kubernetes",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "The Kubernetes scheduler is a critical component that ensures your Pods are efficiently placed on suitable nodes within your cluster.\n\nWhen a new Pod is created, it enters a pending state until the scheduler finds an appropriate node. This complex decision-making process involves two primary phases: filtering and scoring.\n\nFirst, the filtering phase applies a set of 'predicates' to narrow down the available nodes. These predicates check for basic requirements, such as whether a node has enough available resources (CPU and memory) to accommodate the Pod, or if it matches any node selectors, taints, or tolerations specified in the Pod's definition. Nodes that fail any predicate are immediately excluded from consideration.\n\nNext, the scoring phase takes the remaining eligible nodes and assigns them a score based on various 'priorities'. Priorities consider factors like balancing resource utilization across nodes (e.g., preferring nodes that are least requested), or adhering to inter-pod affinity and anti-affinity rules. The node with the highest score is then selected to host the Pod.\n\nUnderstanding how the Kubernetes scheduler operates is essential for optimizing resource utilization, ensuring high availability, and maintaining desired performance for your applications. You can influence the scheduler's decisions by defining accurate resource requests and limits, applying node labels, and using taints and tolerations.",
+    "hook": "The Kubernetes scheduler is a critical component that ensures your Pods are efficiently placed on suitable nodes within your cluster.",
+    "hashtags": [
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "kubernetes",
+      "scheduler",
+      "nodes",
+      "pods",
+      "resource allocation"
+    ],
+    "generatedAt": "2026-11-19T21:12:15.385Z",
+    "publishedAt": "2026-11-19T21:12:53.279Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7529290623481389056",
+    "contentHash": "367e0a9841f7be8bc9e461f11f9168aafca11beb7df8e4a6b482873f93f33fc2"
   }
 ]

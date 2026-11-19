@@ -338,9 +338,9 @@
   {
     "topic": "How the Kubernetes scheduler works",
     "category": "Kubernetes",
-    "lastUsed": "2026-10-20T19:55:23.823Z",
+    "lastUsed": "2026-11-19T21:12:15.385Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "What an SBOM actually is",
