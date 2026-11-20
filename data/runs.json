@@ -1518,5 +1518,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7529649019862614016",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261120230020_398",
+    "startedAt": "2026-11-20T23:00:20.637Z",
+    "completedAt": "2026-11-20T23:01:41.914Z",
+    "status": "success",
+    "topic": "Deployment strategies overview",
+    "category": "DevOps",
+    "contentType": "comparison",
+    "generationAttempts": 7,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7529680394623832064",
+    "dryRun": false
   }
 ]
