@@ -331,9 +331,9 @@
   {
     "topic": "Designing safe rollback strategies",
     "category": "DevOps",
-    "lastUsed": "2026-10-20T16:25:02.754Z",
+    "lastUsed": "2026-11-20T20:56:39.465Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "How the Kubernetes scheduler works",
