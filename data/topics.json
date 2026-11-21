@@ -359,9 +359,9 @@
   {
     "topic": "Terraform modules for reusable infrastructure",
     "category": "Terraform",
-    "lastUsed": "2026-10-22T16:42:12.835Z",
+    "lastUsed": "2026-11-21T22:05:47.756Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Idempotency in configuration management",

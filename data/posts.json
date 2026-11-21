@@ -3075,5 +3075,31 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7529996394808422400",
     "contentHash": "88bba3ca035737d69e94d847f54a8aa801bafd2dfedb7a5cf39ee1549f80604a"
+  },
+  {
+    "id": "post_20261121220547_865",
+    "topic": "Terraform modules for reusable infrastructure",
+    "category": "Terraform",
+    "contentType": "technical_explanation",
+    "difficulty": "intermediate",
+    "content": "Terraform modules are essential for building maintainable and scalable infrastructure as code (IaC). They are a cornerstone for organizing complex cloud environments.\n\nA Terraform module encapsulates a set of resources, like a virtual network, a database, or a web server stack, allowing them to be defined once and reused across multiple environments or projects. This promotes consistency and reduces duplication. Instead of copying and pasting resource blocks, you reference a module, abstracting away the underlying complexity. A common mistake is not adopting modules early, leading to configuration drift and extensive manual refactoring later.\n\nFor instance, if your team frequently deploys similar compute instances with specific networking and monitoring configurations, you can create a 'compute-instance' module. This module would define the instance type, security groups, disk attachments, and cloud-init scripts. Any new deployment then simply calls this module with its required variables.\n\nLeveraging modules significantly improves the organization and readability of your Terraform configurations. It standardizes deployments, minimizes errors, and accelerates provisioning by abstracting common patterns into reusable building blocks. This approach is fundamental for efficient cloud computing operations.\n\nWhat's one common challenge your team faces when managing shared Terraform modules across different projects?",
+    "hook": "Terraform modules are essential for building maintainable and scalable infrastructure as code (IaC). They are a cornerstone for organizing complex cloud environments.",
+    "hashtags": [
+      "#Terraform",
+      "#InfrastructureAsCode",
+      "#CloudComputing",
+      "#DevOps"
+    ],
+    "keywords": [
+      "terraform",
+      "modules",
+      "iac",
+      "cloud computing"
+    ],
+    "generatedAt": "2026-11-21T22:05:47.756Z",
+    "publishedAt": "2026-11-21T22:05:58.412Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7530028758410649600",
+    "contentHash": "ea6699de93bdf96420f5242c794f1c65e50ac345c29f6b8ef18a3a2439977349"
   }
 ]
