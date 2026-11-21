@@ -366,9 +366,9 @@
   {
     "topic": "Idempotency in configuration management",
     "category": "Ansible",
-    "lastUsed": "2026-10-22T19:51:21.824Z",
+    "lastUsed": "2026-11-21T19:57:11.045Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Live migration of virtual machines",
