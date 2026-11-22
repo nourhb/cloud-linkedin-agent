@@ -380,9 +380,9 @@
   {
     "topic": "Observability: logs, metrics, and traces",
     "category": "Observability",
-    "lastUsed": "2026-10-23T19:52:28.090Z",
+    "lastUsed": "2026-11-22T20:10:25.476Z",
     "cooldownDays": 30,
-    "useCount": 1
+    "useCount": 2
   },
   {
     "topic": "Kubernetes networking model",

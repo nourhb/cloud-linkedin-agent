@@ -3101,5 +3101,35 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7530028758410649600",
     "contentHash": "ea6699de93bdf96420f5242c794f1c65e50ac345c29f6b8ef18a3a2439977349"
+  },
+  {
+    "id": "post_20261122201025_623",
+    "topic": "Observability: logs, metrics, and traces",
+    "category": "Observability",
+    "contentType": "learning_in_public",
+    "difficulty": "intermediate",
+    "content": "Understanding observability is crucial for anyone managing modern cloud-native applications. It's about gaining deep insights into your systems and their behavior.\n\nObservability goes beyond traditional monitoring. While monitoring tells you if a system is up or down, observability helps you understand *why* it's behaving a certain way. It's built on three fundamental pillars: logs, metrics, and traces.\n\nLogs capture discrete events like an error message, a user login, or a function call, offering detailed context at a specific point in time. Metrics are aggregations over time, such as CPU utilization, request latency, or error rates, providing statistical views of system health and performance.\n\nTraces follow a single request or transaction as it traverses multiple services and components in a distributed system, revealing its full journey and dependencies. This is especially vital in complex microservices architectures to pinpoint bottlenecks.\n\nCombining these three data types provides a comprehensive view. For example, if your application's latency metrics spike, you can use traces to pinpoint which specific service introduced the delay, then analyze that service's detailed logs to uncover the root cause. This integrated approach allows for much faster and more accurate issue resolution. What's the biggest challenge your team faces in correlating logs, metrics, and traces effectively?",
+    "hook": "Understanding observability is crucial for anyone managing modern cloud-native applications. It's about gaining deep insights into your systems and their behavior.",
+    "hashtags": [
+      "#Observability",
+      "#CloudComputing",
+      "#DevOps",
+      "#Metrics",
+      "#Traces"
+    ],
+    "keywords": [
+      "observability",
+      "logs",
+      "metrics",
+      "traces",
+      "cloud-native",
+      "monitoring",
+      "troubleshooting"
+    ],
+    "generatedAt": "2026-11-22T20:10:25.476Z",
+    "publishedAt": "2026-11-22T20:10:38.158Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7530362122992685056",
+    "contentHash": "68b3ccf74651ebaaa0a15b65b58804475b3db25121ab4305cf418b7997cadba9"
   }
 ]

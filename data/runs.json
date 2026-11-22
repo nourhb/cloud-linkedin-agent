@@ -1557,5 +1557,18 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7530028758410649600",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261122201025_161",
+    "startedAt": "2026-11-22T20:10:25.476Z",
+    "completedAt": "2026-11-22T20:10:38.163Z",
+    "status": "success",
+    "topic": "Observability: logs, metrics, and traces",
+    "category": "Observability",
+    "contentType": "learning_in_public",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "linkedinPostId": "urn:li:share:7530362122992685056",
+    "dryRun": false
   }
 ]
