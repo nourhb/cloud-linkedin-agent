@@ -3131,5 +3131,33 @@
     "status": "published",
     "linkedinPostId": "urn:li:share:7530362122992685056",
     "contentHash": "68b3ccf74651ebaaa0a15b65b58804475b3db25121ab4305cf418b7997cadba9"
+  },
+  {
+    "id": "post_20261122222158_591",
+    "topic": "Resource overcommitment in virtualization",
+    "category": "Virtualization",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "A common source of performance issues in virtualized environments stems from misunderstood resource overcommitment.\n\nMany associate overcommitment solely with aggressive cost-saving and assume it's inherently detrimental. They might think allocating more vCPUs or vRAM than physical resources will always cause problems. While overcommitment *can* lead to trouble if mismanaged, it's a fundamental capability of virtualization platforms. The issue often isn't overcommitment itself, but a lack of visibility or poor planning regarding actual workload demands. Hypervisors like VMware ESXi or KVM enable overcommitment to boost hardware utilization. For CPU, this involves time-slicing physical cores among more vCPUs. For memory, techniques such as ballooning, memory sharing, and swapping come into play. A key troubleshooting step is to identify the signs: high CPU ready times, excessive memory swapping, or disk I/O bottlenecks that appear even when individual VMs seem underutilized. Effective capacity planning and monitoring tools are critical to prevent resource contention and ensure guest VMs perform optimally under overcommitment conditions. How do you approach capacity planning to manage resource overcommitment effectively in your virtualization clusters?",
+    "hook": "A common source of performance issues in virtualized environments stems from misunderstood resource overcommitment.",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#CapacityPlanning",
+      "#Troubleshooting",
+      "#Hypervisor"
+    ],
+    "keywords": [
+      "overcommit",
+      "capacity",
+      "virtualization",
+      "hypervisor",
+      "troubleshooting"
+    ],
+    "generatedAt": "2026-11-22T22:21:58.338Z",
+    "publishedAt": "2026-11-22T22:22:18.842Z",
+    "status": "published",
+    "linkedinPostId": "urn:li:share:7530395260481454080",
+    "contentHash": "42217bdf25774b9a10029f3c0494019e13484ac3230f038125e7551191757a3f"
   }
 ]
