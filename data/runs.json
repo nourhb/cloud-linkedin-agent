@@ -1597,5 +1597,19 @@
     "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
     "errorCategory": "LINKEDIN_AUTH_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261124031233_264",
+    "startedAt": "2026-11-24T03:12:33.470Z",
+    "completedAt": "2026-11-24T03:13:09.766Z",
+    "status": "failed",
+    "topic": "Live migration of virtual machines",
+    "category": "Virtualization",
+    "contentType": "common_mistake",
+    "generationAttempts": 3,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]

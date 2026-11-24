@@ -3181,5 +3181,30 @@
     "generatedAt": "2026-11-24T00:36:40.435Z",
     "status": "failed",
     "contentHash": "a938430e5c8a9778ebd61f8b9ef5ffca983795f0507bf6110c6a4d4b5238ebf6"
+  },
+  {
+    "id": "post_20261124031233_129",
+    "topic": "Live migration of virtual machines",
+    "category": "Virtualization",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "Are you overlooking network readiness as a critical factor during virtual machine live migration?\n\nWhile technologies like vMotion allow seamless VM movement between hosts, a common mistake is underestimating the network's role. Live migration transfers the VM's active memory and CPU state. If the underlying network lacks sufficient bandwidth or has high latency, this transfer can significantly prolong the migration duration, potentially causing performance degradation or even a brief outage during the final cutover phase. This is especially true for large VMs or environments with shared network resources. Most teams focus on host CPU/memory but overlook network congestion or misconfigured jumbo frames. For instance, attempting to migrate a multi-GB memory footprint VM over a 1Gbps link shared with production traffic can lead to I/O stuttering or a failed operation. Effective planning requires validating network paths, ensuring adequate bandwidth, and often dedicating network segments or applying QoS for migration traffic. Failing to prepare the network can turn a 'live' migration into a disruptive event. What network metrics do you prioritize when preparing for VM live migrations in your infrastructure?",
+    "hook": "Are you overlooking network readiness as a critical factor during virtual machine live migration?",
+    "hashtags": [
+      "#Virtualization",
+      "#CloudComputing",
+      "#Networking",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "live migration",
+      "vMotion",
+      "VM",
+      "network performance",
+      "virtualization"
+    ],
+    "generatedAt": "2026-11-24T03:12:33.470Z",
+    "status": "failed",
+    "contentHash": "80e137ccb4af31bca0d04916c126f6254bff383af91a2abc72dd7f71849c59fc"
   }
 ]
