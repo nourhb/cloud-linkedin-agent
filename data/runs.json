@@ -1583,5 +1583,19 @@
     "publicationAttempts": 1,
     "linkedinPostId": "urn:li:share:7530395260481454080",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261124003640_810",
+    "startedAt": "2026-11-24T00:36:40.435Z",
+    "completedAt": "2026-11-24T00:36:48.667Z",
+    "status": "failed",
+    "topic": "Infrastructure as Code fundamentals",
+    "category": "DevOps",
+    "contentType": "technical_explanation",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]
