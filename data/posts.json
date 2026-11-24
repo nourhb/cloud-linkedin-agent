@@ -3206,5 +3206,28 @@
     "generatedAt": "2026-11-24T03:12:33.470Z",
     "status": "failed",
     "contentHash": "80e137ccb4af31bca0d04916c126f6254bff383af91a2abc72dd7f71849c59fc"
+  },
+  {
+    "id": "post_20261124225543_873",
+    "topic": "DNS fundamentals for cloud infrastructure",
+    "category": "Networking",
+    "contentType": "troubleshooting",
+    "difficulty": "intermediate",
+    "content": "A common misconception in cloud infrastructure is assuming DNS resolution issues are always external. Often, the most challenging problems stem from internal configurations, requiring a deep understanding of DNS fundamentals.\n\nWhile public DNS services handle external name resolution, cloud environments introduce layers of private DNS. Within a Virtual Private Cloud (VPC), cloud providers offer internal DNS resolvers that automatically handle service discovery for resources like EC2 instances, virtual machines, or Kubernetes pods. A frequent troubleshooting scenario involves misconfigured private hosted zones, incorrect DNS forwarding rules between VPCs, or applications pointing to outdated or incorrect DNS server IPs. These errors can manifest as intermittent connectivity, services failing to discover dependencies, or requests timing out, even when security groups and network ACLs are correctly configured. Effective cloud networking requires understanding how your application's DNS queries traverse these internal and external resolution paths. What's one unexpected DNS configuration issue you've encountered in a cloud setup?",
+    "hook": "A common misconception in cloud infrastructure is assuming DNS resolution issues are always external. Often, the most challenging problems stem from internal configurations, requiring a deep understanding of DNS fundamentals.",
+    "hashtags": [
+      "#DNS",
+      "#CloudNetworking",
+      "#Troubleshooting",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "dns",
+      "networking",
+      "resolution"
+    ],
+    "generatedAt": "2026-11-24T22:55:43.352Z",
+    "status": "failed",
+    "contentHash": "2dfd0158a9b3fdc7675c157fa0a09ab5a2b8c632559a5c1b24137b3aaf1715dc"
   }
 ]
