@@ -3229,5 +3229,28 @@
     "generatedAt": "2026-11-24T22:55:43.352Z",
     "status": "failed",
     "contentHash": "2dfd0158a9b3fdc7675c157fa0a09ab5a2b8c632559a5c1b24137b3aaf1715dc"
+  },
+  {
+    "id": "post_20261125011803_213",
+    "topic": "Kubernetes security basics",
+    "category": "DevSecOps",
+    "contentType": "architecture",
+    "difficulty": "intermediate",
+    "content": "How do you effectively manage access control within your Kubernetes clusters, ensuring users and applications only have the permissions they truly need?\n\nKubernetes Role-Based Access Control (RBAC) is fundamental for defining and enforcing security policies. Without granular RBAC, teams often grant overly permissive access, creating significant security vulnerabilities.\n\nRBAC operates on a simple principle: authenticate a user or service account, then authorize their actions based on defined roles. The key components are:\n*   Role/ClusterRole: Defines a set of permissions (e.g., \"can read Pods\" or \"can create Deployments\"). Roles are namespace-scoped, while ClusterRoles are cluster-wide.\n*   RoleBinding/ClusterRoleBinding: Binds a Role (or ClusterRole) to a user, group, or service account. This linkage grants the defined permissions to the specified subject.\n\nFor instance, you might define a Role named \"pod-reader\" in the \"dev\" namespace that allows \"get\", \"watch\", and \"list\" permissions on Pods. Then, you create a RoleBinding that associates this \"pod-reader\" Role with a specific developer's user account, restricting their access to only reading Pods within the \"dev\" namespace. This minimizes the blast radius if an account is compromised. Implementing least privilege with RBAC is a cornerstone of robust Kubernetes security.\n\nWhat's a common RBAC misconfiguration you've encountered, or a best practice your team strongly adheres to?",
+    "hook": "How do you effectively manage access control within your Kubernetes clusters, ensuring users and applications only have the permissions they truly need?",
+    "hashtags": [
+      "#KubernetesSecurity",
+      "#DevSecOps",
+      "#Kubernetes",
+      "#CloudComputing"
+    ],
+    "keywords": [
+      "kubernetes",
+      "security",
+      "rbac"
+    ],
+    "generatedAt": "2026-11-25T01:18:03.340Z",
+    "status": "failed",
+    "contentHash": "d4ed114a71fcd79b709a3e19013bf52ea4fdff66847b726043b02fb007ac6071"
   }
 ]

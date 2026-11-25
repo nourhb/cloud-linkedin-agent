@@ -1625,5 +1625,19 @@
     "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
     "errorCategory": "LINKEDIN_AUTH_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261125011803_724",
+    "startedAt": "2026-11-25T01:18:03.340Z",
+    "completedAt": "2026-11-25T01:18:09.580Z",
+    "status": "failed",
+    "topic": "Kubernetes security basics",
+    "category": "DevSecOps",
+    "contentType": "architecture",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]
