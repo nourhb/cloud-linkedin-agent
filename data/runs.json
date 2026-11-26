@@ -1653,5 +1653,19 @@
     "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
     "errorCategory": "LINKEDIN_AUTH_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261126005258_001",
+    "startedAt": "2026-11-26T00:52:58.583Z",
+    "completedAt": "2026-11-26T00:53:07.846Z",
+    "status": "failed",
+    "topic": "What an SBOM actually is",
+    "category": "DevSecOps",
+    "contentType": "question_discussion",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]
