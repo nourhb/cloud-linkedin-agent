@@ -1667,5 +1667,19 @@
     "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
     "errorCategory": "LINKEDIN_AUTH_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261126220841_447",
+    "startedAt": "2026-11-26T22:08:41.087Z",
+    "completedAt": "2026-11-26T22:08:58.385Z",
+    "status": "failed",
+    "topic": "AWS EC2 fundamentals",
+    "category": "AWS",
+    "contentType": "common_mistake",
+    "generationAttempts": 2,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]

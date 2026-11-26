@@ -3301,5 +3301,29 @@
     "generatedAt": "2026-11-26T00:52:58.583Z",
     "status": "failed",
     "contentHash": "dbda1232b4981f20d0203c36dd42dab309dcb833da165aeee0c86f7b1d843139"
+  },
+  {
+    "id": "post_20261126220841_917",
+    "topic": "AWS EC2 fundamentals",
+    "category": "AWS",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "Are you optimizing your AWS EC2 costs and performance by choosing the right instance type?\n\nA common mistake in cloud computing is underestimating the impact of EC2 instance type selection. It's not just about CPU cores and RAM; each family (e.g., T, M, C, R) is optimized for different workloads with specific underlying hardware, network, and storage capabilities.\n\nTeams sometimes pick a general-purpose 'm' series for every application, assuming it's a safe default. However, a CPU-intensive task might run more efficiently on a 'c' (compute-optimized) series, while a memory-intensive database would benefit more from an 'r' (memory-optimized) series, even at a similar price point. Using a burstable 't' series for consistently high CPU loads, for example, can lead to unexpected performance throttling and credit exhaustion.\n\nMisaligning the workload with the instance type often results in either overspending on underutilized resources or experiencing performance bottlenecks. Understanding these nuances is key to effective infrastructure management in AWS.\n\nHow do you approach evaluating and selecting the optimal EC2 instance types for diverse workloads in your environment?",
+    "hook": "Are you optimizing your AWS EC2 costs and performance by choosing the right instance type?",
+    "hashtags": [
+      "#AWSEC2",
+      "#CloudComputing",
+      "#Virtualization",
+      "#AWS",
+      "#CloudEngineer"
+    ],
+    "keywords": [
+      "aws",
+      "ec2",
+      "compute"
+    ],
+    "generatedAt": "2026-11-26T22:08:41.087Z",
+    "status": "failed",
+    "contentHash": "ec49d9e76168eb5948ae5c1db88756aaabf5ce7aa67502ca70f4c2ce347b62a3"
   }
 ]
