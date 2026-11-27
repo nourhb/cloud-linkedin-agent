@@ -3351,5 +3351,29 @@
     "generatedAt": "2026-11-27T00:58:45.614Z",
     "status": "failed",
     "contentHash": "98d72d76e483456766b589e9638f6640c378548d234177835166f1607e7f3916"
+  },
+  {
+    "id": "post_20261127214927_314",
+    "topic": "Kubernetes networking model",
+    "category": "Kubernetes",
+    "contentType": "interview_concept",
+    "difficulty": "intermediate",
+    "content": "Many new to Kubernetes networking assume the platform handles all network implementation details directly, similar to its orchestration of compute resources.\n\nHowever, Kubernetes defines a *networking model* rather than implementing the network itself. The fundamental principle is that every pod receives its own IP address, and all pods can communicate with each other across nodes without Network Address Translation (NAT). This \"flat network\" concept simplifies application development and deployment within the cluster. To fulfill this model, Kubernetes relies on a Container Network Interface (CNI) plugin. The CNI is a standard that allows different network providers to integrate with Kubernetes, handling tasks like IP address management (IPAM) for pods and establishing routes or overlays for inter-node communication. Popular CNI choices like Calico, Flannel, or Cilium offer varying capabilities, from basic connectivity to advanced network policy enforcement and observability. Understanding this separation of concerns – Kubernetes defining the 'what' and CNI plugins handling the 'how' – is key to grasping the core of Kubernetes networking. Finally, Kubernetes Services abstract these ephemeral pod IPs, providing stable, discoverable endpoints for applications, often with built-in load balancing capabilities. When evaluating CNI plugins for a new Kubernetes cluster, which specific network policy or performance features do you find most critical?",
+    "hook": "Many new to Kubernetes networking assume the platform handles all network implementation details directly, similar to its orchestration of compute resources.",
+    "hashtags": [
+      "#KubernetesNetworking",
+      "#CNI",
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps"
+    ],
+    "keywords": [
+      "kubernetes",
+      "networking",
+      "cni"
+    ],
+    "generatedAt": "2026-11-27T21:49:27.719Z",
+    "status": "failed",
+    "contentHash": "b6f15f7729cd59231de616c817a7073ca7a7c32a39e4714f2f66440dff54850c"
   }
 ]
