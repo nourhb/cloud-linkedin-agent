@@ -1709,5 +1709,19 @@
     "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
     "errorCategory": "LINKEDIN_AUTH_ERROR",
     "dryRun": false
+  },
+  {
+    "runId": "run_20261128002455_043",
+    "startedAt": "2026-11-28T00:24:55.789Z",
+    "completedAt": "2026-11-28T00:25:02.830Z",
+    "status": "failed",
+    "topic": "Kubernetes DaemonSets",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "generationAttempts": 1,
+    "publicationAttempts": 1,
+    "error": "LinkedIn authentication failed (401): {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}",
+    "errorCategory": "LINKEDIN_AUTH_ERROR",
+    "dryRun": false
   }
 ]

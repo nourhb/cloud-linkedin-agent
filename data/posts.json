@@ -3375,5 +3375,29 @@
     "generatedAt": "2026-11-27T21:49:27.719Z",
     "status": "failed",
     "contentHash": "b6f15f7729cd59231de616c817a7073ca7a7c32a39e4714f2f66440dff54850c"
+  },
+  {
+    "id": "post_20261128002455_150",
+    "topic": "Kubernetes DaemonSets",
+    "category": "Kubernetes",
+    "contentType": "common_mistake",
+    "difficulty": "intermediate",
+    "content": "Are you accidentally over-provisioning resources or creating unnecessary overhead when deploying cluster-level tools in Kubernetes? A common mistake involves misusing DaemonSets.\n\nDaemonSets ensure that all (or some) nodes in a Kubernetes cluster run a copy of a specific Pod. They are ideal for agents like log collectors, monitoring agents, or network proxies that need to run on every node. The common mistake occurs when teams use DaemonSets for applications that don't *need* to run on every node, or when they forget to apply node selectors or taints and tolerations appropriately. This can lead to inefficient resource usage and increased operational complexity.For instance, deploying a database or a general-purpose application with a DaemonSet, rather than a Deployment, can unnecessarily consume resources on every node. Similarly, if you only need a monitoring agent on worker nodes, but the DaemonSet deploys it to master nodes as well, it wastes resources. Properly configuring `nodeSelector`, `nodeAffinity`, or `tolerations` allows you to target specific nodes, preventing unwanted Pod deployments and optimizing resource allocation within your Kubernetes infrastructure.Understanding DaemonSet purpose and fine-tuning their deployment with node targeting mechanisms is crucial for efficient Kubernetes operations. How does your team ensure DaemonSets are deployed only where necessary in your clusters?",
+    "hook": "Are you accidentally over-provisioning resources or creating unnecessary overhead when deploying cluster-level tools in Kubernetes? A common mistake involves misusing DaemonSets.",
+    "hashtags": [
+      "#KubernetesDaemonSet",
+      "#Kubernetes",
+      "#CloudComputing",
+      "#DevOps",
+      "#InfrastructureAsCode"
+    ],
+    "keywords": [
+      "kubernetes",
+      "daemonset",
+      "nodes"
+    ],
+    "generatedAt": "2026-11-28T00:24:55.789Z",
+    "status": "failed",
+    "contentHash": "373ba9e0ad19b3b6babdbe6aef30d81e1f721a08b123e275bf652b854b96ccd4"
   }
 ]
